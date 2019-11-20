@@ -9,6 +9,7 @@ import LazyLoad from 'react-lazyload';
 import Spinner from '../../components/ui/spinner/spinner';
 import * as actionType from '../../store/actions/action-type'
 import getBlogs from '../../services/api/get-blog-items'
+import { Helmet } from "react-helmet";
 
 // importing UI component used
 import SectionHeading from '../../components/pages-component/section-heading/section-heading'
@@ -127,6 +128,10 @@ class Blogs extends Component{
     });
       return (
           <div className="page page--blogs-page">
+            <Helmet>
+            <title>Blogs – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.</title>
+            <meta name="description" content="Ethereal Machines – Blogs: simultaneous 5-axis CNC Machine & 3D Printer."/>
+            </Helmet>
             {
               this.state.msg
               ?
@@ -135,7 +140,7 @@ class Blogs extends Component{
               </Modal>
               : null
             }
-            <PageBanner heading={'Ethereal Machines Blogs'} classValue={'page-banner--blogs-page'}/>
+            <PageBanner heading={'Ethereal Machines Blogs'} subHeading={'Dream | Design | Create'} classValue={'page-banner--blogs-page'}/>
             <section className="section section--blogs">
               <div className="container">
                 {

@@ -30,11 +30,16 @@
 /* .vision,
 .mission {
   width: 50%;
-} */
+} 
+
+.certifications {
+  width: 100%;
+}
 
 .mission {
   width: 100%;
 }
+*/
 
 .about-title {
   font-size: var(--small-font-size);

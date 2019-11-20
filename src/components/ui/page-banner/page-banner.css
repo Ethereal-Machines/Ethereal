@@ -31,7 +31,10 @@
   background-image: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./assets/images/ray_banner.png');
 }
 .page-banner--pentagram {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/pentagram-banner.jpg');
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/pentagram_banner.jpg');
+}
+.page-banner--concrete {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/concrete_banner.png');
 }
 .page-banner--careers {
   background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/careers_banner_2.jpeg');

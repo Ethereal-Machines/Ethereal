@@ -20,6 +20,7 @@ import ContentLoader from '../../components/ui/content-loader/content-loader';
 import ContactUsBanner from '../../components/pages-component/contact-us-banner/contact-us-banner';
 import './media.css';
 import '../../components/pages-component/button/button.css'
+import { Helmet } from "react-helmet";
 
 import ShowMsg from '../../components/pages-component/showMSG/msg'
 import MediaForm from './components/media-form/media-form';
@@ -51,6 +52,7 @@ class Media extends Component {
   }
 
   componentDidMount() {
+    document.title = `MIA | Ethereal Machines | Bangalore, India`;
     // scrolling the component to the top when the page is mounted
     window.scrollTo(0, 0);
 
@@ -178,6 +180,10 @@ class Media extends Component {
     return (
       <React.Fragment>
       <div className="page page--media">
+        <Helmet>
+        <title>Media Coverage – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.</title>
+        <meta name="description" content="Ethereal Machines – Media Coverage: simultaneous 5-axis CNC Machine & 3D Printer."/>
+        </Helmet>
         {
           this.state.msg
             ?
@@ -218,7 +224,7 @@ class Media extends Component {
               </div>
             </div>
           </section>
-          <section className="section section--contact-us">
+          {/*<section className="section section--contact-us">
             <div className="container">
                 <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"}/>
                 <ContactUsBanner
@@ -226,7 +232,7 @@ class Media extends Component {
                   secondText={"Let's get in touch."}
                 />
             </div>
-          </section>
+              </section> */}
         </div>
       </React.Fragment>
     );

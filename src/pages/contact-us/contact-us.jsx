@@ -4,6 +4,7 @@
  */
 
 import React, { Component } from 'react';
+import { Helmet } from "react-helmet";
 
 import './contact-us.css';
 
@@ -195,7 +196,11 @@ class ContactUs extends Component {
           <FormSuccessMsg />
         </Modal>
         <div className="page page--contact-us">
-          <PageBanner heading={"Contact Us"} subHeading={"If you think that we can't wait to hear from you, you are right! Let's talk."} classValue={"page-banner--contact-us"} />
+        <Helmet>
+        <title>Contact us | Ethereal Machines-Bangalore, India.</title>
+        <meta name="description" content="Ethereal Machines – get in touch with us."/>
+        </Helmet>
+          <PageBanner heading={"Get in touch with Ethereal Machines"} subHeading={"Let's talk."} classValue={"page-banner--contact-us"} />
           <section className="section section--contact-us-form">
             <div className="container">
             {
@@ -208,7 +213,7 @@ class ContactUs extends Component {
                 :
                     null
               }
-              <SectionHeading name={"Get in Touch!"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Please fill in your details to reach us and we will get back to you"}/>
+              <SectionHeading name={"Quick Enquiry form"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Please fill your details to get in touch with us."}/>
               <ContactUsForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired} showLoader={this.state.formSubmissionStart}/>
             </div>
           </section>

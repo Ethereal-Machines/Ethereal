@@ -29,3 +29,15 @@
 .u-text-white {
   color: var(--color-text-white);
 }
+
+.u-text-gold{
+  color: var(--color-secondary);
+}
+
+.display-inherit{
+  display: inherit;
+}
+
+.display-inline{
+  display: inline;
+}

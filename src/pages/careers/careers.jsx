@@ -4,6 +4,7 @@
  */
 
 import React, { Component } from 'react';
+import { Helmet } from "react-helmet";
 
 import './careers.css';
 
@@ -292,6 +293,10 @@ class Careers extends Component {
           : null
         }
         <div className="page page--careers">
+        <Helmet>
+        <title>Careers at Ethereal Machines-Bangalore,India</title>
+        <meta name="description" content="Ethereal Machines – Join us in building the next big thing."/>
+        </Helmet>
           <PageBanner heading={"Careers in Ethereal Machines"} subHeading={"Make your dream job come true"} classValue={"page-banner--careers"} />
           <section className="section section--openings">
             <div className="container">
@@ -306,8 +311,8 @@ class Careers extends Component {
                 :
                     null
               }
-              <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'Current Openings in Ethereal Machines'} />
-              {
+              <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'Join us in Building the Next Big Thing'} />
+              {/* {
                 flag === 1
                     ?
                     <div className="current-openings">
@@ -335,10 +340,11 @@ class Careers extends Component {
                     <p className="u-text-center">Sorry, we have no current openings.</p>
                   </div>
                 : null
-              }
+              } */}
+              <p className="u-text-center">We are happy you are thinking about a profession with Ethereal Machines, Bangalore, India! Let us join forces to put India on the world map. Together, we shall disrupt the Deep-Tech industry. Let’s create the future leader of Deep-Tech from India.</p>
             </div>
           </section>
-          <section className="section section--careers-form">
+          <section className="section section--careers-form section-no-top-padding">
             <div className="container">
               <SectionHeading name={"Get in touch!"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading={true} subHeading={"Let's schedule an interview!"}/>
               <CareersGenericForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} showLoader={this.state.formSubmissionStart}/>

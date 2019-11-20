@@ -1,0 +1,14 @@
+.company-brief {
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10rem 0 0 0;
+}
+
+.company-brief .detail-text p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: inherit;
+  font-size: var(--smaller-font-size);
+  font-family: var(--light);
+  letter-spacing: .25px;
+}

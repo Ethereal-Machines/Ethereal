@@ -33,6 +33,27 @@
   margin: auto auto;
 }
 
+.product-topimg-right-column{
+  height: 80vh;
+  max-height: 62vh;
+}
+
+.product-title{
+  font-weight: 600;
+}
+
+section.section-no-top-padding{
+  padding: 0 0 10rem 0 !important;
+}
+
+.penta-img-size{
+  width: 69% !important;
+}
+
+.hover-changeto-black:hover{
+  color:#000;
+}
+
 @media screen and (max-width: 768px) {
   .product-details {
     grid-column: 1 / -1;

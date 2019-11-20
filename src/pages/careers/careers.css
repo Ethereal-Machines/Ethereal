@@ -20,3 +20,7 @@
 .form--careers-generic-form .form-control:last-child{
   grid-column: 1 / span 1;
 }
+
+section.section-no-top-padding{
+  padding: 0 0 10rem 0 !important;
+}

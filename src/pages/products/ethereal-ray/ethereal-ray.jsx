@@ -5,6 +5,7 @@
 
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
+import { Helmet } from "react-helmet";
 
 import '../products.css';
 
@@ -28,6 +29,10 @@ class EtherealRay extends Component {
   render() {
     return (
       <div className="page page--ethereal-ray">
+        <Helmet>
+        <title>Ethereal ray – A dual extruder 3D Printer for your everyday printing needs.</title>
+        <meta name="description" content="The Ethereal Ray is a smart 3D Printing device built to unbridle the designer and engineer in you."/>
+        </Helmet>
         <PageBanner heading={'The Ethereal Ray'} subHeading={'A smart dual extruder printer for your everyday 3D printing needs!'} classValue={'page-banner--ray'}/>
         <section className="section section--about-product">
           <div className="container">
@@ -35,18 +40,10 @@ class EtherealRay extends Component {
               <div className="product-details">
                 <SectionHeading name={"About Ethereal Ray"} classValue={"u-margin-bottom-small u-text-left"} />
                 <div className="detail-text">
-                  <p>The Ethereal Ray is a smart device built to unbridle the designer and
-                  engineer in you. Equipped with two nozzles, the Ray helps
-                  you achieve prints with multiple materials and dual
-                  colours.</p>
-                  <p>Print seamlessly via Wi-Fi. Slice on the cloud. Monitor through
-                  your phone. Save prints on the cloud.</p>
-                  <p>User experience takes top priority at Ethereal Machines. The
-                  Ray dons a 5" capacitive touchscreen and LEDs that signal
-                  various stages of a print to enhance user experience.</p>
-                  <p>The Ethereal Ray is poised to provide a makeover to your
-                  desktop and is your tool to take your ideas from design to
-                  prototype stage.</p>
+                  <p>The Ethereal Ray is a smart device built to unbridle the designer and engineer in you. Equipped with two nozzles, the Ray helps you achieve prints with multiple materials and dual colours.</p>
+                  <p>Print seamlessly via Wi-Fi. Slice on the cloud. Monitor through your phone. Save prints on the cloud.</p>
+                  <p>User experience takes top priority at Ethereal Machines. The Ray dons a 5" capacitive touchscreen and LEDs that signal various stages of a print to enhance user experience.</p>
+                  <p>The Ethereal Ray is poised to provide a makeover to your desktop and is your tool to take your ideas from design to prototype stage.</p>
                 </div>
               </div>
               <div className="product-img flex-column">
@@ -54,12 +51,18 @@ class EtherealRay extends Component {
               </div>
             </div>
           </div>
+          <br></br>
+          <div className="container">
+              <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
+                <a href="https://etherealmachines.com/static/media/Ray-Brochure.pdf" className="display-inline hover-changeto-black">Download Brochure</a>
+              </div>
+            </div>
         </section>
         <ProductFeatures features={etherealRayData.features} />
         <ProductTechSpecs techSpecs={etherealRayData.techSpecs} product={'ray'}/>
-        <LazyLoad height={200} offset={100} once>
-          <ContactUs />
-        </LazyLoad>
+        {/*<LazyLoad height={200} offset={100} once>
+          <ContactUs /> 
+        </LazyLoad>*/}
       </div>
     );
   }

@@ -17,56 +17,56 @@ const etherealPentagram = {
   features: [
     {
       id: 1,
-      title: 'Desktop Size',
-      description: 'Designed and engineered to occupy minimal floor space',
+      title: 'Ultra Low Footprint',
+      description: 'Designed and engineered to occupy minimal floor space of 1500x1500mm.',
       imgUrl: desktop_size
     },
     {
       id: 2,
       title: 'Ample Work Area',
-      description: 'The Pentagram offers a work area of 200 Ø x 200 mm',
+      description: 'The Pentagram offers a work area of 300 Ø x 300 mm.',
       imgUrl: ample_work_area
     },
     {
       id: 3,
-      title: '5-Axis Simultaneous Kinematics',
-      description: '5 axis simulatneous movement to help reduce machining time',
+      title: 'Simultaneous 5-Axis Kinematics',
+      description: 'Simultaneous 5-axis movement to help reduce machining time.',
       imgUrl: five_axis_simultaneous
     },
     {
       id: 4,
       title: 'High Accuracy Drive Mechanism',
-      description: 'Achieved through utilization of accurately calibrated ball screws and linear guide rails',
+      description: 'Achieved through utilization of highly accurately calibrated ball screws and linear guide rails.',
       imgUrl: high_accuracy_drive_mechanism
     },
     {
       id: 5,
-      title: 'Dedicated PC-Based Controller',
-      description: 'Real time monitoring and control of the machining job in progress',
+      title: 'Dedicated SIEMENS Controller',
+      description: ' Real time monitoring and control of the machining/printing job in the progress.',
       imgUrl: dedicated_pc_based_controller
     },
     {
       id: 6,
-      title: 'Encoder Feedback',
-      description: 'Ensures zero bypass of machine code',
+      title: 'Dual Encoder Feedback',
+      description: 'Ensures minimum deviation from the machining code.',
       imgUrl: encoder_feedback
     },
     {
       id: 7,
       title: 'Multiple Tool Support',
-      description: 'Permits employment of various tools to machine a spectrum of materials',
+      description: 'Permits employment of various tools to machine a spectrum of materials.',
       imgUrl: multiple_tool_support
     },
     {
       id: 8,
-      title: 'Z Probe',
-      description: 'Facilitates auto tool height compensation',
+      title: 'Tool Probe',
+      description: 'Probe reduces set-up times by up to 90% and improves process control.',
       imgUrl: z_probe
     },
     {
       id: 9,
       title: 'User Friendly Interface',
-      description: 'Ensures easy operability and aids in quick familiarization with the machine',
+      description: 'Ensures easy operability and aids in quick familiarization with the machine.',
       imgUrl: user_friendly_interface
     }
   ],

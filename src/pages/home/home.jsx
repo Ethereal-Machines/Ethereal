@@ -24,6 +24,14 @@ class Home extends Component {
     return (
       <div className="page page--home">
         <PageBanner heading={"Welcome to Ethereal Machines"} subHeading={"We build the future of manufacturing. We create entrepreneurs."} classValue={"page-banner--home"} />
+        <section className="company-brief">
+          <div className="container">
+            <div className="detail-text">
+              <p>Ethereal Machines is a leading manufacturer of 5-axis CNC Machines and 3D Printers in India, based out of Bangalore. Our flagship product the Ethereal Halo, combines the technologies of subtractive and additive manufacturing into one bundle to replicate the capabilities of a large factory on a desktop scale.</p>
+              <p>Our other products are Ethereal Ray, Ethereal pentagram and Ethereal 3D Concrete Printer.</p>
+            </div>
+          </div>
+        </section>
         <section className="section section--products">
           <div className="container">
             {/* <SectionHeading name={"Our wide range of industrial grade products"} classValue={"u-margin-bottom-big u-text-center"} /> */}
@@ -48,7 +56,7 @@ class Home extends Component {
             </LazyLoad>
           </div>
         </section>
-        <section className="section section--contact-us">
+        {/* <section className="section section--contact-us">
           <div className="container">
             <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"} />
             <LazyLoad height={200} offset={200} once>
@@ -58,7 +66,7 @@ class Home extends Component {
               />
             </LazyLoad>
           </div>
-        </section>
+    </section>*/}
       </div>
     );
   }
