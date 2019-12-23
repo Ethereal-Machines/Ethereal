@@ -4,7 +4,8 @@
  */
 
 import React, { Component } from 'react';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import DocumentMeta from 'react-document-meta';
 
 import './contact-us.css';
 
@@ -127,15 +128,20 @@ class ContactUs extends Component {
     switch (targetType) {
       case 'text':
         if (inputFieldName === 'name') {
+          this.formData.delete('name');
           this.formData.append('name', targetValue);
-        } else if (inputFieldName === 'contact_number') {
+        } 
+        else 
+        if (inputFieldName === 'contact_number') {
           const contactNo = targetValue;
+          this.formData.delete('contact_number');
           this.formData.append('contact_number', contactNo);
         }
         break;
 
       case 'email':
         if (inputFieldName === 'email') {
+          this.formData.delete('email');
           this.formData.append('email', targetValue);
         }
         break;
@@ -165,6 +171,8 @@ class ContactUs extends Component {
         break;
 
       case 'textarea':
+        
+        this.formData.delete('message');
         this.formData.append('message', targetValue);
         break;
 
@@ -188,18 +196,28 @@ class ContactUs extends Component {
   queryReport = () => {
     getQueryReport()
   }
-
   render() {
+    const meta = {
+      title: 'Contact us | Ethereal Machines-Bangalore, India.',
+      meta: {
+        property: {
+          'og:title': 'Contact us | Ethereal Machines-Bangalore, India.',
+           'og:description': ' Ethereal Machines – get in touch with us.',
+          }
+      }
+    };
     return (
       <React.Fragment>
         <Modal show={this.state.showModal} clicked={this.closeModal}>
           <FormSuccessMsg />
         </Modal>
         <div className="page page--contact-us">
-        <Helmet>
+        {/* <Helmet>
         <title>Contact us | Ethereal Machines-Bangalore, India.</title>
         <meta name="description" content="Ethereal Machines – get in touch with us."/>
-        </Helmet>
+        </Helmet> */}
+
+<DocumentMeta {...meta} />
           <PageBanner heading={"Get in touch with Ethereal Machines"} subHeading={"Let's talk."} classValue={"page-banner--contact-us"} />
           <section className="section section--contact-us-form">
             <div className="container">

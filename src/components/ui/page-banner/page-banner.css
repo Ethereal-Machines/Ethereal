@@ -45,6 +45,9 @@
 .page-banner--contact-us {
   background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/contact_us_banner.JPG');
 }
+.page-banner--design-help {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/design-help.jpeg');
+}
 
   
 .container--page-banner {

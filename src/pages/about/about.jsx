@@ -8,7 +8,8 @@ import { connect } from 'react-redux';
 import LazyLoad from 'react-lazyload';
 import axios from '../../services/axios/axios';
 import * as actionType from '../../store/actions/action-type';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import DocumentMeta from 'react-document-meta';
 
 // importing the API used for this page
 import getMedia from '../../services/api/get-team';
@@ -49,12 +50,25 @@ class About extends Component {
   }
 
   render () {
+
+    const meta = {
+      title: 'About Us | Ethereal Machines | Bangalore, India',
+      meta: {
+        property: {
+          'og:title': 'About Us | Ethereal Machines | Bangalore, India',
+           'og:description': 'Ethereal Machines – Manufacturers of 5-axis CNC Machines and 3D Printers.',
+          }
+      }
+    };
+
     return (
       <div className="page page--about">
-        <Helmet>
+        {/* <Helmet>
         <title>About Us | Ethereal Machines | Bangalore, India</title>
         <meta name="description" content="Ethereal Machines – Manufacturers of 5-axis CNC Machines and 3D Printers."/>
-        </Helmet>
+        </Helmet> */}
+        <DocumentMeta {...meta} />
+
         <PageBanner heading={"Know about Ethereal Machines"} subHeading={"Who are we and what do we do?"} classValue={'page-banner--about'}/>
         <section className="section section--about-us">
           <div className="container">

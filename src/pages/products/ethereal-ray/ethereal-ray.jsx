@@ -5,7 +5,8 @@
 
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import DocumentMeta from 'react-document-meta';
 
 import '../products.css';
 
@@ -27,12 +28,24 @@ class EtherealRay extends Component {
   }
 
   render() {
+    const meta = {
+      title: 'Ethereal ray – A dual extruder 3D Printer for your everyday printing needs.',
+      meta: {
+        property: {
+          'og:title': 'Ethereal ray – A dual extruder 3D Printer for your everyday printing needs.',
+           'og:description': 'The Ethereal Ray is a smart 3D Printing device built to unbridle the designer and engineer in you.',
+          }
+      }
+    };
+
     return (
       <div className="page page--ethereal-ray">
-        <Helmet>
+        {/* <Helmet>
         <title>Ethereal ray – A dual extruder 3D Printer for your everyday printing needs.</title>
         <meta name="description" content="The Ethereal Ray is a smart 3D Printing device built to unbridle the designer and engineer in you."/>
-        </Helmet>
+        </Helmet> */}
+        <DocumentMeta {...meta} />
+
         <PageBanner heading={'The Ethereal Ray'} subHeading={'A smart dual extruder printer for your everyday 3D printing needs!'} classValue={'page-banner--ray'}/>
         <section className="section section--about-product">
           <div className="container">

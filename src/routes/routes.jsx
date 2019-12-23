@@ -60,6 +60,10 @@ const ContactUs = Loadable({
   loader: () => import('../pages/contact-us/contact-us'),
   loading: Loading
 });
+const DesignHelp = Loadable({
+  loader: () => import('../pages/design-help/design-help'),
+  loading: Loading
+});
 const Blogs = Loadable({
   loader: () => import('../pages/blogs/blog'),
   loading: Loading
@@ -130,6 +134,7 @@ class Routes extends Component {
           <Route path="/products/pentagram" component={Pentagram} />
           <Route path="/products/concrete" component={Concrete} />
           <Route path="/contact" component={ContactUs} />
+          <Route path="/DesignHelp" component={DesignHelp} />
           <Route path="/careers" exact component={Careers} />
           <Route path="/careers/apply/:id" component={Apply} />
           <Route path="/home" exact component={Home} />

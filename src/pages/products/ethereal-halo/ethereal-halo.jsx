@@ -5,7 +5,8 @@
 
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import DocumentMeta from 'react-document-meta';
 
 import '../products.css';
 
@@ -57,6 +58,17 @@ class EtherealHalo extends Component {
   }
 
   render() {
+
+    
+    const meta = {
+      title: 'Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.',
+      meta: {
+        property: {
+          'og:title': 'Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.',
+           'og:description':  'Ethereal Halo is the world’s first consumer-oriented simultaneous 5-axis CNC Machine and 5-axis 3D Printer.',
+          }
+      }
+    };
     return (
       <React.Fragment>
         <Modal show={this.state.showModal} clicked={this.closeModal}>
@@ -69,10 +81,13 @@ class EtherealHalo extends Component {
           </iframe>
         </Modal>
         <div className="page page--ethereal-halo">
-        <Helmet>
+
+        <DocumentMeta {...meta} />
+
+        {/* <Helmet>
         <title>Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.</title>
         <meta name="description" content="Ethereal Halo is the world’s first consumer-oriented simultaneous 5-axis CNC Machine and 5-axis 3D Printer."/>
-        </Helmet>
+        </Helmet> */}
           <PageBanner heading={'The Ethereal Halo'} subHeading={'The Dawn of Hybrid Manufacturing'} classValue={'page-banner--halo'}>
             <div className="btn btn--golden btn--transparent btn--center-aligned u-text-center" onClick={this.showModal}>Watch Video</div>
           </PageBanner>

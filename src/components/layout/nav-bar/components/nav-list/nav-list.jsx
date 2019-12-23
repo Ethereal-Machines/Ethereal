@@ -42,6 +42,7 @@ const navList = (props) => {
       <NavItem linkType={'text'} navLink={true} address={'/blogs'} name={'Blogs'} {...props}/>
       <NavItem linkType={'text'} navLink={true} address={'/careers'} name={'Careers'} {...props}/>
       <NavItem linkType={'text'} navLink={true} address={'/contact'} name={'Contact Us'} {...props}/>
+      <NavItem linkType={'text'} navLink={true} address={'/DesignHelp'} name={'Design Help'} {...props}/>
       {
           props.session
           ?

@@ -5,7 +5,8 @@
 
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazyload';
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import DocumentMeta from 'react-document-meta';
 
 import '../products.css';
 
@@ -29,12 +30,25 @@ class EtherealPentagram extends Component {
   }
 
   render() {
+
+    const meta = {
+      title: 'Ethereal Pentagram – Precise Robust Simultaneous 5-axis CNC Machine.',
+      meta: {
+        property: {
+          'og:title': 'Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.',
+           'og:description':  'The one stop solution for all your machining needs fulfilled by Ethereal Pentagram: Simultaneous 5- axis CNC Machine.',
+          }
+      }
+    };
     return (
       <div className="page page--ethereal-pentagram">
-        <Helmet>
+        {/* <Helmet>
         <title>Ethereal Pentagram – Precise Robust Simultaneous 5-axis CNC Machine.</title>
         <meta name="description" content="The one stop solution for all your machining needs fulfilled by Ethereal Pentagram: Simultaneous 5- axis CNC Machine."/>
-        </Helmet>
+        </Helmet> */}
+
+<DocumentMeta {...meta} />
+
         <PageBanner heading={'The Ethereal Pentagram'} subHeading={'Desktop Simultaneous 5 Axis CNC Machine'} classValue={'page-banner--pentagram'}/>
         <section className="section section--about-product">
           <div className="container">

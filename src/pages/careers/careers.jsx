@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import { Helmet } from "react-helmet";
 
 import './careers.css';
+import DocumentMeta from 'react-document-meta';
 
 import PageBanner from '../../components/ui/page-banner/page-banner';
 import SectionHeading from '../../components/pages-component/section-heading/section-heading';
@@ -266,6 +267,16 @@ class Careers extends Component {
         noJob = 1
       }
     }
+    const meta = {
+      title: 'About Us | Ethereal Machines | Bangalore, India',
+      meta: {
+        property: {
+          'og:title': 'About Us | Ethereal Machines | Bangalore, India',
+           'og:description': 'Ethereal Machines – Manufacturers of 5-axis CNC Machines and 3D Printers.',
+          }
+      }
+    };
+
     return (
       <React.Fragment>
         {this.state.createCareer || this.state.updateCareer
@@ -293,10 +304,12 @@ class Careers extends Component {
           : null
         }
         <div className="page page--careers">
-        <Helmet>
+        {/* <Helmet>
         <title>Careers at Ethereal Machines-Bangalore,India</title>
         <meta name="description" content="Ethereal Machines – Join us in building the next big thing."/>
-        </Helmet>
+        </Helmet> */}
+                <DocumentMeta {...meta} />
+
           <PageBanner heading={"Careers in Ethereal Machines"} subHeading={"Make your dream job come true"} classValue={"page-banner--careers"} />
           <section className="section section--openings">
             <div className="container">

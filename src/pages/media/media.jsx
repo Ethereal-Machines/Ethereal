@@ -20,7 +20,8 @@ import ContentLoader from '../../components/ui/content-loader/content-loader';
 import ContactUsBanner from '../../components/pages-component/contact-us-banner/contact-us-banner';
 import './media.css';
 import '../../components/pages-component/button/button.css'
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import DocumentMeta from 'react-document-meta';
 
 import ShowMsg from '../../components/pages-component/showMSG/msg'
 import MediaForm from './components/media-form/media-form';
@@ -176,14 +177,24 @@ class Media extends Component {
         <ContentLoader key={i + '_loader'} />
       );
     }
-
+    const meta = {
+      title: 'Media Coverage – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.',
+      meta: {
+        property: {
+          'og:title': 'Media Coverage – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.',
+           'og:description': 'Ethereal Machines – Media Coverage: simultaneous 5-axis CNC Machine & 3D Printer.',
+          }
+      }
+    };
     return (
       <React.Fragment>
       <div className="page page--media">
-        <Helmet>
+        {/* <Helmet>
         <title>Media Coverage – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.</title>
         <meta name="description" content="Ethereal Machines – Media Coverage: simultaneous 5-axis CNC Machine & 3D Printer."/>
-        </Helmet>
+        </Helmet> */}
+        <DocumentMeta {...meta} />
+
         {
           this.state.msg
             ?

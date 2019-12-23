@@ -9,7 +9,8 @@ import LazyLoad from 'react-lazyload';
 import Spinner from '../../components/ui/spinner/spinner';
 import * as actionType from '../../store/actions/action-type'
 import getBlogs from '../../services/api/get-blog-items'
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import DocumentMeta from 'react-document-meta';
 
 // importing UI component used
 import SectionHeading from '../../components/pages-component/section-heading/section-heading'
@@ -126,12 +127,24 @@ class Blogs extends Component{
         </LazyLoad>
       );
     });
+
+    const meta = {
+      title: 'Blogs – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.',
+      meta: {
+        property: {
+          'og:title': 'About Us | Ethereal Machines | Bangalore, India',
+           'og:description': 'Ethereal Machines – Manufacturers of 5-axis CNC Machines and 3D Printers.',
+          }
+      }
+    };
+
       return (
           <div className="page page--blogs-page">
-            <Helmet>
+            {/* <Helmet>
             <title>Blogs – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.</title>
             <meta name="description" content="Ethereal Machines – Blogs: simultaneous 5-axis CNC Machine & 3D Printer."/>
-            </Helmet>
+            </Helmet> */}
+            <DocumentMeta {...meta} />
             {
               this.state.msg
               ?
