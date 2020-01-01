@@ -4,8 +4,8 @@
  */
 
 import React, { Component } from 'react';
-// import { Helmet } from "react-helmet";
-import DocumentMeta from 'react-document-meta';
+import { Helmet } from "react-helmet";
+// import DocumentMeta from 'react-document-meta';
 
 import '../products.css';
 
@@ -21,22 +21,22 @@ class EtherealConcrete extends Component {
 
   render() {
 
-    const meta = {
-      title: 'Ethereal 3D Concrete Printer | A new innovation from ethereal Machines…',
-      meta: {
-        property: {
-          'og:title': 'Ethereal 3D Concrete Printer | A new innovation from ethereal Machines…',
-           'og:description':  'Ethereal Machine’s 3D Concrete printer is India’s first automated concrete laying machine.',
-          }
-      }
-    };
+    // const meta = {
+    //   title: 'Ethereal 3D Concrete Printer | A new innovation from ethereal Machines…',
+    //   meta: {
+    //     property: {
+    //       'og:title': 'Ethereal 3D Concrete Printer | A new innovation from ethereal Machines…',
+    //        'og:description':  'Ethereal Machine’s 3D Concrete printer is India’s first automated concrete laying machine.',
+    //       }
+    //   }
+    // };
     return (
       <div className="page page--blog">
-        {/* <Helmet>
+        <Helmet>
         <title>Ethereal 3D Concrete Printer | A new innovation from ethereal Machines…</title>
         <meta name="description" content="Ethereal Machine’s 3D Concrete printer is India’s first automated concrete laying machine."/>
-        </Helmet> */}
-        <DocumentMeta {...meta} />
+        </Helmet>
+        {/* <DocumentMeta {...meta} /> */}
 
 
         <PageBanner heading={'Ethereal Concrete 3D Printer'} subHeading={'India’s first automated concrete laying machine!'} classValue={'page-banner--concrete'}/>
