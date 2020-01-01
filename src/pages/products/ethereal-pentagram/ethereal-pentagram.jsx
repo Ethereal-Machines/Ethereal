@@ -35,7 +35,7 @@ class EtherealPentagram extends Component {
       title: 'Ethereal Pentagram – Precise Robust Simultaneous 5-axis CNC Machine.',
       meta: {
         property: {
-          'og:title': 'Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.',
+          'og:title': 'Ethereal Pentagram – Precise Robust Simultaneous 5-axis CNC Machine.',
            'og:description':  'The one stop solution for all your machining needs fulfilled by Ethereal Pentagram: Simultaneous 5- axis CNC Machine.',
           }
       }

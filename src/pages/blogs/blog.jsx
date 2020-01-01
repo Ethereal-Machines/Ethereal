@@ -132,8 +132,8 @@ class Blogs extends Component{
       title: 'Blogs – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.',
       meta: {
         property: {
-          'og:title': 'About Us | Ethereal Machines | Bangalore, India',
-           'og:description': 'Ethereal Machines – Manufacturers of 5-axis CNC Machines and 3D Printers.',
+          'og:title': 'CNC Machine,3D printer |Ethereal Machines-Bangalore, India.',
+           'og:description': 'Ethereal Machines – Blogs: simultaneous 5-axis CNC Machine & 3D Printer.',
           }
       }
     };

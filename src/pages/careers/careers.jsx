@@ -272,7 +272,7 @@ class Careers extends Component {
       meta: {
         property: {
           'og:title': 'About Us | Ethereal Machines | Bangalore, India',
-           'og:description': 'Ethereal Machines – Manufacturers of 5-axis CNC Machines and 3D Printers.',
+           'og:description': 'Ethereal Machines – Join us in building the next big thing.',
           }
       }
     };

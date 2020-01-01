@@ -152,10 +152,10 @@ class DesignHelp extends Component {
 
   render() {
     const meta = {
-      title: 'Contact us | Ethereal Machines-Bangalore, India.',
+      title: 'Design Help | Ethereal Machines-Bangalore, India.',
       meta: {
         property: {
-          'og:title': 'Contact us | Ethereal Machines-Bangalore, India.',
+          'og:title': 'Design Help | Ethereal Machines-Bangalore, India.',
            'og:description': ' Ethereal Machines – get in touch with us.',
           }
       }
@@ -167,7 +167,7 @@ class DesignHelp extends Component {
         </Modal>
         <div className="page page--contact-us">
         {/* <Helmet>
-        <title>Contact us | Ethereal Machines-Bangalore, India.</title>
+        <title>Design Help | Ethereal Machines-Bangalore, India.</title>
         <meta name="description" content="Ethereal Machines – get in touch with us."/>
         </Helmet> */}
 
