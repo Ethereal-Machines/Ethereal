@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://etherealmachines.com/</loc> </url>
-<url> <loc>https://etherealmachines.com/home</loc> </url>
-<url> <loc>https://etherealmachines.com/about</loc> </url>
-<url> <loc>https://etherealmachines.com/media</loc> </url>
-<url> <loc>https://etherealmachines.com/login</loc> </url>
-<url> <loc>https://etherealmachines.com/dashboard</loc> </url>
-<url> <loc>https://etherealmachines.com/blogs</loc> </url>
-<url> <loc>https://etherealmachines.com/products/halo</loc> </url>
-<url> <loc>https://etherealmachines.com/products/ray</loc> </url>
-<url> <loc>https://etherealmachines.com/products/pentagram</loc> </url>
-<url> <loc>https://etherealmachines.com/products/concrete</loc> </url>
-<url> <loc>https://etherealmachines.com/contact</loc> </url>
-<url> <loc>https://etherealmachines.com/careers</loc> </url>
-<url> <loc>https://etherealmachines.com/</loc> </url>
+<url> <loc>https://etherealmachines.com#/</loc> </url>
+<url> <loc>https://etherealmachines.com#/home</loc> </url>
+<url> <loc>https://etherealmachines.com#/about</loc> </url>
+<url> <loc>https://etherealmachines.com#/media</loc> </url>
+<url> <loc>https://etherealmachines.com#/login</loc> </url>
+<url> <loc>https://etherealmachines.com#/dashboard</loc> </url>
+<url> <loc>https://etherealmachines.com#/blogs</loc> </url>
+<url> <loc>https://etherealmachines.com#/products/halo</loc> </url>
+<url> <loc>https://etherealmachines.com#/products/ray</loc> </url>
+<url> <loc>https://etherealmachines.com#/products/pentagram</loc> </url>
+<url> <loc>https://etherealmachines.com#/products/concrete</loc> </url>
+<url> <loc>https://etherealmachines.com#/contact</loc> </url>
+<url> <loc>https://etherealmachines.com#/careers</loc> </url>
+<url> <loc>https://etherealmachines.com#/</loc> </url>
 </urlset>

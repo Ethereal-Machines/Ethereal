@@ -8,7 +8,7 @@ const SiteMap = require("react-router-sitemap").default;
 const generateSiteMap = () => {
     return (
         new SiteMap(router)
-            .build("https://etherealmachines.com")
+            .build("https://etherealmachines.com/#/")
             .save("./public/sitemap.xml")
     );
 };
