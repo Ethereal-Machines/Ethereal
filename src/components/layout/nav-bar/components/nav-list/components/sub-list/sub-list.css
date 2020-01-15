@@ -8,7 +8,7 @@
   top: 6.4rem;
   height: inherit;
   visibility: hidden;
-  opacity: 0;
+  opacity: 0; 
 }
 
 .sub-list-container--right {
@@ -36,9 +36,10 @@
 }
 
 @media screen and (max-width: 767px) {
-  .sub-list-container {
-    position: relative;
-    visibility: visible;
+   
+  .sub-list-container { 
+    z-index: 10;
+    visibility: hidden;
     opacity: 1;
     top: 0;
     left: 0;

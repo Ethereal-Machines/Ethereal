@@ -51,6 +51,13 @@ class Dashboard extends Component {
                     </div>
                 </div>
               </div>
+              <div className="dashboard-item flex-row">
+                <div className="dashboard-details-container">
+                    <div className="dashboard-link">
+                        <a onClick={() => getQueriesReport()}>Download Design Help report</a>
+                    </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

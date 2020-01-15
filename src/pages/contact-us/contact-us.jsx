@@ -201,8 +201,8 @@ class ContactUs extends Component {
       title: 'Contact us | Ethereal Machines-Bangalore, India.',
       meta: {
         property: {
-          'og:title': 'Contact us | Ethereal Machines-Bangalore, India.',
-           'og:description': ' Ethereal Machines – get in touch with us.',
+          'title': 'Contact us | Ethereal Machines-Bangalore, India.',
+           'description': ' Ethereal Machines – get in touch with us.',
           }
       }
     };

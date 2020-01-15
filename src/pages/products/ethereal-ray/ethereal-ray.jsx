@@ -32,8 +32,8 @@ class EtherealRay extends Component {
       title: 'Ethereal ray – A dual extruder 3D Printer for your everyday printing needs.',
       meta: {
         property: {
-          'og:title': 'Ethereal ray – A dual extruder 3D Printer for your everyday printing needs.',
-           'og:description': 'The Ethereal Ray is a smart 3D Printing device built to unbridle the designer and engineer in you.',
+          'title': 'Ethereal ray – A dual extruder 3D Printer for your everyday printing needs.',
+           'description': 'The Ethereal Ray is a smart 3D Printing device built to unbridle the designer and engineer in you.',
           }
       }
     };

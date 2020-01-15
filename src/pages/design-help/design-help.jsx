@@ -14,10 +14,7 @@ import SectionHeading from '../../components/pages-component/section-heading/sec
 import DesignHelpForm from './components/design-help-form/design-help-form';
 import Modal from '../../components/ui/modal/modal';
 import FormSuccessMsg from '../../components/pages-component/form-success-msg/form-success-msg';
-
-import postGeneralQuery from '../../services/api/post-general-query';
-import postMediaQuery from '../../services/api/post-media-query';
-import postDistributorQuery from '../../services/api/post-distributor-query';
+import DigitalHelp from '../../services/api/post-DigitalHelp-query';
 import getQueryReport from '../../services/api/get-queries-report'
 import * as utilityFunctions from '../../utility-functions/utility-functions';
 import { connect } from 'react-redux';
@@ -45,8 +42,9 @@ class DesignHelp extends Component {
     this.formData.delete('name');          
     this.formData.delete('country');
     this.formData.delete('contact_number');
+    this.formData.delete('email');
     this.formData.delete('imageLink');
-    this.formData.delete('specificQueries');
+    this.formData.delete('message');
    }
 
   resetProperties = () => {
@@ -96,7 +94,7 @@ class DesignHelp extends Component {
       ...this.state,
       formSubmissionStart: true
     });
-    postMediaQuery(this.onSubmitCallBack, this.formData);
+    DigitalHelp(this.onSubmitCallBack, this.formData);
   }
 
   onInputChange = (event) => {
@@ -115,6 +113,11 @@ class DesignHelp extends Component {
           this.formData.append('contact_number', targetValue);
         }
         else 
+        if (inputFieldName === 'email') {
+          this.formData.delete('email');
+          this.formData.append('email', targetValue);
+        }
+        else 
         if (inputFieldName === 'country') { 
           this.formData.delete('country');
           this.formData.append('country',targetValue);
@@ -126,8 +129,8 @@ class DesignHelp extends Component {
         }
         break;  
       case 'textarea':
-        this.formData.delete('specificQueries');
-         this.formData.append('specificQueries', targetValue);
+        this.formData.delete('message');
+         this.formData.append('message', targetValue);
         break;
       default:
         break;
@@ -152,11 +155,11 @@ class DesignHelp extends Component {
 
   render() {
     const meta = {
-      title: 'Design Help | Ethereal Machines-Bangalore, India.',
+      title: 'Ethereal Machines - CAD/CAM Design or Programming Help',
       meta: {
         property: {
-          'og:title': 'Design Help | Ethereal Machines-Bangalore, India.',
-           'og:description': ' Ethereal Machines – get in touch with us.',
+          'title': 'Ethereal Machines - CAD/CAM Design or Programming Help',
+           'description': 'Ethereal Machines is glad to assist you with CAD/CAM programming for CNC machining and 3D Printing.',
           }
       }
     };

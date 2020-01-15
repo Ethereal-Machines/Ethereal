@@ -19,16 +19,7 @@ import stateOptions from './state-options';
 // import countryCodeOptions from './country-code-options';
 
 class DesignHelpForm extends Component {
-  render() {
-    const regionOptions = [
-      {id: 1, value: 'India'},
-      {id: 2, value: 'International'},
-    ];
-    const natureOfQuery = [
-      {id: 1, value: 'General Queries'},
-      {id: 2, value: 'Become a reseller or distributor'},
-      {id: 3, value: 'Media Queries'},
-    ];
+  render() { 
 
     return (
       <Form {...this.props} classValue={"form form--contact-us"}>
@@ -37,18 +28,10 @@ class DesignHelpForm extends Component {
           <InputText labelName={"Name"} inputName={"name"} placeholder={"Enter Name"} isRequired {...this.props} />
           <InputText labelName={"Country"} inputName={"country"} placeholder={"Enter Country"} isRequired {...this.props} />
           <InputText labelName={"Design Files / Images"} inputName={"imageLink"} placeholder={"Kindly drop a drive link"} isRequired {...this.props} />
-           {/* <InputEmail labelName={"Email"} inputName={"email"} placeholder={"Enter Email"} isRequired {...this.props} /> */}
+          <InputText labelName={"Email"} inputName={"email"} placeholder={"Enter Email"} isRequired {...this.props} /> 
           {/* <Select labelName={"Country Code"} inputName={"countryCode"} options={countryCodeOptions} defaultValue={"--select--"} isRequired type={"countryCode"} {...this.props} /> */}
           <InputText labelName={"Contact Number"} inputName={"contact_number"} placeholder={"Contact No. with Country Code (e.g. +91XXXXXXXXXX)"} isRequired {...this.props} />
-          {/* { this.props.natureOfQuery === 'General Queries' ?
-            <Select labelName={"Region"} inputName={"region"} options={regionOptions} defaultValue={"--select--"} isRequired {...this.props} /> :
-            null
-          }
-          {
-            this.props.isStateRequired ? 
-            <Select labelName={"State"} inputName={"state"} options={stateOptions} defaultValue={"--select state--"} {...this.props} /> :
-            null
-          } */}
+      
           <TextArea labelName={"Specific Queries"} inputName={"specificQueries"} placeholder={"Add details about product/design/type of machining"}  {...this.props} />
         </div>
         { this.props.errorMsg ? <ErrorBox isRequired {...this.props} /> : null }

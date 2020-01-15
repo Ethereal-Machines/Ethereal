@@ -271,8 +271,8 @@ class Careers extends Component {
       title: 'About Us | Ethereal Machines | Bangalore, India',
       meta: {
         property: {
-          'og:title': 'About Us | Ethereal Machines | Bangalore, India',
-           'og:description': 'Ethereal Machines – Join us in building the next big thing.',
+          'title': 'About Us | Ethereal Machines | Bangalore, India',
+           'description': 'Ethereal Machines – Join us in building the next big thing.',
           }
       }
     };

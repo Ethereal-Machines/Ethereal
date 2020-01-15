@@ -181,8 +181,8 @@ class Media extends Component {
       title: 'Media Coverage – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.',
       meta: {
         property: {
-          'og:title': 'Media Coverage – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.',
-           'og:description': 'Ethereal Machines – Media Coverage: simultaneous 5-axis CNC Machine & 3D Printer.',
+          'title': 'Media Coverage – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.',
+           'description': 'Ethereal Machines – Media Coverage: simultaneous 5-axis CNC Machine & 3D Printer.',
           }
       }
     };
