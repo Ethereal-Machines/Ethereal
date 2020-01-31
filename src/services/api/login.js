@@ -8,7 +8,7 @@ const loginInstance = axios.create({
 });
 
 const loginUser = (callback, data) => {
-    loginInstance.post(`/auth/token/create/`, data, {
+    loginInstance.post(`/auth/jwt/create/`, data, {
         headers: {
             'Content-Type': 'application/json'
         },
