@@ -28,7 +28,7 @@ class LoginForm extends Component{
 
     loginCallback = (data) => {
         if(data.status === 200){
-            sessionStorage.setItem('jwt', data.data.token);
+            sessionStorage.setItem('jwt', data.data.auth_token);
             this.props.loginUser()
             this.props.history.push("/");
             utilityFunctions.clearSelectField('.select-input');
