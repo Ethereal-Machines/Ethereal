@@ -6,6 +6,10 @@ import FloatingButton from './floating-button/floating-button'
 import updateBolg from '../../../../../services/api/update-blog'
 import getBlogItemsByID from '../../../../../services/api/get-blog-item-byid'
 
+import Header from '../../../../../components/layout/header/header';
+import Footer from '../../../../../components/layout/footer/footer';
+
+
 // The editor core
 import Editor, { Editable, createEmptyState } from 'ory-editor-core'
 import 'ory-editor-core/lib/index.css' // we also want to load the stylesheets
@@ -147,6 +151,7 @@ componentDidMount() {
     })
     return (
         <div className="page page--blogs-page">
+            <Header />
             <section className="section section--blogs">
                 <FloatingButton onUpdate={this.updateContent}/>
                 {/* Content area */}
@@ -157,6 +162,7 @@ componentDidMount() {
                 <DisplayModeToggle editor={editor}/>
                 <Toolbar editor={editor}/>
             </section>
+            <Footer />
         </div>
     );
   }

@@ -1,14 +1,11 @@
-/**
- * Created by rozer on 8/16/2018.
- */
 import axios from 'axios';
 
 const loginInstance = axios.create({
-    baseURL: 'https://api2.etherealmachines.com'
+    baseURL: 'http://192.168.43.152:8000'
 });
 
 const loginUser = (callback, data) => {
-    loginInstance.post(`/auth/token/login/`, data, {
+    loginInstance.post(`/auth/token/login_new/`, data, {
         headers: {
             'Content-Type': 'application/json'
         },

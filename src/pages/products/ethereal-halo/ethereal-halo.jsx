@@ -23,6 +23,10 @@ import halo from '../assets/images/halo.png';
 
 import etherealHaloData from './ethereal-halo-data';
 
+import Header from '../../../components/layout/header/header';
+import Footer from '../../../components/layout/footer/footer';
+
+
 class EtherealHalo extends Component {
 
   state = {
@@ -81,6 +85,8 @@ class EtherealHalo extends Component {
           </iframe>
         </Modal>
         <div className="page page--ethereal-halo">
+        <Header />
+
 
         <DocumentMeta {...meta} />
 
@@ -158,6 +164,7 @@ class EtherealHalo extends Component {
           {/*<LazyLoad height={200} offset={100} once>
             <ContactUs />
           </LazyLoad>*/}
+          <Footer />
         </div>
       </React.Fragment>
     );

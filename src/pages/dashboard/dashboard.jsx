@@ -7,8 +7,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import getCareerEnquiry from '../../services/api/get-career-report'
 import getQueriesReport from '../../services/api/get-queries-report'
+import getDigitalHelpQueryReport from '../../services/api/get-queries-report-digitalhelp'
 
-import './dashboard.css';
+// import './dashboard.css';
+// import '../../common_css/dashboard.css'
 
 class Dashboard extends Component {
   render() {
@@ -54,7 +56,7 @@ class Dashboard extends Component {
               <div className="dashboard-item flex-row">
                 <div className="dashboard-details-container">
                     <div className="dashboard-link">
-                        <a onClick={() => getQueriesReport()}>Download Design Help report</a>
+                        <a onClick={() => getDigitalHelpQueryReport()}>Download Design Help report</a>
                     </div>
                 </div>
               </div>

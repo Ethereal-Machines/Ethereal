@@ -7,7 +7,7 @@ import React from 'react';
 
 import FormControl from './components/form-control';
 
-const inputText = (props) => {
+const InputText = (props) => {
   return (
     <FormControl>
       <label htmlFor={props.inputName}>
@@ -27,4 +27,4 @@ const inputText = (props) => {
   );
 };
 
-export default inputText;
+export default InputText;

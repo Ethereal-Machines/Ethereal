@@ -40,6 +40,10 @@ import native from 'ory-editor-plugins-default-native'
 // The divider plugin
 import divider from 'ory-editor-plugins-divider'
 
+// Header Footer
+import Header from '../../../../components/layout/header/header';
+import Footer from '../../../../components/layout/footer/footer';
+
 // Renders json state to html, can be used on server and client side
 require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
 
@@ -77,6 +81,7 @@ class BlogPage extends Component {
 
         return (
         <div className="page page--blog">
+            <Header />
             <section className="section">
                 <div className="container">
                     <div className="my-editor">
@@ -84,6 +89,7 @@ class BlogPage extends Component {
                     </div>
                 </div>
             </section>
+        <Footer />
         </div>
         );
     }

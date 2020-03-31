@@ -8,9 +8,14 @@ import React from 'react';
 import SectionHeading from '../../../../components/pages-component/section-heading/section-heading';
 import ContactUsBanner from '../../../../components/pages-component/contact-us-banner/contact-us-banner';
 
+import Header from '../../../../components/layout/header/header';
+import Footer from '../../../../components/layout/footer/footer';
+
+
 const contactUs = (props) => {
   return (
     <section className="section section--contact-us">
+      <Header />
       <div className="container">
         <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"} />
         <ContactUsBanner
@@ -18,6 +23,7 @@ const contactUs = (props) => {
           secondText={"Contact us to become a Distributor/ Reseller or if you have any technical query."}
         />
       </div>
+      <Footer />
     </section>
   );
 };

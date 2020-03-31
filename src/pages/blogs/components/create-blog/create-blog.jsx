@@ -12,6 +12,10 @@ import ErrorBox from '../../../../components/pages-component/form/components/err
 import Loader from '../../../../components/ui/loader/loader';
 import * as actionType from '../../../../store/actions/action-type'
 
+import Header from '../../../../components/layout/header/header';
+import Footer from '../../../../components/layout/footer/footer';
+
+
 class CreateBlog extends Component{
 
     state = {
@@ -109,6 +113,7 @@ class CreateBlog extends Component{
     render(){
         return(
             <div className="page page--blogs-page">
+                <Header />
                 <section className="section section--blogs">
                     <div className="container">
                         <div className="create-blog-form">
@@ -194,6 +199,7 @@ class CreateBlog extends Component{
                         </div>
                     </div>
                 </section>
+                <Footer />
             </div>
         )
     }

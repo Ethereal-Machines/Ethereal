@@ -21,6 +21,8 @@ import deleteBlog from '../../services/api/delete-blog'
 import pubunpubBlogs from '../../services/api/blog-unpublish'
 import Modal from '../../components/ui/modal/modal'
 import ShowMsg from '../../components/pages-component/showMSG/msg'
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
 
 class Blogs extends Component{
   state = {
@@ -140,6 +142,7 @@ class Blogs extends Component{
 
       return (
           <div className="page page--blogs-page">
+            <Header />
             {/* <Helmet>
             <title>Blogs – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.</title>
             <meta name="description" content="Ethereal Machines – Blogs: simultaneous 5-axis CNC Machine & 3D Printer."/>
@@ -171,6 +174,7 @@ class Blogs extends Component{
                 </div>
               </div>
             </section>
+            <Footer />
           </div>
         );
   }

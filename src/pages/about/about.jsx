@@ -23,6 +23,8 @@ import AboutUs from './components/about-us/about-us';
 import Team from './components/team/team';
 import EtherealJourney from './components/ethereal-journey/ethereal-journey';
 import ContactUsBanner from '../../components/pages-component/contact-us-banner/contact-us-banner';
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
 
 class About extends Component {
   state = {
@@ -63,6 +65,7 @@ class About extends Component {
 
     return (
       <div className="page page--about">
+        <Header />
         {/* <Helmet>
         <title>About Us | Ethereal Machines | Bangalore, India</title>
         <meta name="description" content="Ethereal Machines – Manufacturers of 5-axis CNC Machines and 3D Printers."/>
@@ -103,6 +106,7 @@ class About extends Component {
             </LazyLoad>
           </div>
       </section> */}
+      <Footer />
       </div>
     );
   }

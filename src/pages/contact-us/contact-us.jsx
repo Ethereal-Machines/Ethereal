@@ -22,6 +22,10 @@ import getQueryReport from '../../services/api/get-queries-report'
 import * as utilityFunctions from '../../utility-functions/utility-functions';
 import { connect } from 'react-redux';
 
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
+
+
 class ContactUs extends Component {
   constructor(props) {
     super(props);
@@ -220,6 +224,7 @@ class ContactUs extends Component {
 <DocumentMeta {...meta} />
           <PageBanner heading={"Get in touch with Ethereal Machines"} subHeading={"Let's talk."} classValue={"page-banner--contact-us"} />
           <section className="section section--contact-us-form">
+          <Header />
             <div className="container">
             {
                 this.props.session.session
@@ -234,6 +239,7 @@ class ContactUs extends Component {
               <SectionHeading name={"Quick Enquiry form"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Please fill your details to get in touch with us."}/>
               <ContactUsForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired} showLoader={this.state.formSubmissionStart}/>
             </div>
+            <Footer />
           </section>
         </div>
       </React.Fragment>

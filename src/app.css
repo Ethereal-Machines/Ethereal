@@ -3,3 +3,227 @@
   grid-template-columns: var(--grid-template-columns);
   grid-template-rows: var(--grid-template-rows);
 }
+
+ 
+
+/* @import '~antd/dist/antd.css'; */
+/* .App {
+  text-align: center;
+} */
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo {
+  height: 40px;
+  margin: 12px
+}
+
+.sider {
+  overflow:initial;
+  height: 100vh; 
+  position: fixed; 
+  left: 0;
+  z-index: 1000;
+}
+
+.content-pull-right {
+  margin-left: 200px;
+  transition: 0.2s;
+}
+
+.content-pull-left {
+  margin-left: 0;
+  transition: 0.1s;
+}
+
+
+.heading {
+  text-align: center;
+  padding: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 50%;
+  padding: 5%;
+  background: #fff;
+  opacity: 0.8;
+  border-radius: 10px
+}
+
+.form-control {
+  padding: 1rem
+}
+
+label {
+  color: black;
+  font-weight: bolder
+}
+
+.inputField-outline {
+  border: 1px solid red;
+  outline: 0 none;
+  border-radius: 0.25rem
+}
+
+.star {
+  text-align: center;
+  color: red;
+  padding: 0.2rem
+}
+
+.login-button-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+.login-group {
+  width: 50%;
+  padding: 1rem;
+  text-align: center
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-left {
+  width: 50%;
+  padding: 0 2% 0 2%;
+  align-self: flex-start
+}
+
+.container-right {
+  width: 50%;
+  padding: 0 2% 0 2%;
+  align-self: flex-start
+}
+
+.flex-column {
+  flex-direction: column
+}
+
+.flex-row {
+  flex-direction: row
+}
+
+.issue-form-button {
+  padding: 1rem
+}
+
+.issue-form,
+.issue-list {
+  width: 40%;
+}
+
+span {
+  padding: 0.3rem
+}
+
+.chip {
+  border-radius: 10px;
+}
+
+.chat-left {
+  width: 55%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.chat-right {
+  width: 55%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  border: 1px solid black
+}
+
+/* loader */
+
+.page {
+  margin-top: 6.4rem;
+  grid-column: 1 / -1;
+  min-height: 60vh;
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  position: relative;
+  /* background-color: #fafafa; */
+}
+
+.page-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.u-text-center {
+  text-align: center;
+  color: rgba(144, 144, 144, 0.7)
+}
+
+
+@media only screen and (max-width : 768px){
+  
+  .login-box,
+  .container-right,
+  .container-left,
+  .issue-list,
+  .chat-right,
+  .chat-left,
+  .login-group,
+  .issue-form {
+      width: 100%
+  }
+
+  .login-button-group,
+  .flex-row {
+    flex-direction: column
+  }
+
+  .flex-row {
+    flex-direction: column
+  }
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1224px) {
+
+  .login-box {
+    width: 70%
+  }
+
+  .chat-left,
+  .chat-right {
+    width: 100%
+  }
+
+  .issue-form,
+  .issue-list {
+    width: 50%;
+}
+
+}

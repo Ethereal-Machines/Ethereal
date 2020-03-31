@@ -13,6 +13,8 @@ import SectionHeading from '../../../components/pages-component/section-heading/
 import PageBanner from '../../../components/ui/page-banner/page-banner';
 
 import './ethereal-concrete.css';
+import Header from '../../../components/layout/header/header';
+import Footer from '../../../components/layout/footer/footer';
 
 class EtherealConcrete extends Component {
   componentDidMount() {
@@ -32,6 +34,7 @@ class EtherealConcrete extends Component {
     };
     return (
       <div className="page page--blog">
+        <Header />
         {/* <Helmet>
         <title>Ethereal 3D Concrete Printer | A new innovation from ethereal Machines…</title>
         <meta name="description" content="Ethereal Machine’s 3D Concrete printer is India’s first automated concrete laying machine."/>
@@ -67,6 +70,7 @@ class EtherealConcrete extends Component {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }

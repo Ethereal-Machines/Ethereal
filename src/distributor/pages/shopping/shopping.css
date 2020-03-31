@@ -1,0 +1,78 @@
+ 
+
+.shopping-list {
+    width: 100%;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;     
+    -ms-flex-wrap: wrap; /* IE10 */     
+    flex-wrap: wrap;
+    padding: 0 4px
+}
+
+.shopping-item {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 1rem
+}
+
+.shopping-card-content {
+    display: flex;
+    flex-direction: column
+}
+
+.shopping-card-image {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+}
+
+.shopping-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.shopping-card-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem
+}
+
+.shopping-card-buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.price {
+    font-weight: bold;
+}
+
+@media only screen and (max-width : 576px) {
+    .shopping-item {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width : 576px) and (max-width : 768px) {
+
+    .shopping-item {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1224px) {
+    .shopping-item {
+        -ms-flex: 33.33%;
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+}

@@ -25,6 +25,8 @@ import DocumentMeta from 'react-document-meta';
 
 import ShowMsg from '../../components/pages-component/showMSG/msg'
 import MediaForm from './components/media-form/media-form';
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
 
 class Media extends Component {
 
@@ -189,6 +191,7 @@ class Media extends Component {
     return (
       <React.Fragment>
       <div className="page page--media">
+      <Header />
         {/* <Helmet>
         <title>Media Coverage – CNC Machine,3D printer |Ethereal Machines-Bangalore, India.</title>
         <meta name="description" content="Ethereal Machines – Media Coverage: simultaneous 5-axis CNC Machine & 3D Printer."/>
@@ -244,6 +247,7 @@ class Media extends Component {
                 />
             </div>
               </section> */}
+              <Footer />
         </div>
       </React.Fragment>
     );

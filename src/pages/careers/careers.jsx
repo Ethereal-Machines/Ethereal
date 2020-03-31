@@ -27,6 +27,8 @@ import CreateCareer from './components/create-careers/careers-form'
 import * as actionType from '../../store/actions/action-type';
 import Career from './components/career/career'
 import getCareerEnqReport from '../../services/api/get-career-report'
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
 
 
 
@@ -304,6 +306,7 @@ class Careers extends Component {
           : null
         }
         <div className="page page--careers">
+        <Header />
         {/* <Helmet>
         <title>Careers at Ethereal Machines-Bangalore,India</title>
         <meta name="description" content="Ethereal Machines – Join us in building the next big thing."/>
@@ -363,6 +366,7 @@ class Careers extends Component {
               <CareersGenericForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} showLoader={this.state.formSubmissionStart}/>
             </div>
           </section>
+          <Footer />
         </div>
       </React.Fragment>
     );

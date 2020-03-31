@@ -1,0 +1,55 @@
+.chat-box {
+    width: 80%;
+    border: 1px solid #a8c4dd;
+    border-radius: 5px;
+    padding: 1rem
+}
+
+.pending-issue-chat-form {
+    width: 80%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+.pending-issue-form-button {
+    padding: 0 1rem 0 1rem
+  }
+
+.pending-issue-chat-form-box{
+    width: 50%
+}
+
+
+@media only screen and (max-width : 768px){
+  
+    .chat-box {
+        width: 100%;
+    }
+    
+    .pending-issue-chat-form {
+        width: 100%;
+    }
+
+    .pending-issue-chat-form-box{
+        width: 100%
+    }
+    
+  }
+  
+  @media only screen and (min-width : 768px) and (max-width : 1224px) {
+  
+    .chat-box {
+        width: 90%;
+    }
+    .pending-issue-chat-form {
+        width: 90%;
+    }
+
+    .pending-issue-chat-form-box{
+        width: 60%
+    }
+
+  }

@@ -22,6 +22,9 @@ import pentagram from '../assets/images/images-no-padding/pentagram.png';
 // import pentaLarger from '../assets/images/pentagram-first-frame-2.jpg';
 
 import etherealPentagramData from './ethereal-pentagram-data';
+import Header from '../../../components/layout/header/header';
+import Footer from '../../../components/layout/footer/footer';
+
 
 class EtherealPentagram extends Component {
 
@@ -42,6 +45,7 @@ class EtherealPentagram extends Component {
     };
     return (
       <div className="page page--ethereal-pentagram">
+        <Header />
         {/* <Helmet>
         <title>Ethereal Pentagram – Precise Robust Simultaneous 5-axis CNC Machine.</title>
         <meta name="description" content="The one stop solution for all your machining needs fulfilled by Ethereal Pentagram: Simultaneous 5- axis CNC Machine."/>
@@ -77,6 +81,7 @@ class EtherealPentagram extends Component {
         {/*<LazyLoad height={200} offset={100} once>
           <ContactUs />
         </LazyLoad>*/}
+        <Footer />
       </div>
     );
   }

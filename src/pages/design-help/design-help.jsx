@@ -18,6 +18,8 @@ import DigitalHelp from '../../services/api/post-DigitalHelp-query';
 import getQueryReport from '../../services/api/get-queries-report'
 import * as utilityFunctions from '../../utility-functions/utility-functions';
 import { connect } from 'react-redux';
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
 
 class DesignHelp extends Component {
   constructor(props) {
@@ -43,7 +45,7 @@ class DesignHelp extends Component {
     this.formData.delete('country');
     this.formData.delete('contact_number');
     this.formData.delete('email');
-    this.formData.delete('imageLink');
+    this.formData.delete('imagelink');
     this.formData.delete('message');
    }
 
@@ -123,9 +125,9 @@ class DesignHelp extends Component {
           this.formData.append('country',targetValue);
         }
         else 
-        if (inputFieldName === 'imageLink') { 
-          this.formData.delete('imageLink');
-          this.formData.append('imageLink',targetValue);
+        if (inputFieldName === 'imagelink') { 
+          this.formData.delete('imagelink');
+          this.formData.append('imagelink',targetValue);
         }
         break;  
       case 'textarea':
@@ -169,6 +171,7 @@ class DesignHelp extends Component {
           <FormSuccessMsg />
         </Modal>
         <div className="page page--contact-us">
+        <Header />
         {/* <Helmet>
         <title>Design Help | Ethereal Machines-Bangalore, India.</title>
         <meta name="description" content="Ethereal Machines – get in touch with us."/>
@@ -192,6 +195,7 @@ class DesignHelp extends Component {
               <DesignHelpForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired} showLoader={this.state.formSubmissionStart}/>
             </div>
           </section>
+          <Footer />
         </div>
       </React.Fragment>
     );

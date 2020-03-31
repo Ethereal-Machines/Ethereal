@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom'
 import getJOb from '../../../../services/api/fetch-job'
 import * as actionType from '../../../../store/actions/action-type'
 import ErrorPage from '../../../error-page/error-page';
+import Header from '../../../../components/layout/header/header';
+import Footer from '../../../../components/layout/footer/footer';
 
 class Apply extends Component{
 
@@ -47,6 +49,7 @@ class Apply extends Component{
         return(
             <React.Fragment>
                 <div className="page page--careers">
+                <Header />
                     <PageBanner heading={"Careers in Ethereal Machines"} subHeading={"Make your dream job come true"} classValue={"page-banner--careers"} />
                     <section className="section section--openings">
                         { 
@@ -65,6 +68,7 @@ class Apply extends Component{
                         }
                         
                     </section>
+                    <Footer />
                 </div>
             </React.Fragment>
         )

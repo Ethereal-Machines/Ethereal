@@ -61,6 +61,9 @@ const navList = (props) => {
                       <SubListItem link={'/dashboard'}>
                           <span className="subtitle">Dashboard</span>
                       </SubListItem>
+                      <SubListItem link={'/resource'}>
+                          <span className="subtitle">Resources</span>
+                      </SubListItem>
                       <SubListItem link={'/'}>
                           <span className="subtitle" onClick={props.logout}>Log Out</span>
                       </SubListItem>

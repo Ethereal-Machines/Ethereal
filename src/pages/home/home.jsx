@@ -14,6 +14,10 @@ import ContactUsBanner from '../../components/pages-component/contact-us-banner/
 import HomePageMedia from './components/home-page-media/home-page-media';
 import CompanyFeatures from './components/company-features/company-features';
 import Products from './components/products/products';
+// import Header from './components/layout/header/header';
+// import Footer from './components/layout/footer/footer';
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
 
 class Home extends Component {
   componentDidMount() {
@@ -22,7 +26,10 @@ class Home extends Component {
 
   render() {
     return (
+     
+      
       <div className="page page--home">
+        <Header />
         <PageBanner heading={"Welcome to Ethereal Machines"} subHeading={"We build the future of manufacturing. We create entrepreneurs."} classValue={"page-banner--home"} />
         <section className="company-brief">
           <div className="container">
@@ -67,7 +74,10 @@ class Home extends Component {
             </LazyLoad>
           </div>
     </section>*/}
+    <Footer />
       </div>
+      
+      
     );
   }
 }

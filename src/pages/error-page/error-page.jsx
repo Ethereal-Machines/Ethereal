@@ -6,6 +6,8 @@
 import React, { Component } from 'react';
 
 import NavBtn from '../../components/ui/nav-btn/nav-btn';
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
 
 import './error-page.css';
 
@@ -17,6 +19,7 @@ class ErrorPage extends Component {
   render() {
     return (
       <div className="page page--error-page">
+        <Header />
         <section className="section section--404">
           <div className="container container--error-page">
             <div className="content">
@@ -32,6 +35,7 @@ class ErrorPage extends Component {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }
