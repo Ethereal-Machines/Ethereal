@@ -66,9 +66,9 @@ class Media extends Component {
      * items from the server. The Redux Store will have all the
      * available items.
     */
-    if (this.props.firstRun) {
+    // if (this.props.firstRun) {
       getMedia(this.onGetMedia);
-    }
+    // }
   }
 
   addMedia = () => {
