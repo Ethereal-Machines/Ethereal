@@ -20,6 +20,10 @@ import * as utilityFunctions from '../../utility-functions/utility-functions';
 import { connect } from 'react-redux';
 // import {GetToken} from '../../../../../helpers/token'
 
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
+
+
 class Resource extends Component {
   constructor(props) {
     super(props);
@@ -225,6 +229,7 @@ class Resource extends Component {
     };
     return (
       <React.Fragment>
+      <Header/>
         <Modal show={this.state.showModal} clicked={this.closeModal}>
           <FormSuccessMsg />
         </Modal>
@@ -244,6 +249,7 @@ class Resource extends Component {
             </div>
           </section>
         </div>
+        <Footer/>
       </React.Fragment>
     );
   }
