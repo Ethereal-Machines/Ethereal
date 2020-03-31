@@ -39,6 +39,8 @@ const navList = (props) => {
       </NavItem>
       <NavItem linkType={'text'} navLink={true} address={'/about'} name={'About Us'} {...props}/>
       <NavItem linkType={'text'} navLink={true} address={'/media'} name={'Media'} {...props}/>
+      {/* <NavItem linkType={'text'} navLink={true} address={'/designfiles'} name={'Design Files'} {...props}/> */}
+      <NavItem linkType={'text'} navLink={true} address={'/covid'} name={'Covid-19 efforts'} {...props}/>
       <NavItem linkType={'text'} navLink={true} address={'/blogs'} name={'Blogs'} {...props}/>
       <NavItem linkType={'text'} navLink={true} address={'/careers'} name={'Careers'} {...props}/>
       <NavItem linkType={'text'} navLink={true} address={'/contact'} name={'Contact Us'} {...props}/>

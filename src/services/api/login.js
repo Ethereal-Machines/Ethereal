@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const loginInstance = axios.create({
-    baseURL: 'http://192.168.43.152:8000'
+    baseURL: 'https://api.etherealmachines.com'
 });
 
 const loginUser = (callback, data) => {

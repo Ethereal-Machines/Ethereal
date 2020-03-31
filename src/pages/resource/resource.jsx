@@ -143,7 +143,13 @@ class Resource extends Component {
     const inputFieldName = event.target.name;
     const targetValue = event.target.value;
     const targetType = event.target.type;
+    
     switch (targetType) {
+      case 'checkbox':
+        this.formData.delete('ispublic');
+        this.formData.append('ispublic', targetValue);
+        break;
+
       case 'text':
         if (inputFieldName === 'title') {
           this.formData.delete('title');

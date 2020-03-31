@@ -1,79 +1,72 @@
- 
+/*
+ * __author__ = 'Anand Singh <sanand926@gmail.com>'
+ * __copyright__ = 'Copyright (C) 2019 Ethereal Machines Pvt. Ltd. All rights reserved'
+ */
 
-.dashboard {
+ .dashboard {
   padding: 24px;
-  padding-top: 100px;
 }
 
 .dashboard-card-list {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;     
-  -ms-flex-wrap: wrap;      
-  flex-wrap: wrap;
-  padding: 0 4px;
+display: flex;
+flex-direction: row;
 }
 
 .dashboard-card-item {
-  -ms-flex: 33.33%; 
-  flex: 33.33%;
-  /* max-width: 33.33%; */
-  padding: 0 1rem;
+display: block;
+padding: 50px;
 }
 
 .dashboard-card-heading {
-  background: #a8c4dd;
-  padding:0.5rem;
-  border-radius: 0.5rem;
-  text-align: center
+background: #a8c4dd;
+padding:0.5rem;
+border-radius: 0.5rem;
+text-align: center
 }
 
 
 .ray-icon {
-  background-image: url("../assets/Icon/estrella-render.svg");
+background-image: url("../assets/Icon/estrella-render.svg");
 }
 
 .halo-icon {
-  background-image: url("../assets/Icon/halo-render.svg");
+background-image: url("../assets/Icon/halo-render.svg");
 }
 
 .pentagram-icon {
-  background-image: url("../assets/Icon/pentagram-render.svg");
+background-image: url("../assets/Icon/pentagram-render.svg");
 }
 
 .ray-icon,
 .halo-icon,
 .pentagram-icon {
-  width: 14px;
-  height: 14px;
-  margin-bottom: 10px;
-  fill: black;
+width: 14px;
+height: 14px;
+margin-bottom: 10px;
+fill: black;
 }
-
-/* @media only screen and (max-width : 576px) {
+@media only screen and (max-width : 576px) {
   .dashboard {
-    padding: 12px;
+  padding: 12px;
   }
 
   .dashboard-card-list {
-    padding: 0 2px
+  display: flex;
+  flex-direction: row;
   }
+    
+  .dashboard-card-item {
+  display: block;
+  padding: 50px;
+  }
+}
+
+@media only screen and (min-width : 576px) and (max-width : 768px) {
 
   .dashboard-card-item {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-      padding: 0 0.5rem;
-  }
-} 
-
-/* @media only screen and (min-width : 576px) and (max-width : 768px) {
-
-  .dashboard-card-item {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-  }
+    display: block;
+    padding: 50px;
+    }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1224px) {
@@ -83,13 +76,12 @@
   }
 
   .dashboard-card-list {
-    padding: 0 2px
-  }
+    display: flex;
+    flex-direction: row;
+    }
 
   .dashboard-card-item {
-      -ms-flex: 33.33%;
-      flex: 33.33%;
-      max-width: 33.33%;
-      padding: 0 0.5rem;
-  }
-} */
+    display: block;
+    padding: 50px;
+    }
+}

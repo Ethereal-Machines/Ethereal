@@ -6,7 +6,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://192.168.43.152:8000/v1'
+  baseURL: 'https://api.etherealmachines.com/v1'
 });
 
 export default instance;

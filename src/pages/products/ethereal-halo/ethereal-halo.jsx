@@ -27,6 +27,8 @@ import Header from '../../../components/layout/header/header';
 import Footer from '../../../components/layout/footer/footer';
 
 
+
+
 class EtherealHalo extends Component {
 
   state = {
@@ -75,6 +77,8 @@ class EtherealHalo extends Component {
     };
     return (
       <React.Fragment>
+        <Header />
+
         <Modal show={this.state.showModal} clicked={this.closeModal}>
           <iframe
             width="720"
@@ -85,7 +89,7 @@ class EtherealHalo extends Component {
           </iframe>
         </Modal>
         <div className="page page--ethereal-halo">
-        <Header />
+        
 
 
         <DocumentMeta {...meta} />
@@ -164,8 +168,9 @@ class EtherealHalo extends Component {
           {/*<LazyLoad height={200} offset={100} once>
             <ContactUs />
           </LazyLoad>*/}
-          <Footer />
+          
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

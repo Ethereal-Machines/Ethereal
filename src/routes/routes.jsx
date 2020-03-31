@@ -66,6 +66,10 @@ const Media = Loadable({
   loader: () => import('../pages/media/media'),
   loading: Loading
 });
+const DesignFiles = Loadable({
+  loader: () => import('../pages/designfiles/designfiles'),
+  loading: Loading
+});
 const Careers = Loadable({
   loader: () => import('../pages/careers/careers'),
   loading: Loading
@@ -80,6 +84,10 @@ const ContactUs = Loadable({
 });
 const DesignHelp = Loadable({
   loader: () => import('../pages/design-help/design-help'),
+  loading: Loading
+});
+const Covid = Loadable({
+  loader: () => import('../pages/covid/covid'),
   loading: Loading
 });
 const Blogs = Loadable({
@@ -251,6 +259,8 @@ class Routes extends Component {
           <Route path="/error-page" component={ErrorPage} />
           <Route path="/about" component={About} />
           <Route path="/media" component={Media} />
+          <Route path="/designfiles" component={DesignFiles} />
+          <Route path="/covid" component={Covid} />
           <Route path="/login" component={LoginAsAdmin} />
           
           {/* <Route path="/dashboard" component={Dashboard} /> */}

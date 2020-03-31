@@ -13,9 +13,11 @@ import InputEmail from '../../../../components/pages-component/form-controls/inp
 import Select from '../../../../components/pages-component/form-controls/select';
 import TextArea from '../../../../components/pages-component/form-controls/text-area';
 import InputFile from '../../../../components/pages-component/form-controls/input-file';
+import InputFileJpg from '../../../../components/pages-component/form-controls/input-filejpg';
 import Loader from '../../../../components/ui/loader/loader';
 
 import stateOptions from './state-options';
+import CheckBox from '../../../../components/pages-component/form-controls/check-box';
 // import countryCodeOptions from './country-code-options';
 
 class ResourceForm extends Component {
@@ -53,20 +55,47 @@ class ResourceForm extends Component {
     return (
       <Form {...this.props} classValue={"form form--contact-us"} encType="multipart/form-data">
         <div className="form-controls single-col-layout" >
+          <CheckBox labelName={"Is Public"} inputName={"ispublic"} value={"Is-public"}/>
           {/* <Select labelName={"Nature of Query"} inputName={"natureOfQuery"} options={natureOfQuery} defaultValue={"--select--"} isRequired {...this.props} /> */}
-          <InputText labelName={"Title"} inputName={"title"} placeholder={"Enter Name of Title"} isRequired {...this.props} />
-          <TextArea labelName={"Discription"} inputName={"description"} placeholder={"Add discription here..."}  {...this.props} />
-          <InputText labelName={"Link"} inputName={"link"} placeholder={"Add your link here..."}  {...this.props} />
+          <InputText 
+          labelName={"Title"} 
+          inputName={"title"} 
+          placeholder={"Enter Name of Title"} 
+          isRequired {...this.props} 
+          />
+
+          <TextArea 
+          labelName={"Discription"} 
+          inputName={"description"} 
+          placeholder={"Add discription here..."}  {...this.props} 
+          />
+
+          <InputText 
+          labelName={"Link"} 
+          inputName={"link"} 
+          placeholder={"Add your link here..."}  {...this.props} 
+          />
           
           
-          <div >
-          <InputFile labelName={"AttachFile1"} inputName={"file1"} {...this.props} />
+          <div>
+
+          <InputFileJpg 
+          labelName={"Thumnail"} 
+          inputName={"file1"} {...this.props} 
+          isRequired {...this.props}
+          />
+
           <button className="btn btn-primary" onClick={this.handleClick1} style={{display: this.state.isToggle1 ? 'none': 'block',width:'100%'}} > Add Attachment </button>
           </div>
           
 
           <div style={{display: this.state.isToggle1 ? 'block': 'none'}}>
-          <InputFile labelName={"AttachFile2"} inputName={"file2"} {...this.props} />
+          
+          <InputFile 
+          labelName={"AttachFile2"} 
+          inputName={"file2"} {...this.props} 
+          />
+          
           <button className="btn btn-primary" onClick={this.handleClick2} style={{display: this.state.isToggle2 ? 'none': 'block',width:'100%'}}> Add Attachment </button>
           </div>
 

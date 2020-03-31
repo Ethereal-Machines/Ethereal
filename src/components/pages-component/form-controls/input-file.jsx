@@ -15,7 +15,13 @@ const InputFile = (props) => {
           {props.labelName}
           {props.isRequired ? <span className="star">*</span> : null}
         </label>
-        <input type="file" onChange={props.onInputChange} name={props.inputName} className="input-element file-input" id={props.inputName} required={props.isRequired} accept=".pdf, .doc, .docx, .md, .rst ,.jpg ,.png" />
+        <input type="file" 
+        onChange={props.onInputChange} 
+        name={props.inputName} 
+        className="input-element file-input" 
+        id={props.inputName} 
+        required={props.isRequired} 
+        accept=".pdf, .doc, .docx, .md, .rst ,.jpg ,.png" />
       </FormControl>
     </div>
   );

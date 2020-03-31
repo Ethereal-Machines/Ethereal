@@ -8,9 +8,10 @@ import { Link } from 'react-router-dom'
 import getCareerEnquiry from '../../services/api/get-career-report'
 import getQueriesReport from '../../services/api/get-queries-report'
 import getDigitalHelpQueryReport from '../../services/api/get-queries-report-digitalhelp'
+import Header from '../../components/layout/header/header';
+import Footer from '../../components/layout/footer/footer';
 
-// import './dashboard.css';
-// import '../../common_css/dashboard.css'
+import './dashboard.css';
 
 class Dashboard extends Component {
   render() {
@@ -23,9 +24,10 @@ class Dashboard extends Component {
 
     return (
       <div className="page page--dashboard">
+        <Header />
         <section className="section section--openings">
           <div className="container">
-            <div className="dashboard-link-item">
+            <div className="dashboard-link-item" style={{width:'100%'}}>
               {
                 data.map((data) => {
                   return(
@@ -63,6 +65,7 @@ class Dashboard extends Component {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     );
   }
