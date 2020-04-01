@@ -3,7 +3,7 @@ import headers from  '../axios/headers'
 
 
 const deleteMedia = (callback,id) => {
-    axios.delete(`/resources/${id}/`,{
+    axios.delete(`/resource/${id}/`,{
         headers:{
             ...headers,
         'Content-Type': 'application/json'

@@ -18,11 +18,10 @@ import createResource from '../../services/api/create-resource';
 import getQueryReport from '../../services/api/get-queries-report'
 import * as utilityFunctions from '../../utility-functions/utility-functions';
 import { connect } from 'react-redux';
-// import {GetToken} from '../../../../../helpers/token'
-
 import Header from '../../components/layout/header/header';
 import Footer from '../../components/layout/footer/footer';
 
+// import {GetToken} from '../../../../../helpers/token'
 
 class Resource extends Component {
   constructor(props) {
@@ -229,7 +228,6 @@ class Resource extends Component {
     };
     return (
       <React.Fragment>
-      <Header/>
         <Modal show={this.state.showModal} clicked={this.closeModal}>
           <FormSuccessMsg />
         </Modal>
@@ -242,14 +240,15 @@ class Resource extends Component {
           <DocumentMeta {...meta} />
           <PageBanner heading={"Ethereal Machines Resource"} subHeading={"Share more..."} classValue={"page-banner--design-help"} />
           <section className="section section--design-help-form">
+          <Header />
             <SectionHeading name={"Resource"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Share your resource"} />
 
             <div className="container">
               <ResourceForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired} showLoader={this.state.formSubmissionStart} addFile= {this.addFile} counter = {Resource.counter} />
             </div>
+            <Footer />
           </section>
         </div>
-        <Footer/>
       </React.Fragment>
     );
   }

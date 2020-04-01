@@ -9,6 +9,7 @@ import './designfiles-item.css';
 
 import calendarIcon from '../../assets/images/calendar-icon.svg';
 import Tag from '../../assets/images/tag.png';
+import ReadMoreAndLess from 'react-read-more-less';
 
 const DesignFilesItem = (props) => {
   var file2 = 'file1'
@@ -49,45 +50,54 @@ const DesignFilesItem = (props) => {
       <div className="media-image-container">
         <img src={props.item.file1} alt="Media" />
       </div>
-      <div className="media-details-container">
+      <div className="media-details-container" style={{width:"100%"}}>
         <div className="media-title subtitle">
           <span>{props.item.title}</span>
         </div>
-        <div className="media-date-publisher flex-row">
-          <span className="media-publisher">
-            {props.item.description}
-          </span>
-          {/* <span className="media-date">
+        
+        <div className="details">
+          <ReadMoreAndLess
+                ref={this.ReadMore}
+                className="read-more-content"
+                charLimit={150}
+                readMoreText="Read more"
+                readLessText="Read less"
+            >
+                {props.item.description}
+            </ReadMoreAndLess>
+          </div>
+        
+        {/* <span className="media-date">
             <img src={calendarIcon} alt="Calendar" width="16" height="16" className="icon"/>
             <span>Published On:</span>ssf
             <span>{props.item.published_at}</span>
           </span> */}
-        </div>
+
         {/* <div className="media-description">{props.item.description}</div> */}
 
 
-        
-            <div className="media-link">
-              <ul className="display-list">
-                {
-                  props.item.link
-                    ?
-                    <li>
-                      <form target="_blank" action={props.item.link}>
-                        <button className="button">View link attached</button>
-                      </form>
-                    </li>
-                    : null
-                }
-        {
-          props.session
-            ?
-            <div>
+
+        <div className="media-link">
+          <ul className="display-list">
+            {
+              props.item.link
+                ?
                 <li>
-                  <a onClick={() => props.onUpdate(props.item.id)}>Update</a>
+                  <form target="_blank" action={props.item.link}>
+                    <button className="button">View link attached</button>
+                  </form>
                 </li>
-                
-                {/* <li>
+                : null
+            }
+            {
+              props.session
+                ?
+                <div>
+                  <li>
+                    <a onClick={() => props.onUpdate(props.item.id)}>Update</a>
+                  </li>
+
+                  {/* <li>
                   {
                     props.item.public
                       ?
@@ -97,33 +107,38 @@ const DesignFilesItem = (props) => {
                   }
                 </li> */}
 
-                <li>
-                  <button className="button" onClick={() => props.deleteMedia(props.item.id)}>Delete</button>
-                </li>
-            </div>
-                
-                : null
-                }
-              </ul>
-            </div>
+                  <li>
+                    <button className="button" onClick={() => props.deleteMedia(props.item.id)}>Delete</button>
+                  </li>
+                </div>
 
-            
-            // <div className="media-link">
-            //   <a href={props.item.link} target="_blank">View More</a>
-            // </div>
-        
+                : null
+            }
+          </ul>
+        </div>
+
+
+        {/* <div className="media-link">
+               <a href={props.item.link} target="_blank">View More</a>
+             </div> */}
+
       </div>
 
       <div align="left" style={{ width: '40%' }}>
-        <div className="media-title subtitle">
-          <span>Download</span>
-        </div>
+
+
+
         {
           props.item.file2
             ?
-            <form target="_blank" action={props.item.file2}>
-              <button className="button">{file2}</button>
-            </form>
+            <div>
+              <div className="media-title subtitle">
+                <span>Download</span>
+              </div>
+              <form target="_blank" action={props.item.file2}>
+                <button className="button">{file2}</button>
+              </form>
+            </div>
             : null
         }
 
