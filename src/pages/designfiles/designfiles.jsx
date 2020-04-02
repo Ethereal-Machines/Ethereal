@@ -111,9 +111,9 @@ class DesignFiles extends Component {
      * items from the server. The Redux Store will have all the
      * available items.
     */
-    // if (this.props.firstRun) {
+    if (this.props.firstRun) {
       getResource(this.onGetDesignFiles);
-    // }
+    }
   }
 
   addMedia = () => {
