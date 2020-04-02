@@ -92,7 +92,7 @@ class DesignFiles extends Component {
     //     "file5": null,
     //     "description": "Doctors from Aster CMI Hospital in Bangalore and a team from Ethereal Machines demonstrate the prototype ventilator splitter for CoVID19 Surge and explain a few misgivings about utilizing a splitter.",
     //      }]
-         this.props.onUpdateDesignFilesItems(data);
+        this.props.onUpdateDesignFilesItems(data);
          this.props.onUpdateFirstRun(false);
     } 
  }
@@ -144,8 +144,8 @@ class DesignFiles extends Component {
     })
   };
 
-  unPublishCallback = (data) => {
-    if(data.status === 200){
+  unPublishCallback = (data1) => {
+    if(data1.status === 200){
       this.setState({
         msg:true,
         msgContent: 'Successfully Changed',
@@ -307,7 +307,7 @@ class DesignFiles extends Component {
 const mapStateToProps = (state) => {
   return {
     firstRun: state.media.firstRun,
-    designfilesItems: state.media.mediaItems,
+    designfilesItems: state.media.designfilesItems,
     session: state.login
   };
 };
@@ -316,13 +316,13 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onUpdateFirstRun: (firstRun) => {
       dispatch({
-        type: actionType.UPDATE_FIRST_RUN_MEDIA,
+        type: actionType.UPDATE_FIRST_RUN_DF,
         value: firstRun
       });
     },
     onUpdateDesignFilesItems: (designfilesItems) => {
       dispatch({
-        type: actionType.UPDATE_MEDIA_ITEMS,
+        type: actionType.UPDATE_DF_ITEMS,
         value: designfilesItems
       });
     },

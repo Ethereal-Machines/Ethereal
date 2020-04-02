@@ -9,7 +9,9 @@ import * as actionType from '../actions/action-type';
 
 const initialState = {
   firstRun: true,
-  mediaItems: []
+  mediaItems: [],
+  designfilesItems: []
+
 };
 
 const reducer = (state = initialState, action) => {
@@ -24,6 +26,13 @@ const reducer = (state = initialState, action) => {
     return {
       ...state,
       mediaItems: state.mediaItems.concat(action.value)
+    };
+  }
+
+  if (action.type === actionType.UPDATE_DF_ITEMS) {
+    return {
+      ...state,
+      designfilesItems: state.designfilesItems.concat(action.value)
     };
   }
   

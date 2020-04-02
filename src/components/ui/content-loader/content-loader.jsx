@@ -7,7 +7,7 @@ import React from 'react';
 
 import './content-loader.css';
 
-// import Spinner from '../spinner/spinner';
+import Spinner from '../spinner/spinner';
 
 const contentLoader = (props) => {
   return (
