@@ -51,9 +51,9 @@ class LoginForm extends Component {
     loginCallback = (data) => {
         
         if (data.status === 200) {
-            console.log(data.data.is_superuser)  
+//            console.log(data.data.is_superuser)  
             
-            if (data.data.is_superuser === true) {
+            if (data.data.auth_token) {
                 sessionStorage.setItem('jwt', data.data.token);
 
                 this.props.loginUser()
@@ -114,7 +114,7 @@ class LoginForm extends Component {
         const data = {
             username: this.state.username,
             password: this.state.password
-        };
+         };
         if(this.state.username === 'ethereal' || this.state.username === 'Ethereal' )
          loginUser(this.loginCallback, data);
         else
