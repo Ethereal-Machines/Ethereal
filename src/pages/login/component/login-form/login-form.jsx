@@ -54,7 +54,7 @@ class LoginForm extends Component {
 //            console.log(data.data.is_superuser)  
             
             if (data.data.auth_token) {
-                sessionStorage.setItem('jwt', data.data.token);
+                sessionStorage.setItem('jwt', data.data.auth_token);
 
                 this.props.loginUser()
                 this.props.history.push("/");
