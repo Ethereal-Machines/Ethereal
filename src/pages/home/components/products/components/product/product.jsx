@@ -11,7 +11,7 @@ import './product.css';
 
 const product = (props) => {
   return (
-    <div className="product">
+    <div className="product flex-row">
       <NavLink to={props.url} className="flex-column">
         <div className="product-img-container">
           <img className="product-img" src={props.imgUrl} alt={props.name} width={props.width}/>

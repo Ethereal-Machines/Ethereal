@@ -13,12 +13,12 @@ import features from './features';
 
 const companyFeatures = (props) => {
   const featureItems = features.map((item) => {
-    return (
-      <CompanyFeature key={item.id} url={item.iconUrl} subtitle={item.subtitle} text={item.text}/>
+    return (    
+        <CompanyFeature key={item.id} url={item.iconUrl} subtitle={item.subtitle} text={item.text}/> 
     );
   });
   return (
-    <div className="company-features-container three-col-layout">
+    <div className="company-features-container three-col-layout container flex-row">
       {featureItems}
     </div>
   );

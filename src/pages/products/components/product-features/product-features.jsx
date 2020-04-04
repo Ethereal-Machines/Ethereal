@@ -32,8 +32,8 @@ const productFeatures = (props) => {
 
   return (
     <section className="section section--product-features section--background-fill">
+      <SectionHeading name={"Product Features"} classValue={"u-margin-bottom-big u-text-center u-text-white"} />
       <div className="container">
-        <SectionHeading name={"Product Features"} classValue={"u-margin-bottom-big u-text-center u-text-white"} />
         <div className="feature-container three-col-layout">
           {features}
         </div>

@@ -2,6 +2,10 @@
  * __author__ = 'Kanishka Mohan Madhuni <kmmadhuni@gmail.com>'
  * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
  */
+ .product {
+  display: flex;
+  text-align: justify;
+}
 
 .product a {
   justify-content: flex-end;

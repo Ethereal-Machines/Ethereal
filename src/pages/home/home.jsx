@@ -26,8 +26,8 @@ class Home extends Component {
 
   render() {
     return (
-     
-      
+
+
       <div className="page page--home">
         <Header />
         <PageBanner heading={"Welcome to Ethereal Machines"} subHeading={"We build the future of manufacturing. We create entrepreneurs."} classValue={"page-banner--home"} />
@@ -48,36 +48,36 @@ class Home extends Component {
           </div>
         </section>
         <section className="section section--why-us section--background-fill">
+          <SectionHeading name={"What Defines Us"} classValue={"u-margin-bottom-big u-text-center u-text-white"} />
           <div className="container">
-            <SectionHeading name={"What Defines Us"} classValue={"u-margin-bottom-big u-text-center u-text-white"} />
             <LazyLoad height={200} offset={200} once>
               <CompanyFeatures />
             </LazyLoad>
           </div>
         </section>
         <section className="section section--in-media">
+          <SectionHeading name={"Ethereal Machines in Media"} classValue={"u-margin-bottom-big u-text-center"} />
           <div className="container">
-            <SectionHeading name={"Ethereal Machines in Media"} classValue={"u-margin-bottom-big u-text-center"} />
             <LazyLoad height={200} offset={200} once>
               <HomePageMedia />
             </LazyLoad>
           </div>
         </section>
-        {/* <section className="section section--contact-us">
-          <div className="container">
-            <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"} />
-            <LazyLoad height={200} offset={200} once>
-              <ContactUsBanner
-                firstText={"Let's get going!"}
-                secondText={"We want to talk to you as well."}
-              />
-            </LazyLoad>
-          </div>
-    </section>*/}
-    <Footer />
+            {/* <section className="section section--contact-us">
+              <div className="container">
+                <SectionHeading name={"Contact Us"} classValue={"u-margin-bottom-big u-text-center"} />
+                <LazyLoad height={200} offset={200} once>
+                  <ContactUsBanner
+                    firstText={"Let's get going!"}
+                    secondText={"We want to talk to you as well."}
+                  />
+                </LazyLoad>
+              </div>
+             </section>*/}
+        <Footer />
       </div>
-      
-      
+
+
     );
   }
 }

@@ -14,7 +14,7 @@ const companyFeature = (props) => {
 
   return (
     <div className="company-feature">
-      <div className="company-feature-img-container flex-row" style={styles}>
+      <div className="company-feature-img-container" style={styles}>
         {/* <img src={props.url} alt="Icon" width="100" height="100"/> */}
       </div>
       <div className="company-feature-details">

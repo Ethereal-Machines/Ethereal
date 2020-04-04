@@ -53,7 +53,7 @@ class EtherealPentagram extends Component {
 
 <DocumentMeta {...meta} />
 
-        <PageBanner heading={'The Ethereal Pentagram'} subHeading={'Desktop Simultaneous 5 Axis CNC Machine'} classValue={'page-banner--pentagram'}/>
+        <PageBanner heading={'The Ethereal Pentagram'} subHeading={'Simultaneous 5 Axis CNC Machine'} classValue={'page-banner--pentagram'}/>
         <section className="section section--about-product">
           <div className="container">
             <div className="col-12-grid">

@@ -25,7 +25,7 @@ const products = (props) => {
     );
   });
   return (
-    <div className="products-container three-col-layout">
+    <div className="products-container three-col-layout container flex-row">
       {companyProducts}
     </div>
   );

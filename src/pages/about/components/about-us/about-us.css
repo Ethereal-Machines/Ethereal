@@ -6,6 +6,9 @@
 .about-us-container {
   justify-content: flex-start;
   align-items: flex-start;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: justify;
 }
 
 .about-us-container p {
@@ -64,6 +67,6 @@
 
   .vision,
   .mission {
-    width: 100%;
+    width: ;
   }
 }

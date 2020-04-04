@@ -5,7 +5,7 @@ const instance = axios.create({
 });
 
 export const login = (callback, data) => {
-    instance.post('/auth/token/login', data)
+    instance.post('/auth/token/login_new/', data)
         .then((res) => {
             callback(res);  
         }).catch((err) => callback(err));

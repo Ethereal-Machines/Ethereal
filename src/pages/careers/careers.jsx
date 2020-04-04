@@ -315,6 +315,7 @@ class Careers extends Component {
 
           <PageBanner heading={"Careers in Ethereal Machines"} subHeading={"Make your dream job come true"} classValue={"page-banner--careers"} />
           <section className="section section--openings">
+          <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'Join us in Building the Next Big Thing'} />
             <div className="container">
               {
                 this.props.session.session
@@ -327,7 +328,6 @@ class Careers extends Component {
                 :
                     null
               }
-              <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'Join us in Building the Next Big Thing'} />
               {/* {
                 flag === 1
                     ?
@@ -361,8 +361,8 @@ class Careers extends Component {
             </div>
           </section>
           <section className="section section--careers-form section-no-top-padding">
+          <SectionHeading name={"Get in touch!"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading={true} subHeading={"Let's schedule an interview!"}/>
             <div className="container">
-              <SectionHeading name={"Get in touch!"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading={true} subHeading={"Let's schedule an interview!"}/>
               <CareersGenericForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} showLoader={this.state.formSubmissionStart}/>
             </div>
           </section>

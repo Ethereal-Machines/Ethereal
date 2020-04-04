@@ -99,6 +99,7 @@ label {
 .container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -116,11 +117,12 @@ label {
 }
 
 .flex-column {
-  flex-direction: column
+  flex-direction: column;
+  
 }
 
 .flex-row {
-  flex-direction: row
+  flex-direction: row;
 }
 
 .issue-form-button {

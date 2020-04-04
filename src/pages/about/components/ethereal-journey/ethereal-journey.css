@@ -22,14 +22,14 @@
   border: 3px solid var(--color-white) !important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 250px) {
   .carousel.carousel-slider {
-    width: 100% !important;
+    width: 50% !important;
     margin: 0 auto;
   }
 
   .carousel {
-    width: 100% !important;
+    /* width: 50% !important; */
     margin: 0 auto;
   }
 }

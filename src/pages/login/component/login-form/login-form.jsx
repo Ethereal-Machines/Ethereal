@@ -5,6 +5,7 @@ import '../../../../components/pages-component/button/button.css'
 import FormControl from '../../../../components/pages-component/form-controls/components/form-control'
 import { connect } from 'react-redux'
 import loginUser from '../../../../services/api/login'
+import {login} from '../../../../services/api/login-ims'
 import * as actionType from '../../../../store/actions/action-type'
 import * as utilityFunctions from '../../../../utility-functions/utility-functions';
 import { SetToken, GetToken } from '../../../../helpers/token';
@@ -114,7 +115,11 @@ class LoginForm extends Component {
             username: this.state.username,
             password: this.state.password
         };
-        loginUser(this.loginCallback, data);
+        if(this.state.username === 'ethereal' || this.state.username === 'Ethereal' )
+         loginUser(this.loginCallback, data);
+        else
+        login(this.loginCallback, data);
+
     };
 
     render() {
