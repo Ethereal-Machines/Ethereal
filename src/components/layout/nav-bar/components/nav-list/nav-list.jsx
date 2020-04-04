@@ -56,7 +56,7 @@ const navList = (props) => {
                       width: 40,
                       height: 40
                     }}
-                  navLink={false}
+                  navLink={'user'}
                   address={'#user-sub-list'}
               >
                   <SubList type={"left"} id={'user-sub-list'}>
@@ -71,9 +71,9 @@ const navList = (props) => {
                       </SubListItem>
                   </SubList>
               </NavItem>
-          :
+           :
               null
-      }
+      } 
     </ul>
   );
 };

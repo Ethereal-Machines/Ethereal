@@ -45,7 +45,7 @@
     left: 0;
     max-height: 0;
     transition: max-height .5s ease;
-    /* display: none; */
+    display: block;
   }
 
   .sub-list-container--close {

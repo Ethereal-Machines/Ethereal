@@ -13,8 +13,10 @@ const navItem = (props) => {
   } else if (props.linkType === 'img') {
     item = <img src={props.img.url} alt={props.img.alt} width={props.img.width} height={props.img.height} className="avatar" />;
   }
+  console.log(props.name)
 
   return (
+    
     <li className="nav-item" onClick={props.closeNavBar}>
       <div className="item-name flex-row">
         {
@@ -34,23 +36,41 @@ const navItem = (props) => {
                 document.getElementById("product-sub-list").style.overflow = "visible"
                 document.getElementById("product-sub-list").style.position = "inherit" 
                 document.getElementById("product-sub-list").style.zIndex = "10" 
-                document.getElementById("user-sub-list").style.visibility = "visible"
-                document.getElementById("user-sub-list").style.overflow = "visible"
-                document.getElementById("user-sub-list").style.position = "inherit" 
-                document.getElementById("user-sub-list").style.zIndex = "10"
                 document.getElementById("/about").style.marginTop = "220px"
               }
               else
               {
                 flag = false
                 document.getElementById("product-sub-list").style.overflow = "hidden"
-                document.getElementById("user-sub-list").style.overflow = "hidden"
                 document.getElementById("/about").style.marginTop = "0px"
                 
               }
 
             }}>{item}</a>
             
+        }
+
+         {
+          props.navLink ==="user"
+          ? 
+          
+          <a className={props.showActive ? 'item-link active' : 'item-link'} type="no-click" onClick={() => {
+            if (flag == false) {
+              flag = true
+              document.getElementById("user-sub-list").style.visibility = "visible"
+              document.getElementById("user-sub-list").style.overflow = "visible"
+              document.getElementById("user-sub-list").style.position = "inherit" 
+              document.getElementById("user-sub-list").style.zIndex = "10"
+            }
+            else
+            {
+              flag = false
+              document.getElementById("user-sub-list").style.overflow = "hidden"
+              
+            }
+
+          }}>{item}</a>
+          : null
         }
       </div>
       {props.children}
