@@ -212,6 +212,7 @@ class ContactUs extends Component {
     };
     return (
       <React.Fragment>
+        <Header />
         <Modal show={this.state.showModal} clicked={this.closeModal}>
           <FormSuccessMsg />
         </Modal>
@@ -224,7 +225,7 @@ class ContactUs extends Component {
 <DocumentMeta {...meta} />
           <PageBanner heading={"Get in touch with Ethereal Machines"} subHeading={"Let's talk."} classValue={"page-banner--contact-us"} />
           <section className="section section--contact-us-form">
-          <Header />
+          
             <div className="container">
             {
                 this.props.session.session
@@ -236,12 +237,14 @@ class ContactUs extends Component {
                 :
                     null
               }
+              </div>
               <SectionHeading name={"Quick Enquiry form"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Please fill your details to get in touch with us."}/>
               <ContactUsForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired} showLoader={this.state.formSubmissionStart}/>
-            </div>
-            <Footer />
+            
+            
           </section>
         </div>
+        <Footer />
       </React.Fragment>
     );
   }

@@ -24,7 +24,7 @@ import Footer from '../../components/layout/footer/footer';
 class DesignHelp extends Component {
   constructor(props) {
     super(props);
-    this.formData = new FormData(); 
+    this.formData = new FormData();
     this.isStateRequired = false;
     this.allowStateField = false;
   }
@@ -41,13 +41,13 @@ class DesignHelp extends Component {
   }
 
   onClearningFormData = () => {
-    this.formData.delete('name');          
+    this.formData.delete('name');
     this.formData.delete('country');
     this.formData.delete('contact_number');
     this.formData.delete('email');
     this.formData.delete('imagelink');
     this.formData.delete('message');
-   }
+  }
 
   resetProperties = () => {
     this.natureOfQuery = null;
@@ -108,31 +108,31 @@ class DesignHelp extends Component {
         if (inputFieldName === 'name') {
           this.formData.delete('name');
           this.formData.append('name', targetValue);
-        } 
-        else 
-        if (inputFieldName === 'contact_number') {
-          this.formData.delete('contact_number');
-          this.formData.append('contact_number', targetValue);
         }
-        else 
-        if (inputFieldName === 'email') {
-          this.formData.delete('email');
-          this.formData.append('email', targetValue);
-        }
-        else 
-        if (inputFieldName === 'country') { 
-          this.formData.delete('country');
-          this.formData.append('country',targetValue);
-        }
-        else 
-        if (inputFieldName === 'imagelink') { 
-          this.formData.delete('imagelink');
-          this.formData.append('imagelink',targetValue);
-        }
-        break;  
+        else
+          if (inputFieldName === 'contact_number') {
+            this.formData.delete('contact_number');
+            this.formData.append('contact_number', targetValue);
+          }
+          else
+            if (inputFieldName === 'email') {
+              this.formData.delete('email');
+              this.formData.append('email', targetValue);
+            }
+            else
+              if (inputFieldName === 'country') {
+                this.formData.delete('country');
+                this.formData.append('country', targetValue);
+              }
+              else
+                if (inputFieldName === 'imagelink') {
+                  this.formData.delete('imagelink');
+                  this.formData.append('imagelink', targetValue);
+                }
+        break;
       case 'textarea':
         this.formData.delete('message');
-         this.formData.append('message', targetValue);
+        this.formData.append('message', targetValue);
         break;
       default:
         break;
@@ -161,49 +161,52 @@ class DesignHelp extends Component {
       meta: {
         property: {
           'title': 'Ethereal Machines - CAD/CAM Design or Programming Help',
-           'description': 'Ethereal Machines is glad to assist you with CAD/CAM programming for CNC machining and 3D Printing.',
-          }
+          'description': 'Ethereal Machines is glad to assist you with CAD/CAM programming for CNC machining and 3D Printing.',
+        }
       }
     };
     return (
       <React.Fragment>
+        <Header />
         <Modal show={this.state.showModal} clicked={this.closeModal}>
           <FormSuccessMsg />
         </Modal>
         <div className="page page--contact-us">
-        <Header />
-        {/* <Helmet>
+
+          {/* <Helmet>
         <title>Design Help | Ethereal Machines-Bangalore, India.</title>
         <meta name="description" content="Ethereal Machines – get in touch with us."/>
         </Helmet> */}
 
-        <DocumentMeta {...meta} />
-          <PageBanner heading={"NEED HELP WITH CAD/CAM PROGRAMMING?"} subHeading={"Get In Touch"} classValue={"page-banner--design-help"} />
+          <DocumentMeta {...meta} />
+          <PageBanner heading={"NEED HELP WITH CAD/CAM PROGRAMMING?"} subHeading={" "} classValue={"page-banner--design-help"} />
           <section className="section section--design-help-form">
             <div className="container">
-            {
+              {
                 this.props.session.session
-                ?
-                    <div>
-                      <button className="form-btn" onClick={this.queryReport}>Query Report</button>
-                    </div>
-                    
-                :
-                    null
+                  ?
+                  <div>
+                    <button className="form-btn" onClick={this.queryReport}>Query Report</button>
+                  </div>
+
+                  :
+                  null
               }
-              <SectionHeading name={"Details form"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"We'd Love to hear about your Project and Help you get started"}/>
-              <DesignHelpForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired} showLoader={this.state.formSubmissionStart}/>
             </div>
+            <SectionHeading name={"Details form"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"We'd Love to hear about your Project and Help you get started"} />
+            <DesignHelpForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired} showLoader={this.state.formSubmissionStart} />
+
           </section>
-          <Footer />
+
         </div>
+        <Footer />
       </React.Fragment>
     );
   }
 }
 
 const mapStateToProps = (state) => {
-  return{
+  return {
     session: state.login
   }
 }
