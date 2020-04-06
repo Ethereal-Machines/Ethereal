@@ -4,6 +4,7 @@
 
 .nav-bar {
   align-self: stretch;
+  width: max-content;
 }
 
 @media screen and (max-width: 767px) {

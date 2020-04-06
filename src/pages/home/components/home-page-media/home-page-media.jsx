@@ -20,7 +20,7 @@ const homePageMedia = (props) => {
 
   return (
     <div align="center">
-      <div className="home-page-media-container three-col-layout container flex-row">
+      <div className="home-page-media-container three-col-layout">
       {homePageMediaItems}
       
     </div>

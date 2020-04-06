@@ -158,6 +158,7 @@ class Blogs extends Component{
             }
             <PageBanner heading={'Ethereal Machines Blogs'} subHeading={'Dream | Design | Create'} classValue={'page-banner--blogs-page'}/>
             <section className="section section--blogs">
+            
               <div className="container">
                 {
                   this.props.session.session
@@ -168,11 +169,12 @@ class Blogs extends Component{
                   :
                       null
                 }
+                </div>
                 <SectionHeading name={"Featured Blogs"} classValue={"u-margin-bottom-big u-text-center"}/>
                 <div className="blog-item-container three-col-layout">
                   {  blogsItem  }
                 </div>
-              </div>
+              
             </section>
             <Footer />
           </div>

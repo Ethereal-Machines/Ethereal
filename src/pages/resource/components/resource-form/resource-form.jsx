@@ -85,7 +85,7 @@ class ResourceForm extends Component {
           isRequired {...this.props}
           />
 
-          <button className="btn btn-primary" onClick={this.handleClick1} style={{display: this.state.isToggle1 ? 'none': 'block',width:'100%'}} > Add Attachment </button>
+          <span className="btn btn-primary" onClick={this.handleClick1} style={{display: this.state.isToggle1 ? 'none': 'block',width:'100%',textAlign:'center'}} > Add Attachment </span>
           </div>
           
 
@@ -96,17 +96,17 @@ class ResourceForm extends Component {
           inputName={"file2"} {...this.props} 
           />
           
-          <button className="btn btn-primary" onClick={this.handleClick2} style={{display: this.state.isToggle2 ? 'none': 'block',width:'100%'}}> Add Attachment </button>
+          <span className="btn btn-primary" onClick={this.handleClick2} style={{display: this.state.isToggle2 ? 'none': 'block',width:'100%',textAlign:'center'}}> Add Attachment </span>
           </div>
 
           <div style={{display: this.state.isToggle2 ? 'block': 'none'}}>
           <InputFile labelName={"AttachFile3"} inputName={"file3"} {...this.props} />
-          <button className="btn btn-primary" onClick={this.handleClick3} style={{display: this.state.isToggle3 ? 'none': 'block',width:'100%'}} > Add Attachment</button>
+          <span className="btn btn-primary" onClick={this.handleClick3} style={{display: this.state.isToggle3 ? 'none': 'block',width:'100%',textAlign:'center'}} > Add Attachment</span>
           </div>
 
           <div style={{display: this.state.isToggle3 ? 'block': 'none'}}>
           <InputFile labelName={"AttachFile4"} inputName={"file4"} {...this.props} />
-          <button className="btn btn-primary" onClick={this.handleClick4} style={{display: this.state.isToggle4 ? 'none': 'block',width:'100%'}}> Add Attachment</button>
+          <span className="btn btn-primary" onClick={this.handleClick4} style={{display: this.state.isToggle4 ? 'none': 'block',width:'100%',textAlign:'center'}}> Add Attachment</span>
           </div>
 
           <div style={{display: this.state.isToggle4 ? 'block': 'none'}}>
