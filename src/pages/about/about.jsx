@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import LazyLoad from 'react-lazyload';
-import axios from '../../services/axios/axios';
+// import axios from '../../services/axios/axios';
 import * as actionType from '../../store/actions/action-type';
 // import { Helmet } from "react-helmet";
 import DocumentMeta from 'react-document-meta';
@@ -20,9 +20,9 @@ import './about.css';
 import PageBanner from '../../components/ui/page-banner/page-banner';
 import SectionHeading from '../../components/pages-component/section-heading/section-heading';
 import AboutUs from './components/about-us/about-us';
-import Team from './components/team/team';
+// import Team from './components/team/team';
 import EtherealJourney from './components/ethereal-journey/ethereal-journey';
-import ContactUsBanner from '../../components/pages-component/contact-us-banner/contact-us-banner';
+// import ContactUsBanner from '../../components/pages-component/contact-us-banner/contact-us-banner';
 import Header from '../../components/layout/header/header';
 import Footer from '../../components/layout/footer/footer';
 

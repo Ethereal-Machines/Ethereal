@@ -6,7 +6,8 @@
 import React, { Component } from 'react';
 import { Route, Router, Switch, Redirect } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import { createHashHistory } from 'history';
+// import { createHashHistory } from 'history';
+import { createBrowserHistory } from 'history';
 import { connect } from 'react-redux'
 
 import loader from '../assets/images/loader/loader.gif';
@@ -244,7 +245,8 @@ class Routes extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
-  history = createHashHistory({
+  // history = createHashHistory({
+  history = createBrowserHistory({
     basename: "", // The base URL of the app (see below)
     hashType: "slash", // The hash type to use (see below)
     // A function to use to confirm navigation with the user (see below)

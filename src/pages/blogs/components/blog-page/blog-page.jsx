@@ -5,12 +5,12 @@
 
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import * as actionType from '../../../../store/actions/action-type'
-import getBlogById from '../../../../services/api/get-blog-item-byid';
+// import * as actionType from '../../../../store/actions/action-type'
+// import getBlogById from '../../../../services/api/get-blog-item-byid';
 import emptyData from './blog-empty-data'
 
 // The editor core
-import Editor, { Editable, createEmptyState } from 'ory-editor-core'
+import Editor, { Editable } from 'ory-editor-core'
 import 'ory-editor-core/lib/index.css' // we also want to load the stylesheets
 
 // Load some exemplary plugins:

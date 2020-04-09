@@ -13,7 +13,7 @@ const navItem = (props) => {
   } else if (props.linkType === 'img') {
     item = <img src={props.img.url} alt={props.img.alt} width={props.img.width} height={props.img.height} className="avatar" />;
   }
-  console.log(props.name)
+  
 
   return (
     

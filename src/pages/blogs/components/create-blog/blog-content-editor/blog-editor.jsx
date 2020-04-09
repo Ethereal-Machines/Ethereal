@@ -88,7 +88,7 @@ componentDidMount() {
     this.unblock = this.props.history.block(targetLocation => {
     
         var cnfrm= window.confirm("You will loss your data");
-        if (cnfrm == true) {
+        if (cnfrm === true) {
             this.props.contentEditorOpen(false) 
             return window.location.href='/#/blogs'
         } else {

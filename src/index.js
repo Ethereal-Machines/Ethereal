@@ -5,7 +5,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 // importing all the Redux related dependencies
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';

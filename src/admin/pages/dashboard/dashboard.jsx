@@ -6,7 +6,7 @@ import Card from '../../../components/ui/card/card';
 import CardHeading from '../../../components/ui/card/card-heading/card-heading';
 import Divider from '../../../components/ui/divider/divider';
 import AnalogClock from '../../../components/ui/analog_watch/analog_watch';
-import FullScreenLoader from '../../../components/ui/fullscreen_loader/fullscreen_loader'
+// import FullScreenLoader from '../../../components/ui/fullscreen_loader/fullscreen_loader'
 import '../../../common_css/dashboard.css'
 import { Tree, Icon } from 'antd';
 //
