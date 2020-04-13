@@ -4,11 +4,12 @@
  */
 
 import React from 'react';
-
 import './designfiles-item.css';
 
-import calendarIcon from '../../assets/images/calendar-icon.svg';
-import Tag from '../../assets/images/tag.png';
+import doc from '../../assets/images/Document.svg';
+import faq from '../../assets/images/faq.jpg';
+import splitter from '../../assets/images/splitter.jpeg';
+
 import ReadMoreAndLess from 'react-read-more-less';
 
 const DesignFilesItem = (props) => {
@@ -50,23 +51,23 @@ const DesignFilesItem = (props) => {
       <div className="media-image-container">
         <img src={props.item.file1} alt="Media" />
       </div>
-      <div className="media-details-container" style={{width:"100%"}}>
+      <div className="media-details-container" style={{ width: "100%" }}>
         <div className="media-title subtitle">
           <span>{props.item.title}</span>
         </div>
-        
+
         <div className="details">
           <ReadMoreAndLess
-                ref={this.ReadMore}
-                className="read-more-content"
-                charLimit={150}
-                readMoreText="Read more"
-                readLessText="Read less"
-            >
-                {props.item.description}
-            </ReadMoreAndLess>
-          </div>
-        
+            ref={this.ReadMore}
+            className="read-more-content"
+            charLimit={100}
+            readMoreText="Read more"
+            readLessText="Read less"
+          >
+            {props.item.description}
+          </ReadMoreAndLess>
+        </div>
+
         {/* <span className="media-date">
             <img src={calendarIcon} alt="Calendar" width="16" height="16" className="icon"/>
             <span>Published On:</span>ssf

@@ -7,157 +7,78 @@ import React from 'react';
 
 import './covid-item.css';
 
-
-import calendarIcon from '../../assets/images/calendar-icon.svg';
-import Tag from '../../assets/images/tag.png';
+import doc from '../../assets/images/Document.svg';
+import faq from '../../assets/images/faq.jpg';
+import splitter from '../../assets/images/splitter.jpeg';
 import ReadMoreAndLess from 'react-read-more-less';
 
 const CovidItem = (props) => {
-  var file2 = 'file1'
-  var file4 = 'file2'
-  var file3 = 'file3'
-  var file5 = 'file4'
-  if (props.item.file5 !== null) {
-    var str = props.item.file5;
-    var res = str.split('/')
-    var n = res.length
-    file5 = res[n - 1];
-  }
-
-  if (props.item.file2 !== null) {
-    var str = props.item.file2;
-    var res = str.split('/')
-    var n = res.length
-    file2 = res[n - 1];
-  }
-  if (props.item.file3 !== null) {
-    var str = props.item.file3;
-    var res = str.split('/')
-    var n = res.length
-    file3 = res[n - 1];
-  }
-  if (props.item.file4 !== null) {
-    var str = props.item.file4;
-    var res = str.split('/')
-    var n = res.length
-    file4 = res[n - 1];
-  }
-  const imgContainerStyle = {
-    backgroundImage: `url(${props.item.file1})`
-  };
 
   return (
-    <div className="media-item flex-row">
-      <div className="media-image-container">
-        <img src={props.item.file1} alt="Media" />
+    <div className="flex-row">
+      <div className="media-item" style={{ height: "600px", width: "30%", paddingRight: "30px" }} align="center">
+        Related News of Ethereal Machines
       </div>
-      <div className="media-details-container" style={{width:"100%"}}>
-        <div className="media-title subtitle">
-          <span>{props.item.title}</span>
+
+      <div style={{ paddingLeft: "30px",paddingTop:"50px" }}>
+        <div className="container">
+          <div className="cont">
+            <div className="flex-row" >
+              <img style={{ width: "50px" }} src={doc} alt="Media" />
+              <a style={{ textAlign: "left" }} target="_blank" href="https://forms.gle/wr6wpMXzrXrZjvdS7" className="button" style={{ textAlign: "left", textTransform: "none" }}>Kindly fill this form to <br />receive the Amaya splitters</a>
+            </div>
+            <br />
+            <div className="flex-row" >
+              <img style={{ width: "50px" }} src={faq} alt="Media" />
+              <a style={{ textAlign: "left" }} target="_blank" href="https://www.facebook.com/AsterBangalore/videos/726789408129961/" className="button">VIDEO LINK</a>
+            </div>
+          </div>
+
+
+          <img className="image"  src={splitter} alt="Media" />
         </div>
-         <div className="details">
-            <ReadMoreAndLess
+
+        <br />
+        <br />
+        <br />
+        <div className="media-item flex-row">
+          <div className="media-image-container">
+            <img src="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/appicon.png" alt="Media" />
+          </div>
+          <div className="media-details-container" >
+            <div className="media-title subtitle">
+              <span>"COVID-19 | 3D PRINTING AND CNC SOLUTIONS"</span>
+            </div>
+            <div className="details">
+              <ReadMoreAndLess
                 ref={this.ReadMore}
                 className="read-more-content"
                 charLimit={150}
                 readMoreText="Read more"
                 readLessText="Read less"
-            >
-                {props.item.description}
-            </ReadMoreAndLess>
+              >
+                "We have built an app with the design files that can be manufactured locally. The maker community can use this to add designs, get proven design files and hospitals can use it to make requests for any particular design/part they want. Members of the maker community can look up requests and take up projects depending on their capacity. Given the lockdown, we need to be ready to distribute manufacturing capability to all parts of the country. Let's fight #COVID19A collection of all 3D printable products and requests from healthcare staff."
+              </ReadMoreAndLess>
+            </div>
+
+            <div className="media-link">
+              <ul className="display-list">
+                {/* {
+                  props.item.link
+                    ? */}
+                    <li>
+                      <form target="_blank" action="https://3drenders.glideapp.io/">
+                        <button className="button">View link attached</button>
+                      </form>
+                    </li>
+                    {/* : null
+                } */}
+              </ul>
+            </div>
+
+          </div>
         </div>
-
-        <div className="media-link">
-          <ul className="display-list">
-            {
-              props.item.link
-                ?
-                <li>
-                  <form target="_blank" action={props.item.link}>
-                    <button className="button">View link attached</button>
-                  </form>
-                </li>
-                : null
-            }
-            {
-              props.session
-                ?
-                <div>
-                  <li>
-                    <a onClick={() => props.onUpdate(props.item.id)}>Update</a>
-                  </li>
-
-                  {/* <li>
-                  {
-                    props.item.public
-                      ?
-                      <a onClick={() => props.unpublishMedia(props.item.id, false)} >UnPublish</a>
-                      :
-                      <a onClick={() => props.publishMedia(props.item.id, true)} >Publish</a>
-                  }
-                </li> */}
-
-                  <li>
-                    <button className="button" onClick={() => props.deleteMedia(props.item.id)}>Delete</button>
-                  </li>
-                </div>
-
-                : null
-            }
-          </ul>
-        </div>
-
-
-        {/* <div className="media-link">
-               <a href={props.item.link} target="_blank">View More</a>
-             </div> */}
-
       </div>
-
-      {/* <div align="left" style={{ width: '40%' }}>
-
-        {
-          props.item.file2
-            ?
-            <form target="_blank" action={props.item.file2}>
-              <button className="button">{file2}</button>
-            </form>
-            : null
-        }
-
-        {
-          props.item.file3
-            ?
-
-            <form target="_blank" action={props.item.file3}>
-              <button className="button">{file3}</button>
-            </form>
-
-            : null
-        }
-        {
-          props.item.file4
-            ?
-
-            <form target="_blank" action={props.item.file4}>
-              <button className="button">{file4}</button>
-            </form>
-
-            : null
-        }
-        {
-          props.item.file5
-            ?
-
-            <form target="_blank" action={props.item.file5}>
-              <button className="button">Download {file5}</button>
-            </form>
-
-            : null
-        }
-
-
-      </div> */}
     </div>
   );
 };

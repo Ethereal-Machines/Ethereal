@@ -83,19 +83,22 @@
   z-index: -1;
   -webkit-transform: scaleY(.1);
   transform: scaleY(.1);
-  transition: all .4s
+  transition: all .4s 
   }
   .button:hover{
   color:#f8b91c;  
+  background-color: Transparent;
+  -webkit-text-stroke-width: 1%;
+  -webkit-text-stroke-color: black;
   }
-  .button:hover::before{
+  /* .button:hover::before{
   opacity: 1;
   background-color: #c29012;
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
   transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
   transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
-  }
+  } */
 
 .media-date-publisher {
   width: 100%;
