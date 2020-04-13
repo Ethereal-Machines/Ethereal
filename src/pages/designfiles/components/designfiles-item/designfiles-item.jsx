@@ -90,9 +90,9 @@ const DesignFilesItem = (props) => {
                 </li>
                 : null
             }
-            {
+            {/* {
               props.session
-                ?
+                ? */}
                 <div>
                   <li>
                     <a onClick={() => props.onUpdate(props.item.id)}>Update</a>
@@ -113,8 +113,8 @@ const DesignFilesItem = (props) => {
                   </li>
                 </div>
 
-                : null
-            }
+                {/* : null
+            } */}
           </ul>
         </div>
 

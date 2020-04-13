@@ -261,7 +261,7 @@ class Routes extends Component {
           <Route path="/error-page" component={ErrorPage} />
           <Route path="/about" component={About} />
           <Route path="/media" component={Media} />
-          {/* <Route path="/designfiles" component={DesignFiles} /> */}
+          <Route path="/designfiles" component={DesignFiles} />
           <Route path="/covid" component={Covid} />
           <Route path="/login" component={LoginAsAdmin} />
           

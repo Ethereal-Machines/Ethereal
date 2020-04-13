@@ -28,6 +28,7 @@ import ShowMsg from '../../components/pages-component/showMSG/msg'
 
 import DesignFilesForm from './components/covid-form/covid-form';
 import DesignFilesItem from './components/covid-item/covid-item';
+import CovidVideo from './components/covid-splitter-video-model';
 
 
 // Header and Footer
@@ -271,11 +272,12 @@ class Covid extends Component {
             this.state.updateMedia || this.state.createMedia
               ?
               <Modal show={this.state.showModal} clicked={this.closeModal} >
-                <DesignFilesForm
+                {/* <DesignFilesForm
                   mediaId={this.state.mediaId}
                   closeModal={this.closeModal}
                   updateMedia={this.state.updateMedia}
-                />
+                /> */}
+                <CovidVideo />
               </Modal>
               : null
           }
@@ -320,7 +322,8 @@ class Covid extends Component {
                             <br />
                             <div className="flex-row" >
                               <img style={{ width: "50px" }} src={faq} alt="Media" />
-                              <a style={{ textAlign: "left" }} target="_blank" href="https://www.facebook.com/AsterBangalore/videos/726789408129961/" className="button">VIDEO LINK</a>
+                              <a className="button" style={{ textAlign: "left" }} onClick={() => this.onUpdate()}>VIDEO LINK</a>
+                              {/* <a style={{ textAlign: "left" }} target="_blank" href="https://www.facebook.com/AsterBangalore/videos/726789408129961/" className="button">VIDEO LINK</a> */}
                             </div>
                           </div>
 
