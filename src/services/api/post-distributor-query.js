@@ -10,8 +10,7 @@ const postDistributorQuery = (callback, data) => {
   axios.post('queries/distributor/', data, {
     headers: {
       ...headers,
-      "Content-Type":"application/json"
-}
+    }
 })
     .then(res => {
       // console.log(res);

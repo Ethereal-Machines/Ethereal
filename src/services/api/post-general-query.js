@@ -10,8 +10,7 @@ const postGeneralQuery = (callback, data) => {
   axios.post('queries/general/', data, {
     headers: {
       ...headers,
-      "Content-Type":"application/json"
-}
+    }
 })
     .then(res => {
       // console.log(res);

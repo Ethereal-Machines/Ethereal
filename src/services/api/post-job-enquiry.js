@@ -10,8 +10,7 @@ const postJobEnquiry = (callback, data) => {
   axios.post('careers/enquiries/', data, {
     headers: {
       ...headers,
-      "Content-Type":"application/json"
-}
+    }
 })
     .then(res => {
       callback(res);

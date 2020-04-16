@@ -6,7 +6,7 @@ const createResource = (callback, data) => {
     axios.post(`/resources/`, data, {
         headers: {
              'Accept': 'application/json',
-         "Content-Type":"multipart/form-data"
+         'Content-Type':'multipart/form-data'
 
         }
     })

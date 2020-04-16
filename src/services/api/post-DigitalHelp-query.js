@@ -10,8 +10,7 @@ const DigitalHelp = (callback, data) => {
   axios.post('queries/digitalhelp/', data, {
     headers: {
       ...headers,
-      "Content-Type":"application/json"
-}
+    },
 })
   
     .then(res => {

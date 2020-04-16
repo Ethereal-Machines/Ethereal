@@ -10,8 +10,7 @@ const postMediaQuery = (callback, data) => {
   axios.post('queries/media/', data, {
     headers: {
       ...headers,
-      "Content-Type":"application/json"
-}
+    }
 })
     .then(res => {
       // console.log(res);
