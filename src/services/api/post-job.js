@@ -7,8 +7,9 @@ import headers from '../axios/headers';
  const postJob = (callback,data) => {
     axios.post(`/careers/jobs/`, {
         headers: {
-            ...headers,
-        }
+          ...headers,
+          'Content-Type': 'application/json',
+        },
     })
     .then(res => {
         callback(res)

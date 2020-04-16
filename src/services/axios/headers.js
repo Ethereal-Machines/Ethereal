@@ -7,7 +7,7 @@
     'Accept': 'application/json',
     'Authorization': sessionStorage.jwt ? `Token ${sessionStorage.jwt}` : '',
     // 'Content-Type': 'application/json',
-    'Content-Type': 'multipart/form-data',
+    // 'Content-Type': 'multipart/form-data',
 };
 
 export default headers

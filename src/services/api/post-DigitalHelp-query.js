@@ -7,11 +7,12 @@ import axios from '../axios/axios';
 import headers from '../axios/headers';
 
 const DigitalHelp = (callback, data) => {
-  axios.post('queries/digitalhelp/', data, {
+  axios.post('queries/digitalhelp/', {
     headers: {
       ...headers,
+      'Content-Type': 'application/json',
     },
-})
+},data)
   
     .then(res => {
       // console.log(res);
