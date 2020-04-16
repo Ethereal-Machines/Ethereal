@@ -4,9 +4,16 @@
  */
 
 import axios from '../axios/axios';
+import headers from '../axios/headers';
 
 const DigitalHelp = (callback, data) => {
-  axios.post('queries/digitalhelp/', data)
+  axios.post('queries/digitalhelp/', data, {
+    headers: {
+      ...headers,
+      "Content-Type":"application/json"
+}
+})
+  
     .then(res => {
       // console.log(res);
       callback(res);

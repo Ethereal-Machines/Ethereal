@@ -9,6 +9,15 @@
   width: 95%;
 }
 
+.imgbanner
+{
+  flex-direction: column;
+   background-color: black;
+    height: 500px ;
+    width: 100%; 
+    color: white;
+}
+
 .media-item {
   max-width: 1300px;
   justify-content: flex-start;

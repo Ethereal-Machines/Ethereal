@@ -5,7 +5,7 @@ import headers from '../axios/headers';
     axios.post(`/medias/`, data,{
             headers: {
                 ...headers,
-            'Content-Type': 'application/json'
+                "Content-Type":"application/json"
         }
 }).then(res => {
         callback(res)

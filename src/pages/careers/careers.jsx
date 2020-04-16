@@ -363,7 +363,12 @@ class Careers extends Component {
           <section className="section section--careers-form section-no-top-padding">
           <SectionHeading name={"Get in touch!"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading={true} subHeading={"Let's schedule an interview!"}/>
             <div className="container">
-              <CareersGenericForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} showLoader={this.state.formSubmissionStart}/>
+              <CareersGenericForm 
+              onInputChange={this.onInputChange} 
+              onSubmitHandler={this.onSubmitHandler} 
+              formSubmissionStart={this.state.formSubmissionStart} 
+              errorMsg={this.state.errorMsg} 
+              showLoader={this.state.formSubmissionStart}/>
             </div>
           </section>
           <Footer />

@@ -4,9 +4,15 @@
  */
 
 import axios from '../axios/axios';
+import headers from '../axios/headers';
 
 const postGeneralQuery = (callback, data) => {
-  axios.post('queries/general/', data)
+  axios.post('queries/general/', data, {
+    headers: {
+      ...headers,
+      "Content-Type":"application/json"
+}
+})
     .then(res => {
       // console.log(res);
       callback(res);

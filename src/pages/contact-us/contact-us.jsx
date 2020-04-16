@@ -239,7 +239,15 @@ class ContactUs extends Component {
               }
               </div>
               <SectionHeading name={"Quick Enquiry form"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Please fill your details to get in touch with us."}/>
-              <ContactUsForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired} showLoader={this.state.formSubmissionStart}/>
+              <ContactUsForm 
+              onInputChange={this.onInputChange} 
+              onSubmitHandler={this.onSubmitHandler} 
+              formSubmissionStart={this.state.formSubmissionStart} 
+              errorMsg={this.state.errorMsg} 
+              natureOfQuery={this.natureOfQuery} 
+              isStateRequired={this.isStateRequired} 
+              showLoader={this.state.formSubmissionStart}
+              />
             
             
           </section>
