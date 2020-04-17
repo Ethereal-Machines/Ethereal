@@ -7,12 +7,13 @@ import axios from '../axios/axios';
 import headers from '../axios/headers';
 
 const postJobEnquiry = (callback,data) => {
-  axios.post('careers/enquiries/', {
-    headers: {
-      ...headers,
-      'Content-Type': 'application/json',
-    },
-},data)
+  axios.post('careers/enquiries/',data,{
+    headers :{
+      'Accept': 'application/json',
+      // 'Authorization': sessionStorage.jwt ? `Token ${sessionStorage.jwt}` : '',
+      'Content-Type': 'application/json'    
+  }
+} )
     .then(res => {
       callback(res);
     })

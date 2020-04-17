@@ -6,8 +6,7 @@
  const headers = {
     'Accept': 'application/json',
     'Authorization': sessionStorage.jwt ? `Token ${sessionStorage.jwt}` : '',
-    // 'Content-Type': 'application/json',
-    // 'Content-Type': 'multipart/form-data',
-};
+    'Content-Type': 'application/vnd.myapp.type+json'    
+};  
 
 export default headers

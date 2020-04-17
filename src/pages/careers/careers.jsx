@@ -131,17 +131,21 @@ class Careers extends Component {
     switch (event.target.type) {
       case 'text':
         if (inputFieldName === 'name') {
-          this.formData.append('name', event.target.value);
+          this.formData.delete('name');
+           this.formData.append('name', event.target.value);
         } else if (inputFieldName === 'contact_number') {
-          const contactNo = event.target.value;
-          this.formData.append('contact_number', contactNo);
+           const contactNo = event.target.value;
+           this.formData.delete('contact_number');
+            this.formData.append('contact_number', contactNo);
         }else if(inputFieldName === 'resume'){
-          this.formData.append('resume',event.target.value)
+          this.formData.delete('resume');
+           this.formData.append('resume',event.target.value)
         }
         break;
       
       case 'email':
         if (inputFieldName === 'email') {
+          this.formData.delete('email');
           this.formData.append('email', event.target.value);
         }
         break;
@@ -149,16 +153,24 @@ class Careers extends Component {
       case 'select-one':
         if (inputFieldName === 'gender') {
           if (event.target.value === 'Male') {
+            this.formData.delete('gender');
+
             this.formData.append('gender', 'M');
           } else {
+            this.formData.delete('gender');
+
             this.formData.append('gender', 'F');
           }
         } else if (inputFieldName === 'position') {
+          this.formData.delete('position');
+
           this.formData.append('position', event.target.value);
         }
         break;
 
       case 'textarea':
+        this.formData.delete('message');
+
         this.formData.append('message', event.target.value);
         break;
 
@@ -168,7 +180,7 @@ class Careers extends Component {
 
     this.setState({
       ...this.state,
-      formData: this.formData,
+      formData: this.formData,  
     });
   }
 
