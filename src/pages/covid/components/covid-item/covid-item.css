@@ -11,9 +11,8 @@
 
 .imgbanner
 {
-  flex-direction: column;
    background-color: black;
-    height: 500px ;
+    /* height: 500px ; */
     width: 100%; 
     color: white;
 }

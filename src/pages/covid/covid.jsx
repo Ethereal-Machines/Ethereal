@@ -27,9 +27,14 @@ import DocumentMeta from 'react-document-meta';
 import ShowMsg from '../../components/pages-component/showMSG/msg'
 
 import DesignFilesForm from './components/covid-form/covid-form';
-import CovidItem from './components/covid-item/covid-item';
+// import CovidItem from './components/covid-item/covid-item';
+import CovidItem from '../media/components/media-item/media-item';
 
-
+//video player
+import { Player, ControlBar, BigPlayButton } from 'video-react';
+import './video-react.css';
+import videoposter from './assets/images/videoposter.jpg';
+import video from './assets/images/video.mp4';
 
 // Header and Footer
 import Header from '../../components/layout/header/header';
@@ -42,7 +47,7 @@ import splitter from './assets/images/splitter.jpeg';
 import ReadMoreAndLess from 'react-read-more-less';
 import CovidVideo from './components/covid-splitter-video-model';
 import logoWhite from '../../assets/images/logo/logo-white.svg';
-import videoposter from './assets/images/videoposter.jpg';
+import mediaItemNews from '../media/components/media-item/media-item';
 
 class Covid extends Component {
   state = {
@@ -218,21 +223,11 @@ class Covid extends Component {
 
   render() {
     const covid = this.props.designfilesItems.map(item => {
-      if (item.is_public) {
-        return (
-          <LazyLoad height={200} offset={100} placeholder={<ContentLoader />} once key={item.id}>
-            <CovidItem
-            item={item}
-            onUpdate={this.onUpdate}
-            session={this.props.session.session}
-            publishMedia={this.publishMedia}
-            unpublishMedia={this.unpublishMedia}
-            deleteMedia={this.deleteMedia}
-            />
-          </LazyLoad>
-        );
-      }
-      console.log(item.id)
+      return (
+        // <LazyLoad height={200} offset={100} placeholder={<ContentLoader />} once key={item.id}>
+        <mediaItemNews />
+        // </LazyLoad>
+      );
     }
     );
 
@@ -287,25 +282,14 @@ class Covid extends Component {
           <PageBanner heading={"Ethereal Machines in Covid -19 Efforts"} classValue={'page-banner--media'} />
           <section className="section section--media">
             <div className="container imgbanner">
-              {/* <video
-                width="840"
-                height="480"
-                frameborder="0"
+
+              <Player
                 poster={videoposter}
-                controls
+                src={video}
+                autoHide={true}
               >
-                <source data-reactid=".0.1.0.0.0" src="‪C:\Users\Shreyas\Downloads\video.mp4" type="video/mp4" />
-              </video> */}
-
-              <iframe 
-                src="https://drive.google.com/file/d/1hpvGSxCTx8ea4q-w_Xa-sIXWzpwk8oTG/preview" 
-                width="840" 
-                height="480"
-                frameborder="0" 
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                ></iframe>
-
+                <ControlBar autoHide={true} disableCompletely={true} />
+              </Player>
 
             </div>
             <div className="container">
@@ -328,12 +312,12 @@ class Covid extends Component {
 
                       <div className="flex-row">
 
-                        <div className="media-item" style={{ height: "600px", width: "30%", paddingRight: "30px" }} align="center">
-                          
+                        <div className="media-item" style={{ width: "30%", paddingRight: "30px" }} align="center">
+                          Related News
                           {
                             covid
                           }
-                      </div>
+                        </div>
 
                         <div style={{ paddingLeft: "30px", paddingTop: "50px" }}>
                           <div className="container">
