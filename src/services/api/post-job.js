@@ -1,19 +1,15 @@
-/**
- * Created by Anand Singh on 8/13/2018.
- */
-import  axios  from '../axios/axios';
+import axios from '../axios/axios';
 import headers from '../axios/headers';
 
- const postJob = (callback,data) => {
-    axios.post(`/careers/jobs/`,data , {
-    headers :{
-      'Accept': 'application/json',
-      // 'Authorization': sessionStorage.jwt ? `Token ${sessionStorage.jwt}` : '',
-      'Content-Type': 'application/json'    
-  } })
-    .then(res => {
-        callback(res)
-    })
+const postJob = (callback, data) => {
+  axios.post(`/careers/jobs/`, data, {
+    headers: {
+      ...headers,
+      'Content-Type': 'application/json'
+    }
+  }).then(res => {
+    callback(res)
+  })
     .catch(err => callback(err))
 };
 

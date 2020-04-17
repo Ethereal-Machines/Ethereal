@@ -7,12 +7,7 @@ import axios from '../axios/axios';
 import headers from '../axios/headers';
 
 const postDistributorQuery = (callback, data) => {
-  axios.post('queries/distributor/',data,{
-    headers :{
-      'Accept': 'application/json',
-      // 'Authorization': sessionStorage.jwt ? `Token ${sessionStorage.jwt}` : '',
-      'Content-Type': 'application/json'    
-  }} )
+  axios.post('queries/distributor/',data)
     .then(res => {
       // console.log(res);
       callback(res);

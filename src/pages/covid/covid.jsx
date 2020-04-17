@@ -28,7 +28,7 @@ import ShowMsg from '../../components/pages-component/showMSG/msg'
 
 import DesignFilesForm from './components/covid-form/covid-form';
 import CovidItem from './components/covid-item/covid-item';
-import CovidVideo from './components/covid-splitter-video-model';
+
 
 
 // Header and Footer
@@ -40,6 +40,9 @@ import doc from './assets/images/Document.svg';
 import faq from './assets/images/faq.jpg';
 import splitter from './assets/images/splitter.jpeg';
 import ReadMoreAndLess from 'react-read-more-less';
+import CovidVideo from './components/covid-splitter-video-model';
+import logoWhite from '../../assets/images/logo/logo-white.svg';
+import videoposter from './assets/images/videoposter.jpg';
 
 class Covid extends Component {
   state = {
@@ -218,14 +221,14 @@ class Covid extends Component {
       if (item.is_public) {
         return (
           <LazyLoad height={200} offset={100} placeholder={<ContentLoader />} once key={item.id}>
-            {/* <DesignFilesItem
+            <CovidItem
             item={item}
             onUpdate={this.onUpdate}
             session={this.props.session.session}
             publishMedia={this.publishMedia}
             unpublishMedia={this.unpublishMedia}
             deleteMedia={this.deleteMedia}
-            /> */}
+            />
           </LazyLoad>
         );
       }
@@ -283,6 +286,28 @@ class Covid extends Component {
           }
           <PageBanner heading={"Ethereal Machines in Covid -19 Efforts"} classValue={'page-banner--media'} />
           <section className="section section--media">
+            <div className="container imgbanner">
+              {/* <video
+                width="840"
+                height="480"
+                frameborder="0"
+                poster={videoposter}
+                controls
+              >
+                <source data-reactid=".0.1.0.0.0" src="‪C:\Users\Shreyas\Downloads\video.mp4" type="video/mp4" />
+              </video> */}
+
+              <iframe 
+                src="https://drive.google.com/file/d/1hpvGSxCTx8ea4q-w_Xa-sIXWzpwk8oTG/preview" 
+                width="840" 
+                height="480"
+                frameborder="0" 
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                ></iframe>
+
+
+            </div>
             <div className="container">
               {/* <SectionHeading name={"What media says about us"} classValue={"u-margin-bottom-big u-text-center"}/> */}
               {/* {
@@ -297,8 +322,81 @@ class Covid extends Component {
                 {
                   this.state.loadingContent ?
                     mediaLoader :
-                    
-                  <CovidItem/>
+
+                    <div>
+
+
+                      <div className="flex-row">
+
+                        <div className="media-item" style={{ height: "600px", width: "30%", paddingRight: "30px" }} align="center">
+                          
+                          {
+                            covid
+                          }
+                      </div>
+
+                        <div style={{ paddingLeft: "30px", paddingTop: "50px" }}>
+                          <div className="container">
+                            <div className="cont">
+                              <div className="flex-row" >
+                                <img style={{ width: "50px" }} src={doc} alt="Media" />
+                                <a style={{ textAlign: "left" }} target="_blank" href="https://forms.gle/wr6wpMXzrXrZjvdS7" className="button" style={{ textAlign: "left", textTransform: "none" }}>Kindly fill this form to <br />receive the Amaya splitters</a>
+                              </div>
+                              <br />
+                              <div className="flex-row" >
+                                <img style={{ width: "50px" }} src={faq} alt="Media" />
+                                <a className="button" style={{ textAlign: "left" }} onClick={() => this.onUpdate()}>VIDEO LINK</a>
+                                {/* <a style={{ textAlign: "left" }} target="_blank" href="https://drive.google.com/file/d/1hpvGSxCTx8ea4q-w_Xa-sIXWzpwk8oTG/" className="button">VIDEO LINK</a> */}
+                              </div>
+                            </div>
+
+
+                            <img className="image" src={splitter} alt="Media" />
+                          </div>
+
+                          <br />
+                          <br />
+                          <br />
+                          <div className="media-item flex-row">
+                            <div className="media-image-container">
+                              <img src="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/appicon.png" alt="Media" />
+                            </div>
+                            <div className="media-details-container" >
+                              <div className="media-title subtitle">
+                                <span>"COVID-19 | 3D PRINTING AND CNC SOLUTIONS"</span>
+                              </div>
+                              <div className="details">
+                                <ReadMoreAndLess
+                                  ref={this.ReadMore}
+                                  className="read-more-content"
+                                  charLimit={150}
+                                  readMoreText="Read more"
+                                  readLessText="Read less"
+                                >
+                                  "We have built an app with the design files that can be manufactured locally. The maker community can use this to add designs, get proven design files and hospitals can use it to make requests for any particular design/part they want. Members of the maker community can look up requests and take up projects depending on their capacity. Given the lockdown, we need to be ready to distribute manufacturing capability to all parts of the country. Let's fight #COVID19A collection of all 3D printable products and requests from healthcare staff."
+                              </ReadMoreAndLess>
+                              </div>
+
+                              <div className="media-link">
+                                <ul className="display-list">
+                                  {/* {
+                                  props.item.link
+                                    ? */}
+                                  <li>
+                                    <form target="_blank" action="https://3drenders.glideapp.io/">
+                                      <button className="button">View link attached</button>
+                                    </form>
+                                  </li>
+                                  {/* : null
+                                 } */}
+                                </ul>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 }
               </div>
             </div>

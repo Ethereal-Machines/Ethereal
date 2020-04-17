@@ -7,13 +7,7 @@ import axios from '../axios/axios';
 import headers from '../axios/headers';
 
 const postGeneralQuery = (callback, data) => {
-  axios.post('queries/general/',data ,{
-    headers :{
-      'Accept': 'application/json',
-      // 'Authorization': sessionStorage.jwt ? `Token ${sessionStorage.jwt}` : '',
-      'Content-Type': 'application/json'    
-  } 
-  })
+  axios.post('queries/general/',data)
     .then(res => {
       // console.log(res);
       callback(res);

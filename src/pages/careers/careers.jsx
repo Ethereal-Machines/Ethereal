@@ -282,7 +282,7 @@ class Careers extends Component {
       }
     }
     const meta = {
-      title: 'About Us | Ethereal Machines | Bangalore, India',
+      title: 'Careers | Ethereal Machines | Bangalore, India',
       meta: {
         property: {
           'title': 'About Us | Ethereal Machines | Bangalore, India',

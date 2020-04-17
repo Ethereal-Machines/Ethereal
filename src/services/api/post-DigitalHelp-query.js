@@ -7,12 +7,7 @@ import axios from '../axios/axios';
 import headers from '../axios/headers';
 
 const DigitalHelp = (callback, data) => {
-  axios.post('queries/digitalhelp/',data , {
-    headers :{
-      'Accept': 'application/json',
-      // 'Authorization': sessionStorage.jwt ? `Token ${sessionStorage.jwt}` : '',
-      'Content-Type': 'application/json'    
-  } })
+  axios.post('queries/digitalhelp/',data)
   
     .then(res => {
       // console.log(res);

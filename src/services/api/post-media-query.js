@@ -7,12 +7,7 @@ import axios from '../axios/axios';
 import headers from '../axios/headers';
 
 const postMediaQuery = (callback, data) => {
-  axios.post('queries/media/',data ,{
-    headers :{
-      'Accept': 'application/json',
-      // 'Authorization': sessionStorage.jwt ? `Token ${sessionStorage.jwt}` : '',
-      'Content-Type': 'application/json'    
-  }} )
+  axios.post('queries/media/',data)
     .then(res => {
       // console.log(res);
       callback(res);
