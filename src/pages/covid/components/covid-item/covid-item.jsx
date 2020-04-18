@@ -13,12 +13,11 @@ const CovidItem = (props) => {
   return (
     <div className="media-item">
       <div className="media-image-container">
-        <img src={props.item.file1} alt="Media" />
+        <img src={props.item.thumbnail} alt="Media" />
       </div>
       <div className="media-details-container">
         <div className="media-title subtitle">
-          {/* <span>{props.item.title}</span> */}
-          <marquee><span>asdsaddsad</span></marquee>
+          <marquee>{props.item.title}</marquee>
         </div>
       </div>
     </div>
