@@ -7,7 +7,7 @@ import axios from '../axios/axios';
 import headers from '../axios/headers';
 
 const postMediaQuery = (callback, data) => {
-  axios.post('queries/media/',data,{
+  axios.post(`queries/media/`,data,{
     headers: {
       'Accept': 'application/json',
   'Content-Type':'application/json'

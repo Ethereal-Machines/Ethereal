@@ -6,7 +6,7 @@
 import axios from '../axios/axios';
 
 const postDistributorQuery = (callback, data) => {
-  axios.post('queries/distributor/',data,{
+  axios.post(`queries/distributor/`,data,{
     headers: {
       'Accept': 'application/json',
   'Content-Type':'application/json'
