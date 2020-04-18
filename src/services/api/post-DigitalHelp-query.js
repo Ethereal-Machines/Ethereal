@@ -9,18 +9,14 @@ import headers from '../axios/headers';
 const DigitalHelp = (callback, data) => {
   axios.post('queries/digitalhelp/',data,{
     headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
+      'Accept': 'application/json',
+  'Content-Type':'application/json'
+
+ }
 })
-  
-    .then(res => {
-      // console.log(res);
-      callback(res);
-    })
-    .catch(err => {
-      callback(err);
-    });
-};
+ .then((res) => {
+     callback(res)
+ }).catch(err => callback(err))
+}
 
 export default DigitalHelp;

@@ -47,7 +47,7 @@ import splitter from './assets/images/splitter.jpeg';
 import ReadMoreAndLess from 'react-read-more-less';
 import CovidVideo from './components/covid-splitter-video-model';
 import logoWhite from '../../assets/images/logo/logo-white.svg';
-import mediaItemNews from '../media/components/media-item/media-item';
+import MediaItem from '../media/components/media-item/media-item';
 
 class Covid extends Component {
   state = {
@@ -222,10 +222,13 @@ class Covid extends Component {
   };
 
   render() {
-    const covid = this.props.designfilesItems.map(item => {
+    const covid = this.props.mediaItems.map(item => {
+      console.log(item);
       return (
         // <LazyLoad height={200} offset={100} placeholder={<ContentLoader />} once key={item.id}>
-        <mediaItemNews />
+        <MediaItem 
+        item={item}
+        />
         // </LazyLoad>
       );
     }
@@ -405,6 +408,7 @@ const mapStateToProps = (state) => {
   return {
     firstRun: state.media.firstRun,
     designfilesItems: state.media.designfilesItems,
+    mediaItems: state.media.mediaItems,
     session: state.login
   };
 };

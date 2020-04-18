@@ -11,6 +11,6 @@ import headers from '../axios/headers';
         callback(res)
     })
     .catch(err => callback(err))
-};
+}
 
 export default postMedia

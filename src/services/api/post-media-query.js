@@ -9,17 +9,14 @@ import headers from '../axios/headers';
 const postMediaQuery = (callback, data) => {
   axios.post('queries/media/',data,{
     headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
+      'Accept': 'application/json',
+  'Content-Type':'application/json'
+
+ }
 })
-    .then(res => {
-      // console.log(res);
-      callback(res);
-    })
-    .catch(err => {
-      callback(err);
-    });
-};
+ .then((res) => {
+     callback(res)
+ }).catch(err => callback(err))
+}
 
 export default postMediaQuery;
