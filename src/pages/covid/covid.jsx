@@ -10,7 +10,8 @@ import * as actionType from '../../store/actions/action-type';
 
 
 // importing the API used for this page
-import getResource from '../../services/api/get-resource';
+// import getResource from '../../services/api/get-resource';
+import getMedia from '../../services/api/get-media';
 import pubUnpubDesignFiles from '../../services/api/designfiles-unpublised'
 import deleteMedia from '../../services/api/resource-delete'
 
@@ -27,8 +28,7 @@ import DocumentMeta from 'react-document-meta';
 import ShowMsg from '../../components/pages-component/showMSG/msg'
 
 import DesignFilesForm from './components/covid-form/covid-form';
-// import CovidItem from './components/covid-item/covid-item';
-import CovidItem from '../media/components/media-item/media-item';
+import CovidItem from './components/covid-item/covid-item';
 
 //video player
 import { Player, ControlBar, BigPlayButton } from 'video-react';
@@ -45,7 +45,6 @@ import doc from './assets/images/Document.svg';
 import faq from './assets/images/faq.jpg';
 import splitter from './assets/images/splitter.jpeg';
 import ReadMoreAndLess from 'react-read-more-less';
-import CovidVideo from './components/covid-splitter-video-model';
 import logoWhite from '../../assets/images/logo/logo-white.svg';
 import MediaItem from '../media/components/media-item/media-item';
 
@@ -72,32 +71,32 @@ class Covid extends Component {
     } else {
       // let data1 = [
       //   {
-      //   "id": 1,
-      //   "title": "Explaining Differential Ventilator Splitter",
-      //   "link": "https://www.facebook.com/AsterBangalore/videos/726789408129961/",
-      //   "is_filesattached": true,
-      //   "is_public": true,
-      //   "file1": "https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/WhatsApp+Image+2020-03-30+at+5.37.57+PM.jpeg",
-      //   "file2": null,
-      //   "file3": null,
-      //   "file4": null,
-      //   "file5": null,
-      //   "description": "Doctors from Aster CMI Hospital in Bangalore and a team from Ethereal Machines demonstrate the prototype ventilator splitter for CoVID19 Surge and explain a few misgivings about utilizing a splitter.",
+      //     "id": 1,
+      //     "title": "Explaining Differential Ventilator Splitter",
+      //     "link": "https://www.facebook.com/AsterBangalore/videos/726789408129961/",
+      //     "is_filesattached": true,
+      //     "is_public": true,
+      //     "file1": "https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/WhatsApp+Image+2020-03-30+at+5.37.57+PM.jpeg",
+      //     "file2": null,
+      //     "file3": null,
+      //     "file4": null,
+      //     "file5": null,
+      //     "description": "Doctors from Aster CMI Hospital in Bangalore and a team from Ethereal Machines demonstrate the prototype ventilator splitter for CoVID19 Surge and explain a few misgivings about utilizing a splitter.",
 
-      // }
+      //   }
       //   , {
-      //   "id": 2,
-      //   "title": "DIFFERENTIAL VENTILATOR SPLITTER",
-      //   "link": "https://drive.google.com/drive/folders/1SOv0lzhADn2JY50EPHhyOzWX_-2xcg6V",
-      //   "is_filesattached": true,
-      //   "is_public": true,
-      //   "file1": "https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/WhatsApp+Image+2020-03-30+at+5.36.39+PM.jpeg",
-      //   "file2": null,
-      //   "file3": null,
-      //   "file4": null,
-      //   "file5": null,
-      //   "description": "Our team has tested a 3D printed ventilator splitter at Aster Hospital, Bangalore. The part splits the supply into a 50-50 ratio. This part aids in splitting the supply of oxygen from one source to two patients. The above design is an upgrade to the existing 2-way splitter that was shared a couple of days ago with the community.Below is a brief explanation of the design and the different components that are a part of it. Please refer to the above image for a better understanding of the part being discussed. There are two 2-way splitters that are connected to the circuit, one on the inspiration side and the other on the expiration side. On the inspiration side we have a ball valve connected to one of the two outputs which is used to control the volume of gas going into the lung connected to that output. This helps us in achieving differential ventilation by restricting the amount of gas flowing into the circuit. A simple splitter is being used in dire circumstances right now in order to ventilate two patients with a 50-50% capacity. Differential ventilation is required in the case that the split ratio between two patients from a splitter has to be 30-70 for example in the case that one patient is healthy and another patient’s condition is deteriorating. Now on the expiration side we have two flow control valves (non-return) connected. It is connected such that it will only let the gases to go out and prevent it from getting back in the circuit. What this does is it prevents the gas from Patient 1’s lungs from going into Patient-2 thus preventing the lungs from getting ventilated because of each other and also it prevents the chances of cross contamination because of gas exchange.",
-      // },
+      //     "id": 2,
+      //     "title": "DIFFERENTIAL VENTILATOR SPLITTER",
+      //     "link": "https://drive.google.com/drive/folders/1SOv0lzhADn2JY50EPHhyOzWX_-2xcg6V",
+      //     "is_filesattached": true,
+      //     "is_public": true,
+      //     "file1": "https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/WhatsApp+Image+2020-03-30+at+5.36.39+PM.jpeg",
+      //     "file2": null,
+      //     "file3": null,
+      //     "file4": null,
+      //     "file5": null,
+      //     "description": "Our team has tested a 3D printed ventilator splitter at Aster Hospital, Bangalore. The part splits the supply into a 50-50 ratio. This part aids in splitting the supply of oxygen from one source to two patients. The above design is an upgrade to the existing 2-way splitter that was shared a couple of days ago with the community.Below is a brief explanation of the design and the different components that are a part of it. Please refer to the above image for a better understanding of the part being discussed. There are two 2-way splitters that are connected to the circuit, one on the inspiration side and the other on the expiration side. On the inspiration side we have a ball valve connected to one of the two outputs which is used to control the volume of gas going into the lung connected to that output. This helps us in achieving differential ventilation by restricting the amount of gas flowing into the circuit. A simple splitter is being used in dire circumstances right now in order to ventilate two patients with a 50-50% capacity. Differential ventilation is required in the case that the split ratio between two patients from a splitter has to be 30-70 for example in the case that one patient is healthy and another patient’s condition is deteriorating. Now on the expiration side we have two flow control valves (non-return) connected. It is connected such that it will only let the gases to go out and prevent it from getting back in the circuit. What this does is it prevents the gas from Patient 1’s lungs from going into Patient-2 thus preventing the lungs from getting ventilated because of each other and also it prevents the chances of cross contamination because of gas exchange.",
+      //   },
       //   {
       //     "id": 1,
       //     "title": "COVID-19 | 3D PRINTING AND CNC SOLUTIONS",
@@ -132,7 +131,7 @@ class Covid extends Component {
      * available items.
     */
     if (this.props.firstRun) {
-      getResource(this.onGetDesignFiles);
+      getMedia(this.onGetDesignFiles);
     }
   }
 
@@ -222,14 +221,14 @@ class Covid extends Component {
   };
 
   render() {
-    const covid = this.props.mediaItems.map(item => {
+    const covid = this.props.designfilesItems.map(item => {
       console.log(item);
       return (
         // <LazyLoad height={200} offset={100} placeholder={<ContentLoader />} once key={item.id}>
-        <MediaItem 
-        item={item}
-        />
-        // </LazyLoad>
+          <CovidItem
+            item={item}
+          />
+       // </LazyLoad>
       );
     }
     );
@@ -278,7 +277,16 @@ class Covid extends Component {
                   closeModal={this.closeModal}
                   updateMedia={this.state.updateMedia}
                 /> */}
-                <CovidVideo />
+                <div className="container" style={{width:"1000px"}}>
+                <Player
+                poster={videoposter}
+                src={video}
+                height="50%"
+              >
+                <BigPlayButton position="center" />
+                <ControlBar autoHide={true} />
+              </Player>
+                </div>
               </Modal>
               : null
           }
@@ -289,8 +297,9 @@ class Covid extends Component {
               <Player
                 poster={videoposter}
                 src={video}
-                autoHide={true}
+                height="50%"
               >
+                <BigPlayButton position="center" />
                 <ControlBar autoHide={true} disableCompletely={true} />
               </Player>
 
@@ -309,14 +318,11 @@ class Covid extends Component {
                 {
                   this.state.loadingContent ?
                     mediaLoader :
-
                     <div>
 
-
                       <div className="flex-row">
-
-                        <div className="media-item" style={{ width: "30%", paddingRight: "30px" }} align="center">
-                          Related News
+                        <div className="media-item" style={{ height:"800px" ,overflow: "scroll",width: "30%", paddingRight: "30px" }} align="center">
+                        Related News <br /><br />
                           {
                             covid
                           }
