@@ -103,12 +103,13 @@ class Careers extends Component {
           formSubmissionStart: false
         });
       } else {
-        const fileErrorMsg = { Resume: ["Max. limit for resume 5 MB"] };
+        // const fileErrorMsg = { Resume: ["Max. limit for resume 5 MB"] };
         const genericErrorMsg = { Error: ["Oops! Something went wrong, please try again."] };
         this.setState({
           ...this.state,
           formValid: false,
-          errorMsg: this.fileSize > 5 ? fileErrorMsg : genericErrorMsg,
+          // errorMsg: this.fileSize > 5 ? fileErrorMsg : genericErrorMsg,
+          errorMsg: genericErrorMsg,
           formSubmissionStart: false
         });
       }

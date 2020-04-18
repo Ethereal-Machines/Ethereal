@@ -3,7 +3,7 @@
  * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
  */
 
-import axios from '../axios/axios';
+import axios from '../axios/axios'
 
 const postDistributorQuery = (callback, data) => {
   axios.post(`queries/distributor/`,data,{
@@ -18,4 +18,4 @@ const postDistributorQuery = (callback, data) => {
  }).catch(err => callback(err))
 }
 
-export default postDistributorQuery;
+export default postDistributorQuery

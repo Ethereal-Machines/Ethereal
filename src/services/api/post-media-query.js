@@ -3,8 +3,7 @@
  * __copyright__ = 'Copyright (C) 2018 Ethereal Machines Pvt. Ltd. All rights reserved'
  */
 
-import axios from '../axios/axios';
-import headers from '../axios/headers';
+import axios from '../axios/axios'
 
 const postMediaQuery = (callback, data) => {
   axios.post(`queries/media/`,data,{
@@ -19,4 +18,4 @@ const postMediaQuery = (callback, data) => {
  }).catch(err => callback(err))
 }
 
-export default postMediaQuery;
+export default postMediaQuery

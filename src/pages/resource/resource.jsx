@@ -244,7 +244,16 @@ class Resource extends Component {
             <SectionHeading name={"Resource"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Share your resource"} />
 
             <div className="container">
-              <ResourceForm onInputChange={this.onInputChange} onSubmitHandler={this.onSubmitHandler} formSubmissionStart={this.state.formSubmissionStart} errorMsg={this.state.errorMsg} natureOfQuery={this.natureOfQuery} isStateRequired={this.isStateRequired} showLoader={this.state.formSubmissionStart} addFile= {this.addFile} counter = {Resource.counter} />
+              <ResourceForm 
+              onInputChange={this.onInputChange} 
+              onSubmitHandler={this.onSubmitHandler} 
+              formSubmissionStart={this.state.formSubmissionStart} 
+              errorMsg={this.state.errorMsg} 
+              natureOfQuery={this.natureOfQuery} 
+              isStateRequired={this.isStateRequired} 
+              showLoader={this.state.formSubmissionStart} 
+              addFile= {this.addFile} 
+              counter = {Resource.counter} />
             </div>
             <Footer />
           </section>

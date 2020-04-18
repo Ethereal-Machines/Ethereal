@@ -1,17 +1,18 @@
 
-import axios from '../axios/axios';
 
-const postJobEnquiry = (callback,data) => {
-  axios.post(`careers/enquiries/`,data,{
-    headers: {
-      'Accept': 'application/json',
-  'Content-Type':'application/json'
+import axios from '../axios/axios'
 
- }
-})
- .then((res) => {
-     callback(res)
- }).catch(err => callback(err))
+const postJobEnquiry = (callback, data) => {
+  axios.post(`/resources/`, data, {
+      headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+
+      }
+  })
+      .then((res) => {
+          callback(res)
+      }).catch(err => callback(err))
 }
 
-export default postJobEnquiry;
+export default postJobEnquiry
