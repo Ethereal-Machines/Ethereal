@@ -54,6 +54,9 @@ class Footer extends Component{
                   <NavLink to="/media">Media</NavLink>
                 </li>
                 <li className="link-item">
+                  <NavLink to="/covid">Covid-19 efforts</NavLink>
+                </li>
+                <li className="link-item">
                   <NavLink to="/blogs">Blogs</NavLink>
                 </li>
                 <li className="link-item">
