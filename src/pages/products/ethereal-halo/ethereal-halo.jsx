@@ -18,6 +18,8 @@ import ContactUs from '../components/contact-us/contact-us';
 import Modal from '../../../components/ui/modal/modal';
 
 import halo from '../assets/images/halo.png';
+import HaloBrouchure from './assets/images/features-images/HaloBrochure.pdf';
+import HaloApplication from './assets/images/features-images/HaloApplications.pdf';
 // import haloMedium from '../assets/images/halo--medium.png';
 // import haloLarge from '../assets/images/halo--larger.png';
 
@@ -140,9 +142,9 @@ class EtherealHalo extends Component {
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
                 <span>Download</span>
                 <br></br>
-                <a href="https://etherealmachines.com/static/media/Halo-Brochure.pdf" className="display-inline hover-changeto-black">Brochure</a>
+                <a target="_blank" href={HaloBrouchure} className="display-inline hover-changeto-black">Brochure</a>
                 <span className="display-inline"> | </span>
-                <a href="https://etherealmachines.com/static/media/Halo-Applications.pdf" className="display-inline hover-changeto-black">Application Examples</a>
+                <a target="_blank" href={HaloApplication} className="display-inline hover-changeto-black">Application Examples</a>
               </div>
             </div>
           </section>

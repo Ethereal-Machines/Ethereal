@@ -17,6 +17,7 @@ import ProductFeatures from '../components/product-features/product-features';
 import ContactUs from '../components/contact-us/contact-us';
 
 import pentagram from '../assets/images/images-no-padding/pentagram.png';
+import penta from './assets/images/features-images/PentaBrochure.pdf';
 // import pentaLarge from '../assets/images/pentagram--large.jpg';
 // import pentaMedium from '../assets/images/pentagram--medium.png';
 // import pentaLarger from '../assets/images/pentagram-first-frame-2.jpg';
@@ -72,7 +73,7 @@ class EtherealPentagram extends Component {
           <br></br>
             <div className="container">
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
-                <a href="https://etherealmachines.com/static/media/Penta-Brochure.pdf" className="display-inline hover-changeto-black">Download Brochure</a>
+                <a target="_blank" href={penta} className="display-inline hover-changeto-black">Download Brochure</a>
               </div>
             </div>
         </section>

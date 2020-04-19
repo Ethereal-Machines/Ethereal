@@ -18,6 +18,7 @@ import ContactUs from '../components/contact-us/contact-us';
 
 // import ray from '../assets/images/ray.jpg';
 import ray from '../assets/images/ray.png';
+import raybrochure from './assets/images/features-images/RayBrochure.pdf';
 
 import etherealRayData from './ethereal-ray-data';
 import Header from '../../../components/layout/header/header';
@@ -72,8 +73,8 @@ class EtherealRay extends Component {
           <br></br>
           <div className="container">
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
-                <a href="https://etherealmachines.com/static/media/Ray-Brochure.pdf" className="display-inline hover-changeto-black">Download Brochure</a>
-              </div>
+                <a target="_blank" href={raybrochure} className="display-inline hover-changeto-black">Download Brochure</a>
+              </div >
             </div>
         </section>
         <ProductFeatures features={etherealRayData.features} />
