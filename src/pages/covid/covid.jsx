@@ -272,21 +272,14 @@ class Covid extends Component {
             this.state.updateMedia || this.state.createMedia
               ?
               <Modal show={this.state.showModal} clicked={this.closeModal} >
-                {/* <DesignFilesForm
-                  mediaId={this.state.mediaId}
-                  closeModal={this.closeModal}
-                  updateMedia={this.state.updateMedia}
-                /> */}
-                <div className="container" style={{ width: "1000px" }}>
-                  <Player
-                    poster={videoposter}
-                    src={video}
-                    height="50%"
-                  >
-                    <BigPlayButton position="center" />
-                    <ControlBar autoHide={true} />
-                  </Player>
-                </div>
+                <iframe 
+                width="853" 
+                height="480" 
+                src="https://www.youtube.com/embed/KhDqTs5k9Mk" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                >
+                </iframe>
               </Modal>
               : null
           }
