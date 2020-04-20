@@ -16,9 +16,7 @@ const CovidItem = (props) => {
         <img src={props.item.thumbnail} alt="Media" />
       </div>
       <div className="media-details-container">
-        <div className="media-title subtitle">
-          <marquee>{props.item.title}</marquee>
-        </div>
+      {props.item.title}
       </div>
     </div>
   );

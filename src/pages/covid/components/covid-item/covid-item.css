@@ -44,7 +44,7 @@
 }
 
 .media-image-container img {
-  width: 50%;
+  width: 100%;
   height: 50%;
   display: block;
   object-fit: contain;
@@ -153,10 +153,6 @@
   padding-bottom: .8rem;
 }
 
-.cont{
-  padding-right:80px;
- }
-
  .image{
   width: 50%;
 }
@@ -193,7 +189,8 @@
   }
 
   .media-image-container img {
-    width: 30rem;
+    width: 100%;
+    min-width: 30rem;
     height: 20rem;
   }
 
