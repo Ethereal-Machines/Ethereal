@@ -142,7 +142,7 @@ class EtherealHalo extends Component {
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
                 <span>Download</span>
                 <br></br>
-                <a target="_blank" href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/produts/Ray+Brochure.pdf" className="display-inline hover-changeto-black">Brochure</a>
+                <a target="_blank" href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Brochure.pdf" className="display-inline hover-changeto-black">Brochure</a>
                 <span className="display-inline"> | </span>
                 <a target="_blank" href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Applications.pdf" className="display-inline hover-changeto-black">Application Examples</a>
               </div>
