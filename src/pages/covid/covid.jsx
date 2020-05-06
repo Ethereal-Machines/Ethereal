@@ -283,7 +283,7 @@ class Covid extends Component {
               </Modal>
               : null
           }
-          <PageBanner heading={"Ethereal Machines in Covid -19 Efforts"} classValue={'page-banner--media'} />
+          <PageBanner heading={"Ethereal Machines Covid -19 Efforts"} classValue={'page-banner--media'}/>
           <section className="section section--media">
             <div className="container imgbanner">
 
