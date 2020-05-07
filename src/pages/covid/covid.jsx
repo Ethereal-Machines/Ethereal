@@ -43,6 +43,7 @@ import Footer from '../../components/layout/footer/footer';
 
 import doc from './assets/images/Document.svg';
 import faq from './assets/images/faq.jpg';
+import pdf from './assets/images/pdf.png';
 import splitter from './assets/images/splitter.jpeg';
 import ReadMoreAndLess from 'react-read-more-less';
 import logoWhite from '../../assets/images/logo/logo-white.svg';
@@ -328,12 +329,13 @@ class Covid extends Component {
                             <div className="cont">
 
                             <ul>
-                              <li> <a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/AMAYA+BRIEF.pdf" className="button">Amaya Brief</a></li>
-                              <li> <a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/AMAYA+SPEC.pdf" className="button">Amaya Spec</a></li>
-                              <li> <a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/Amaya+Splitter+-+Usage+instructions.pdf" className="button">Amaya Usage, Instruction</a></li>
+                              <li className="flex-row"> <img style={{ width: "50px" }} src={pdf} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/AMAYA+BRIEF.pdf">Amaya Brief</a></li>
+                              <li className="flex-row"> <img style={{ width: "50px" }} src={pdf} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/AMAYA+SPEC.pdf">Amaya Spec</a></li>
+                              <li className="flex-row"> <img style={{ width: "50px" }} src={pdf} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/Amaya+Splitter+-+Usage+instructions.pdf">Amaya Splitter - Usage Instructions</a></li>
                               <br />
-                              <li> <a target="_blank" style={{ textAlign: "left" }} href="https://forms.gle/wr6wpMXzrXrZjvdS7" className="button">Kindly fill this form</a></li>
-                              <li> <a className="button" style={{ textAlign: "left" }} onClick={() => this.onUpdate()}>VIDEO LINK</a></li>
+                              <li className="flex-row"> <img style={{ width: "50px" }} src={doc} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://forms.gle/wr6wpMXzrXrZjvdS7" >Kindly fill this form <br /> to receive Free Amaya Splitters</a></li>
+                              <br />
+                              <li className="flex-row"> <img style={{ width: "50px" }} src={faq} alt="Media" /><a className="button" style={{ textAlign: "left" }} onClick={() => this.onUpdate()}>VIDEO LINK</a></li>
                             </ul>
                               {/* <div className="flex-row" >
                                 <img style={{ width: "50px" }} src={doc} alt="Media" />
