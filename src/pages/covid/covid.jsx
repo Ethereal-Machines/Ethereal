@@ -329,13 +329,15 @@ class Covid extends Component {
                             <div className="cont">
 
                             <ul>
-                              <li className="flex-row"> <img style={{ width: "50px" }} src={pdf} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/AMAYA+BRIEF.pdf">Amaya Brief</a></li>
-                              <li className="flex-row"> <img style={{ width: "50px" }} src={pdf} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/AMAYA+SPEC.pdf">Amaya Spec</a></li>
-                              <li className="flex-row"> <img style={{ width: "50px" }} src={pdf} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/Amaya+Splitter+-+Usage+instructions.pdf">Amaya Splitter - Usage Instructions</a></li>
+                              <li className="flex-row" style={{ padding:10 }} > <img style={{ width: "40px" }} src={pdf} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/AMAYA+BRIEF.pdf">Amaya - Technical Brief</a></li>
+                              
+                              <li className="flex-row" style={{ padding:10 }} > <img style={{ width: "40px" }} src={pdf} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/AMAYA+SPEC.pdf">Amaya - Technical Specifications</a></li>
+                              
+                              <li className="flex-row" style={{ padding:10 }} > <img style={{ width: "40px" }} src={pdf} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/COVID-19/Amaya+Splitter+-+Usage+instructions.pdf">Amaya Splitter - Usage Instructions</a></li>
                               <br />
-                              <li className="flex-row"> <img style={{ width: "50px" }} src={doc} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://forms.gle/wr6wpMXzrXrZjvdS7" >Kindly fill this form <br /> to receive Free Amaya Splitters</a></li>
-                              <br />
-                              <li className="flex-row"> <img style={{ width: "50px" }} src={faq} alt="Media" /><a className="button" style={{ textAlign: "left" }} onClick={() => this.onUpdate()}>VIDEO LINK</a></li>
+                              <li className="flex-row"style={{ padding:10 }}> <img style={{ width: "50px" }} src={doc} alt="Media" /><a target="_blank" style={{ textAlign: "left" }} href="https://forms.gle/wr6wpMXzrXrZjvdS7" >Kindly fill this form <br /> to receive Free Amaya Splitters</a></li>
+          
+                              <li className="flex-row"style={{ padding:10 }}> <img style={{ width: "50px" }} src={faq} alt="Media" /><a className="button" style={{ textAlign: "left" }} onClick={() => this.onUpdate()}>VIDEO LINK</a></li>
                             </ul>
                               {/* <div className="flex-row" >
                                 <img style={{ width: "50px" }} src={doc} alt="Media" />

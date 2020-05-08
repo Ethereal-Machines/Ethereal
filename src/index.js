@@ -20,7 +20,7 @@ import './index.css';
 import rootReducer from './store/reducer'
 import registerServiceWorker from './registerServiceWorker';
 
-console.log("-----------------------Changes By Shreyas kannur 100% tested-----------------------");
+console.log("-----------------------Changes By MediaCannibal: Shreyas kannur (Test 36)-----------------------");
 
 // Adding the Redux Dev Tool setup
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
