@@ -58,7 +58,7 @@ class About extends Component {
       meta: {
         property: {
           'title': 'About Us | Ethereal Machines | Bangalore, India',
-           'description': 'Ethereal Machines – Manufacturers of 5-axis CNC Machines and 3D Printers.',
+           'description': 'Ethereal Machines – Bringing deep-tech expertise to every engineer across the world.',
           }
       }
     };
