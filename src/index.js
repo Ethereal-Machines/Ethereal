@@ -20,7 +20,7 @@ import './index.css';
 import rootReducer from './store/reducer'
 import registerServiceWorker from './registerServiceWorker';
 
-console.log("-----------------------Changes By MediaCannibal: Shreyas kannur (Test 37)-----------------------");
+console.log("-----------------------Changes By MediaCannibal: Shreyas kannur (google search changed to 'Ethereal Machines – Bringing deep-tech expertise to every engineer across the world.')-----------------------");
 
 // Adding the Redux Dev Tool setup
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
