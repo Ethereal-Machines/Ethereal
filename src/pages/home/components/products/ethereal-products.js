@@ -8,14 +8,14 @@ import halo from './assets/images/halo.png';
 import pentagram from './assets/images/pentagram.png';
 
 const etherealProducts = [
-  {
-    id: 1,
-    url: '/products/ray',
-    name: 'Ethereal Ray',
-    imgUrl: ray,
-    width: '250',
-    description: 'Smart Dual Extruder 3D Printer'
-  },
+  // {
+  //   id: 1,
+  //   url: '/products/ray',
+  //   name: 'Ethereal Ray',
+  //   imgUrl: ray,
+  //   width: '250',
+  //   description: 'Smart Dual Extruder 3D Printer'
+  // },
   {
     id: 2,
     url: '/products/halo',

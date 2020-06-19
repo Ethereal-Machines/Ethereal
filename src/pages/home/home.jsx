@@ -35,7 +35,7 @@ class Home extends Component {
           <div className="container">
             <div className="detail-text">
               <p>Ethereal Machines is a leading manufacturer of 5-axis CNC Machines and 3D Printers in India, based out of Bangalore. Our flagship product the Ethereal Halo, combines the technologies of subtractive and additive manufacturing into one bundle to replicate the capabilities of a large factory on a desktop scale.</p>
-              <p>Our other products are Ethereal Ray, Ethereal pentagram and Ethereal 3D Concrete Printer.</p>
+              <p>Our other products are Ethereal pentagram and Ethereal 3D Concrete Printer.</p>
             </div>
           </div>
         </section>

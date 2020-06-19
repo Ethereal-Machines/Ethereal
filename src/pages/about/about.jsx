@@ -68,7 +68,7 @@ class About extends Component {
         <Header />
         {/* <Helmet>
         <title>About Us | Ethereal Machines | Bangalore, India</title>
-        <meta name="description" content="Ethereal Machines – Bringing deep-tech expertise to every engineer across the world."/>
+        <meta name="description" content="Ethereal Machines – Bringing deep-tech expertise to every engineer across the world..."/>
         </Helmet> */}
         <DocumentMeta {...meta} />
 

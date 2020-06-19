@@ -19,10 +19,10 @@ const navList = (props) => {
       {/* <NavItem linkType={'text'} navLink={true} address={'/home'} name={'Home'} {...props}/> */}
       <NavItem linkType={'text'} navLink={false} address={'#product-sub-list'} name={'Products'} showActive={currentPath.includes('products')}>
         <SubList id={'product-sub-list'}>
-          <SubListItem url={ray} width={70} height={70} hasImage link={'/products/ray'} {...props}>
+          {/* <SubListItem url={ray} width={70} height={70} hasImage link={'/products/ray'} {...props}>
             <span className="subtitle">Ray</span>
             <div className="caption">Smart Dual Extruder 3D Printer</div>
-          </SubListItem>
+          </SubListItem> */}
           <SubListItem url={halo} width={70} height={70} hasImage link={'/products/halo'} {...props}>
             <span className="subtitle">Halo</span>
             <div className="caption">Hybrid 5-axis CNC Machine and 3D Printer</div>

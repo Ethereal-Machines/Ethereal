@@ -70,9 +70,9 @@ class Footer extends Component{
             <div className="footer-col-divider" content="product-items">
               <div className="footer-title">Products</div>
               <ul className="links-list">
-                <li className="link-item">
+                {/* <li className="link-item">
                   <NavLink to='/products/ray'>Ray</NavLink>
-                </li>
+                </li> */}
                 <li className="link-item">
                   <NavLink to='/products/halo'>Halo</NavLink>
                 </li>

@@ -112,7 +112,7 @@ class Dashboard extends Component {
                                             title={<span style={{ color: '#0c3ff7' }}>Total ({haloCount + rayCount + pentagramCount + haloSold + raySold + pentagramSold})</span>}
                                             key="0-0-0-0"
                                         />
-                                        <TreeNode icon={<img className="ray-icon" alt="" />} title={`Ray (${rayCount + raySold})`} key="0-0-0-1" />
+                                        {/* <TreeNode icon={<img className="ray-icon" alt="" />} title={`Ray (${rayCount + raySold})`} key="0-0-0-1" /> */}
                                         <TreeNode icon={<img className="halo-icon" alt="" />} title={`Halo (${haloCount + haloSold})`} key="0-0-0-2" />
                                         <TreeNode icon={<img className="pentagram-icon" alt="" />} title={`Pentagram (${pentagramCount + pentagramSold})`} key="0-0-0-3" />
                                     </TreeNode>
