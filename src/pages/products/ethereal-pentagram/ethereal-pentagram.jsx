@@ -73,7 +73,7 @@ class EtherealPentagram extends Component {
           <br></br>
             <div className="container">
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
-                <a target="_blank" href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/produts/Penta+Brochure.pdf" className="display-inline hover-changeto-black">Download Brochure</a>
+                <a target="_blank" href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Penta+Brochure.pdf" className="display-inline hover-changeto-black">Download Brochure</a>
               </div>
             </div>
         </section>

@@ -57,7 +57,7 @@ class EtherealConcrete extends Component {
                 </div>
               </div>
               <div className="product-img flex-column">
-                <img src="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/concretepage/WhatsApp+Image+2020-04-04+at+1.52.53+PM+(1).jpeg" alt="Ethereal Concrete 3D Printer" className="product-topimg-right-column"/>
+                <img src="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/concretepage/WhatsApp+Image+2020-04-04+at+1.52.53+PM+(1).jpeg" alt="Ethereal Concrete 3D Printer" className="product-topimg-right-column"/>
               </div>
             </div>
           </div>
@@ -65,8 +65,8 @@ class EtherealConcrete extends Component {
         <section className="section section-no-top-padding">
           <div className="container">
             <div className="secondary-img-container three-col-layout">
-              <img src="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/concretepage/WhatsApp+Image+2020-04-04+at+1.52.52+PM.jpeg" alt="Ethereal Concrete 3D printer" width="400"/>
-              <img src="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/concretepage/WhatsApp+Image+2020-04-04+at+1.52.52+PM+(1).jpeg" alt="Ethereal Concrete 3D printer" width="400"/>
+              <img src="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/concretepage/WhatsApp+Image+2020-04-04+at+1.52.52+PM.jpeg" alt="Ethereal Concrete 3D printer" width="400"/>
+              <img src="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/concretepage/WhatsApp+Image+2020-04-04+at+1.52.52+PM+(1).jpeg" alt="Ethereal Concrete 3D printer" width="400"/>
             </div>
           </div>
         </section>

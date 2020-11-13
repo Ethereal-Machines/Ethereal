@@ -142,9 +142,9 @@ class EtherealHalo extends Component {
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
                 <span>Download</span>
                 <br></br>
-                <a target="_blank" href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Brochure.pdf" className="display-inline hover-changeto-black">Brochure</a>
+                <a target="_blank" href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Brochure.pdf" className="display-inline hover-changeto-black">Brochure</a>
                 <span className="display-inline"> | </span>
-                <a target="_blank" href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Applications.pdf" className="display-inline hover-changeto-black">Application Examples</a>
+                <a target="_blank" href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Applications.pdf" className="display-inline hover-changeto-black">Application Examples</a>
               </div>
             </div>
           </section>
@@ -163,7 +163,7 @@ class EtherealHalo extends Component {
           <section className="section-no-top-padding">
             <div className="container">
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
-                <a href="https://ethereal-website.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Technical+Details.docx" className="display-inherit hover-changeto-black">Download Detailed Technical Specifications Document</a>
+                <a href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Technical+Details.docx" className="display-inherit hover-changeto-black">Download Detailed Technical Specifications Document</a>
               </div>
           </div>
           </section>
