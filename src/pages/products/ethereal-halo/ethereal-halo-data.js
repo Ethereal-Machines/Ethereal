@@ -16,50 +16,38 @@ const etherealHalo = {
   features: [
     {
       id: 1,
-      title: 'Additive + Subtractive Manufacturing',
-      description: 'Freedom to switch between the two processes at any point.',
-      imgUrl: additive_subtractive
-    },
-    {
-      id: 2,
-      title: 'Desktop Size',
+      title: 'Compact Size',
       description: 'Designed and engineered to occupy minimal floor space.',
       imgUrl: desktop_size
     },
     {
-      id: 3,
+      id: 2,
       title: '5-Axis Simultaneous Kinematics',
       description: 'Simultaneous 5-axis movement to help reduce machining time.',
       imgUrl: five_axis_simultaneous
     },
     {
-      id: 4,
+      id: 3,
       title: 'High Accuracy Drive Mechanism',
       description: 'Achieved through utilization of highly accurately calibrated ball screws and linear guide rails.',
       imgUrl: high_accuracy_drive_mechanism
     },
     {
-      id: 5,
-      title: 'Dedicated PC-Based Controller',
+      id: 4,
+      title: 'PC-Based Controller',
       description: ' Real time monitoring and control of the machining/printing job in the progress.',
       imgUrl: dedicated_pc_based_controller
     },
     {
-      id: 6,
-      title: 'Advanced Nozzle Design',
-      description: 'Ensures zero clogging and smooth filament deposition.',
-      imgUrl: advanced_nozzle_design
-    },
-    {
-      id: 7,
+      id: 5,
       title: 'Multiple Material Support',
-      description: 'Flexibility to use numerous materials to mill or 3D print.',
+      description: 'Flexibility to machine numerous Non-ferrous materials &amp; Plastic materials.',
       imgUrl: multiple_material_support
     },
     {
-      id: 8,
+      id: 6,
       title: 'Automatic Tool Changer',
-      description: 'Permits employment of various tools to machine a spectrum of materials.',
+      description: 'Carrousel type ATC function that features a 12 pieces tool magazine.',
       imgUrl: multiple_tool_support
     },
   ],
@@ -112,7 +100,7 @@ const etherealHalo = {
     {
       id: 10,
       title: 'Spindle',
-      description: '800W, AC motor, ER-11 tool holder'
+      description: 'Max Rating 2.2 kW, Max Speed 30,000 rpm, Tool Changer Carousel type, Capacity 12 Tools, Taper ISO 20'
     },
     {
       id: 11,
@@ -133,6 +121,21 @@ const etherealHalo = {
       id: 14,
       title: 'Power Requirement',
       description: '110-240 VAC, 2.5 kW'
+    },
+    {
+      id: 15,
+      title: 'TABLE SIZE',
+      description: 'ø230mm'
+    },
+    {
+      id: 16,
+      title: 'Travel',
+      description: '220 x 365 x 260 mm, A AXIS -30 deg to +110 deg x C AXIS 360 deg'
+    },
+    {
+      id: 17,
+      title: 'Footprint (in meters)',
+      description: 'L*W*H 2 X 1.4 X 2.4, Weight 3500 Kgs'
     },
   ]
 };

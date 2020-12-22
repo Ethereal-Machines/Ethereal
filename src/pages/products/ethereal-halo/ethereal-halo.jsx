@@ -17,7 +17,7 @@ import ProductTechSpecs from '../components/product-tech-specs/product-tech-spec
 import ContactUs from '../components/contact-us/contact-us';
 import Modal from '../../../components/ui/modal/modal';
 
-import halo from '../assets/images/haloimage-1.png';
+import halo from '../assets/images/halo2020croped.png';
 import HaloBrouchure from './assets/images/features-images/HaloBrochure.pdf';
 import HaloApplication from './assets/images/features-images/HaloApplications.pdf';
 // import haloMedium from '../assets/images/halo--medium.png';
@@ -69,10 +69,10 @@ class EtherealHalo extends Component {
 
 
     const meta = {
-      title: 'Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.',
+      title: 'Ethereal Halo - Compact Simultaneous 5- Axis CNC Machine.',
       meta: {
         property: {
-          'title': 'Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.',
+          'title': 'Ethereal Halo - Compact Simultaneous 5- Axis CNC Machine.',
           'description': 'Ethereal Halo is the world’s first consumer-oriented simultaneous 5-axis CNC Machine and 5-axis 3D Printer.',
         }
       }
@@ -114,7 +114,7 @@ class EtherealHalo extends Component {
                   </div>
                 </div>
                 <div className="product-img flex-column">
-                  <img src={halo} alt="Product" width="464" height="358" />
+                  <img src={halo} alt="Product"  style={{marginTop:-50,width:"158", height:"158", objectFit:"contain"}} />
                 </div>
               </div>
             </div>
@@ -154,9 +154,6 @@ class EtherealHalo extends Component {
               {/* <div className="section-heading u-text-center u-text-gold">
                 <span>Save Money with 5 Axis Machining</span>
               </div> */}
-              <div className="detail-text u-text-white">
-                <p>The term “5-axis” refers to a machine’s ability to move a tool or a part in five different axes simultaneously. On a 5-axis machining centre, the tool moves across the X, Y, and Z linear axes and rotates on the A and B axes simultaneously to approach the work piece from any direction. In other words, you will be able to process a part from 5 directions in a single setup.</p>
-              </div>
             </div>
           </section>
           <ProductTechSpecs techSpecs={etherealHaloData.techSpecs} product={'halo'} />

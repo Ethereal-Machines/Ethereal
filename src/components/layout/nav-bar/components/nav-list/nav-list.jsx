@@ -6,9 +6,9 @@ import './nav-list.css';
 import NavItem from './components/nav-item/nav-item';
 import SubList from './components/sub-list/sub-list';
 import SubListItem from './components/sub-list/sub-list-item/sub-list-item';
-import halo from '../../assets/images/halo-wireframe.svg';
+import halo from '../../assets/images/Asset 1500.png';
 import ray from '../../assets/images/ray-wireframe.svg';
-import pentagram from '../../assets/images/pentagram-wireframe.svg';
+import pentagram from '../../assets/images/Asset 2500.png';
 import concrete from '../../assets/images/concrete-wireframe.svg';
 
 const navList = (props) => {
@@ -23,13 +23,13 @@ const navList = (props) => {
             <span className="subtitle">Ray</span>
             <div className="caption">Smart Dual Extruder 3D Printer</div>
           </SubListItem> */}
-          <SubListItem url={halo} width={70} height={70} hasImage link={'/products/halo'} {...props}>
+          <SubListItem url={halo} width={70} height={100} hasImage link={'/products/halo'} {...props}>
             <span className="subtitle">Halo</span>
-            <div className="caption">Hybrid 5-axis CNC Machine and 3D Printer</div>
+            <div className="caption">Compact Simultaneous 5- Axis CNC Machine</div>
           </SubListItem>
-          <SubListItem url={pentagram} width={70} height={70} hasImage link={'/products/pentagram'} {...props}>
+          <SubListItem url={pentagram} width={70} height={100} hasImage link={'/products/pentagram'} {...props}>
             <span className="subtitle">Pentagram</span>
-            <div className="caption">Desktop Simultaneous 5-axis CNC Machine</div>
+            <div className="caption">Simultaneous 5- Axis CNC Machine</div>
           </SubListItem>
           <SubListItem url={concrete} width={70} height={70} hasImage link={'/products/concrete'} {...props}>
             <span className="subtitle">Concrete 3D Printer</span>

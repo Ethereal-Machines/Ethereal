@@ -4,8 +4,8 @@
  */
 
 import ray from './assets/images/ray.png';
-import halo from './assets/images/halo.png';
-import pentagram from './assets/images/pentagram.png';
+import halo from './assets/images/Halo image-2.png';
+import pentagram from './assets/images/pentagram image.png';
 
 const etherealProducts = [
   // {
@@ -22,7 +22,7 @@ const etherealProducts = [
     name: 'Ethereal Halo',
     imgUrl: halo,
     width: '300',
-    description: 'Hybrid 5-Axis CNC Machine and 3D Printer'
+    description: 'Compact Simultaneous 5-Axis CNC Machine'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const etherealProducts = [
     name: 'Ethereal Pentagram',
     imgUrl: pentagram,
     width: '300',
-    description: 'Desktop Simultaneous 5-Axis CNC Machine'
+    description: 'Simultaneous 5-Axis CNC Machine'
   }
 ];
 
