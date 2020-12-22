@@ -25,13 +25,13 @@
   background-image: linear-gradient(to left, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url('./assets/images/media-banner.jpg');
 }
 .page-banner--halo {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./assets/images/halo_banner.png');
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./assets/images/HaloBanner(2).png');
 }
 .page-banner--ray {
   background-image: linear-gradient(to left, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('./assets/images/ray_banner.png');
 }
 .page-banner--pentagram {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/pentagram_banner.jpg');
+  background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/PentagramBanner.png');
 }
 .page-banner--concrete {
   background-image: linear-gradient(to left, rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('./assets/images/concrete_banner.png');

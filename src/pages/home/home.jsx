@@ -34,8 +34,8 @@ class Home extends Component {
         <section className="company-brief">
           <div className="container">
             <div className="detail-text">
-              <p>Ethereal Machines is a leading manufacturer of 5-axis CNC Machines and 3D Printers in India, based out of Bangalore. Our flagship product the Ethereal Halo, combines the technologies of subtractive and additive manufacturing into one bundle to replicate the capabilities of a large factory on a desktop scale.</p>
-              <p>Our other products are Ethereal pentagram and Ethereal 3D Concrete Printer.</p>
+              <p>Ethereal Machines is a leading manufacturer of 5-axis CNC Machines in India, based out of Bangalore. Our flagship product Ethereal Halo(Simultaneous 5-axis CNC Machine) is simple, affordable, and accessible to everyone.</p>
+              <p>Our other products are the Ethereal pentagram and Ethereal 3D Concrete Printer.</p>
             </div>
           </div>
         </section>

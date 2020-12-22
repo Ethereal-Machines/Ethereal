@@ -17,7 +17,7 @@ import ProductTechSpecs from '../components/product-tech-specs/product-tech-spec
 import ContactUs from '../components/contact-us/contact-us';
 import Modal from '../../../components/ui/modal/modal';
 
-import halo from '../assets/images/halo.png';
+import halo from '../assets/images/haloimage-1.png';
 import HaloBrouchure from './assets/images/features-images/HaloBrochure.pdf';
 import HaloApplication from './assets/images/features-images/HaloApplications.pdf';
 // import haloMedium from '../assets/images/halo--medium.png';
@@ -61,20 +61,20 @@ class EtherealHalo extends Component {
   }
 
   componentDidMount() {
-    
+
     window.scrollTo(0, 0);
   }
 
   render() {
 
-    
+
     const meta = {
       title: 'Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.',
       meta: {
         property: {
           'title': 'Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.',
-           'description':  'Ethereal Halo is the world’s first consumer-oriented simultaneous 5-axis CNC Machine and 5-axis 3D Printer.',
-          }
+          'description': 'Ethereal Halo is the world’s first consumer-oriented simultaneous 5-axis CNC Machine and 5-axis 3D Printer.',
+        }
       }
     };
     return (
@@ -91,37 +91,37 @@ class EtherealHalo extends Component {
           </iframe>
         </Modal>
         <div className="page page--ethereal-halo">
-        
 
 
-        <DocumentMeta {...meta} />
 
-        {/* <Helmet>
+          <DocumentMeta {...meta} />
+
+          {/* <Helmet>
         <title>Ethereal Halo – The Dawn of Manufacturing | Hybrid 5-axis CNC machine and 3D printer.</title>
         <meta name="description" content="Ethereal Halo is the world’s first consumer-oriented simultaneous 5-axis CNC Machine and 5-axis 3D Printer."/>
         </Helmet> */}
-          <PageBanner heading={'The Ethereal Halo'} subHeading={'The Dawn of Hybrid Manufacturing'} classValue={'page-banner--halo'}>
+          <PageBanner heading={'The Ethereal HALO – ATC'} subHeading={'Compact Simultaneous 5 axis CNC Machine'} classValue={'page-banner--halo'}>
             <div className="btn btn--golden btn--transparent btn--center-aligned u-text-center" onClick={this.showModal}>Watch Video</div>
           </PageBanner>
           <section className="section section--about-product">
             <div className="container">
               <div className="col-12-grid">
                 <div className="product-details">
-                  <SectionHeading name={"About Ethereal Halo"} classValue={"u-margin-bottom-small u-text-left"}/>
+                  <SectionHeading name={"About Ethereal Halo"} classValue={"u-margin-bottom-small u-text-left"} />
                   <div className="detail-text">
-                    <p>Ethereal Machines brings about a metamorphosis to the world of manufacturing and kicks off the concept of Hybrid Manufacturing. A synergistic combination of CNC machining and advanced 3D printing that allows the user to design and make parts that are challenging to produce by conventional methods of manufacturing.</p>
-                    <p>Ethereal Halo is the world 's first consumer-oriented 5-axis CNC Machine and 3D Printer that combines both the technologies of subtractive manufacturing and additive manufacturing, with a high degree of accuracy. This hybrid desktop machine can equip a whole range of creators ranging from a specialist to full-fledged industries, with brisk prototyping and manufacturing capabilities. The technology helps reduce the high cost and risks from setting up multiple set-ups with respect to 5-axis machining. Ethereal Machines offers a 5-axis 3D Printer and CNC Machine with revolutionary 5-axis technology giving you the ability to machine complex shapes efficiently in a single affordable set-up.</p>
+                    <p>Introducing our next generation Ethereal HALO (Simultaneous 5 axis CNC machine) with a Carousel type ATC function that features a 12 pieces tool magazine with a 2.2 kW high-speed spindle. This compact machine is pocket friendly and easy to use while maintaining industrial level accuracies. HALO is ideal for MSMEs &amp;amp; SMBs who are looking to upgrade their capability from 3-axis and 4-axis to 5-axis operations that include both indexing and simultaneous functionalities.</p>
+                    <p>HALO provides opportunities for a wide range of applications from light to heavy-duty manufacturing for automobile &amp; aerospace components, moulds, tool &amp; die, dental crown/bridge, machining wax, electrode, cutting precision parts, etc.</p>
                   </div>
                 </div>
                 <div className="product-img flex-column">
-                  <img src={halo} alt="Product" width="464" height="358"/>
+                  <img src={halo} alt="Product" width="464" height="358" />
                 </div>
               </div>
             </div>
             <br></br>
             <div className="container">
               <div className="product-title subtitle u-margin-bottom-small">
-                <span>What is 5 axis machining?</span>
+                <span>WHAT IS 5 AXIS MACHINING?</span>
               </div>
               <div className="detail-text">
                 <p>The term “5-axis” refers to a machine’s ability to move a tool or a part in five different axes simultaneously. On a 5-axis machining centre, the tool moves across the X, Y, and Z linear axes and rotates on the A and B axes simultaneously to approach the work piece from any direction. In other words, you will be able to process a part from 5 directions in a single setup.</p>
@@ -130,7 +130,7 @@ class EtherealHalo extends Component {
             <br></br>
             <div className="container">
               <div className="product-title subtitle u-margin-bottom-small">
-                <span>Why choose Ethereal Halo?</span>
+                <span>WHY CHOOSE ETHEREAL HALO?</span>
               </div>
               <div className="detail-text">
                 <p>Ethereal Machines continues to improve its products with its customer in mind. Our 5-axis machining technology helps in the cost-effective manufacturing of complex designs.</p>
@@ -142,35 +142,35 @@ class EtherealHalo extends Component {
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
                 <span>Download</span>
                 <br></br>
-                <a target="_blank" href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Brochure.pdf" className="display-inline hover-changeto-black">Brochure</a>
+                <a target="_blank" href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Halo2020/HALO+Brochure.pdf" className="display-inline hover-changeto-black">Brochure</a>
                 <span className="display-inline"> | </span>
-                <a target="_blank" href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Applications.pdf" className="display-inline hover-changeto-black">Application Examples</a>
+                <a target="_blank" href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Halo2020/Application+Samples+-+Halo.pdf">Application Examples</a>
               </div>
             </div>
           </section>
           <ProductFeatures features={etherealHaloData.features} />
           <section className="section-no-top-padding section--background-fill">
             <div className="container">
-              <div className="section-heading u-text-center u-text-gold">
+              {/* <div className="section-heading u-text-center u-text-gold">
                 <span>Save Money with 5 Axis Machining</span>
-              </div>
+              </div> */}
               <div className="detail-text u-text-white">
                 <p>The term “5-axis” refers to a machine’s ability to move a tool or a part in five different axes simultaneously. On a 5-axis machining centre, the tool moves across the X, Y, and Z linear axes and rotates on the A and B axes simultaneously to approach the work piece from any direction. In other words, you will be able to process a part from 5 directions in a single setup.</p>
               </div>
-          </div>
+            </div>
           </section>
-          <ProductTechSpecs techSpecs={etherealHaloData.techSpecs} product={'halo'}/>
+          <ProductTechSpecs techSpecs={etherealHaloData.techSpecs} product={'halo'} />
           <section className="section-no-top-padding">
             <div className="container">
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
-                <a href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Halo+Technical+Details.docx" className="display-inherit hover-changeto-black">Download Detailed Technical Specifications Document</a>
+                <a href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Halo2020/TECHNICAL+SPECIFICATION+-+HALO.pdf" className="display-inherit hover-changeto-black">Download Detailed Technical Specifications Document</a>
               </div>
-          </div>
+            </div>
           </section>
           {/*<LazyLoad height={200} offset={100} once>
             <ContactUs />
           </LazyLoad>*/}
-          
+
         </div>
         <Footer />
       </React.Fragment>

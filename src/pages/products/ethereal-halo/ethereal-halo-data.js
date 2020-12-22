@@ -58,7 +58,7 @@ const etherealHalo = {
     },
     {
       id: 8,
-      title: 'Multiple Tool Support',
+      title: 'Automatic Tool Changer',
       description: 'Permits employment of various tools to machine a spectrum of materials.',
       imgUrl: multiple_tool_support
     },

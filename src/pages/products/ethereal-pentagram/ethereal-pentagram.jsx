@@ -16,7 +16,7 @@ import ProductFeatures from '../components/product-features/product-features';
 // import ProductTechSpecs from '../components/product-tech-specs/product-tech-specs';
 import ContactUs from '../components/contact-us/contact-us';
 
-import pentagram from '../assets/images/images-no-padding/pentagram.png';
+import pentagram from '../assets/images/images-no-padding/pentagramimage.png';
 import penta from './assets/images/features-images/PentaBrochure.pdf';
 // import pentaLarge from '../assets/images/pentagram--large.jpg';
 // import pentaMedium from '../assets/images/pentagram--medium.png';
@@ -70,12 +70,12 @@ class EtherealPentagram extends Component {
               </div>
             </div>
           </div>
-          <br></br>
+          {/* <br></br>
             <div className="container">
               <div className="product-title subtitle u-margin-bottom-small u-text-center u-text-gold">
                 <a target="_blank" href="https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/produts/Penta+Brochure.pdf" className="display-inline hover-changeto-black">Download Brochure</a>
               </div>
-            </div>
+            </div> */}
         </section>
         <ProductFeatures features={etherealPentagramData.features}/>
         {/* <ProductTechSpecs techSpecs={etherealPentagramData.techSpecs} product={'pentagram'}/> */}

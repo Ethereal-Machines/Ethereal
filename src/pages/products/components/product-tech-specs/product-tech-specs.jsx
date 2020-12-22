@@ -9,7 +9,7 @@ import LazyLoad from 'react-lazyload';
 import SectionHeading from '../../../../components/pages-component/section-heading/section-heading';
 
 import ray from '../../assets/images/images-no-padding/ray.png';
-import halo from '../../assets/images/images-no-padding/halo.png';
+import halo from '../../assets/images/images-no-padding/Haloimage-2.png';
 import pentagram from '../../assets/images/images-no-padding/pentagram.png';
 
 import './product-tech-specs.css';
