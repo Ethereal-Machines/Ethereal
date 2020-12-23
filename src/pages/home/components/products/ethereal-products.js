@@ -29,7 +29,7 @@ const etherealProducts = [
     url: '/products/pentagram',
     name: 'Ethereal Pentagram',
     imgUrl: pentagram,
-    width: '300',
+    width: '450',
     description: 'Simultaneous 5-Axis CNC Machine'
   }
 ];

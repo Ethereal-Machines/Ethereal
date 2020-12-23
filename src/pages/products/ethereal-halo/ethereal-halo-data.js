@@ -52,88 +52,89 @@ const etherealHalo = {
     },
   ],
   techSpecs: [
+    // {
+    //   id: 1,
+    //   title: '5 Axis Work Area',
+    //   description: '150 Ø X 150 mm'
+    // },
+    // {
+    //   id: 2,
+    //   title: '3 Axis Work Area',
+    //   description: '200 X 200 X 200mm'
+    // },
+    // {
+    //   id: 3,
+    //   title: 'Dimensions',
+    //   description: '1300 x 1300 x 1290 mm'
+    // },
+    // {
+    //   id: 4,
+    //   title: 'Accuracy',
+    //   description: '60 microns'
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Load Bearing Capacity',
+    //   description: '10 kgs'
+    // },
+    // {
+    //   id: 6,
+    //   title: 'Subtractive Manufacturing Materials',
+    //   description: 'Wax, Foam, Plastics, Wood etc.'
+    // },
+    // {
+    //   id: 7,
+    //   title: 'Controller',
+    //   description: 'Dedicated PC-Based Controller'
+    // },
+    // {
+    //   id: 8,
+    //   title: 'Additive Manufacturing Materials',
+    //   description: 'ABS, PLA, PVA, PC, NYLON, PET-G etc.'
+    // },
+    // {
+    //   id: 9,
+    //   title: 'Extrusion Mechanism',
+    //   description: 'Geared Extruder'
+    // },
+
+    // {
+    //   id: 11,
+    //   title: 'Filament Diameter',
+    //   description: '1.75 mm'
+    // },
+    // {
+    //   id: 12,
+    //   title: 'Extruder Temperature',
+    //   description: 'Upto 285 Deg Celsius'
+    // },
+    // {
+    //   id: 13,
+    //   title: 'Working Speed',
+    //   description: '1800 mm/min'
+    // },
+    // {
+    //   id: 14,
+    //   title: 'Power Requirement',
+    //   description: '110-240 VAC, 2.5 kW'
+    // },
     {
       id: 1,
-      title: '5 Axis Work Area',
-      description: '150 Ø X 150 mm'
-    },
-    {
-      id: 2,
-      title: '3 Axis Work Area',
-      description: '200 X 200 X 200mm'
-    },
-    {
-      id: 3,
-      title: 'Dimensions',
-      description: '1300 x 1300 x 1290 mm'
-    },
-    {
-      id: 4,
-      title: 'Accuracy',
-      description: '60 microns'
-    },
-    {
-      id: 5,
-      title: 'Load Bearing Capacity',
-      description: '10 kgs'
-    },
-    {
-      id: 6,
-      title: 'Subtractive Manufacturing Materials',
-      description: 'Wax, Foam, Plastics, Wood etc.'
-    },
-    {
-      id: 7,
-      title: 'Controller',
-      description: 'Dedicated PC-Based Controller'
-    },
-    {
-      id: 8,
-      title: 'Additive Manufacturing Materials',
-      description: 'ABS, PLA, PVA, PC, NYLON, PET-G etc.'
-    },
-    {
-      id: 9,
-      title: 'Extrusion Mechanism',
-      description: 'Geared Extruder'
-    },
-    {
-      id: 10,
-      title: 'Spindle',
-      description: 'Max Rating 2.2 kW, Max Speed 30,000 rpm, Tool Changer Carousel type, Capacity 12 Tools, Taper ISO 20'
-    },
-    {
-      id: 11,
-      title: 'Filament Diameter',
-      description: '1.75 mm'
-    },
-    {
-      id: 12,
-      title: 'Extruder Temperature',
-      description: 'Upto 285 Deg Celsius'
-    },
-    {
-      id: 13,
-      title: 'Working Speed',
-      description: '1800 mm/min'
-    },
-    {
-      id: 14,
-      title: 'Power Requirement',
-      description: '110-240 VAC, 2.5 kW'
-    },
-    {
-      id: 15,
-      title: 'TABLE SIZE',
+      title: 'Table Size',
       description: 'ø230mm'
     },
     {
-      id: 16,
+      id: 2,
       title: 'Travel',
-      description: '220 x 365 x 260 mm, A AXIS -30 deg to +110 deg x C AXIS 360 deg'
+      description:  'X AXIS 220 mm, Y AXIS 365 mm, Z AXIS 260 mm, A AXIS -30 deg to +110 deg, C AXIS 360 deg'
     },
     {
-      id: 17,
+      id: 3,
+      title: 'Spindle',
+      description:  'Max Rating 2.2 kW, Max Speed 30,000 rpm, Tool Changer Carousel type, Capacity 12 Tools, Taper ISO 20'
+    },
+    {
+      id: 4,
       title: 'Footprint (in meters)',
       description: 'L*W*H 2 X 1.4 X 2.4, Weight 3500 Kgs'
     },

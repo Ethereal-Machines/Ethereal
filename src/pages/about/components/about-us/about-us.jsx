@@ -14,7 +14,7 @@ const aboutUs = (props) => {
         {/* <div className="about-title subtitle u-margin-bottom-small">
           <span>Ethereal Machines</span>
         </div> */}
-        <p>At Ethereal machines, we are manufacturers of simultaneous 5axis CNC Machines and 3D Printers. These CNC Machines and 3D Printers are built to invigorate, nurture and embolden an engineer while unbridling the designer’s freedom to create. Ethereal Machines brings about a conjunction between additive and subtractive manufacturing techniques.</p>
+        <p>At Ethereal machines, we are manufacturers of simultaneous 5axis CNC Machines. These CNC Machines are built to invigorate, nurture and embolden an engineer while unbridling the designer’s freedom to create.</p>
         <p>The experience gained over the years by manufacturing CNC Machines has helped us command technical strength and expertise over the field. Technologies that have the potential to create large-scale impacts have always consumed us and shaped the direction of our work over the past few years. Our team of engineers strive every day to refine the shape of the manufacturing industry, lesser the burden of capital costs of machineries and increase user friendliness of CNC machines.</p>
         <p>Based out of the start-up hub of India, Bangalore, Ethereal Machines caters to clients across various fields and helps them establish successful businesses. Our clients from various sectors including range from aerospace, tool and die, healthcare, jewellery, automobile, electronics and education.</p>
       </div>
