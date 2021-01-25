@@ -60,6 +60,7 @@ a:hover {
   font-size: var(--medium-font-size);
   font-family: var(--regular);
   padding: 1rem 0;
+  text-decoration-line: underline;
 }
 
 .subtitle {

@@ -26,6 +26,7 @@ import { connect } from 'react-redux';
 import Header from '../../components/layout/header/header';
 import Footer from '../../components/layout/footer/footer';
 
+import IconsubHeading from '../../components/pages-component/icon-subheading/icon-subheading';
 
 class ContactUs extends Component {
   constructor(props) {
@@ -115,7 +116,7 @@ class ContactUs extends Component {
       case 'Media Queries':
         postMediaQuery(this.onSubmitCallBack, this.formData);
         break;
-    
+
       default:
         alert('Something is wrong. Please try again.');
         this.setState({
@@ -135,13 +136,13 @@ class ContactUs extends Component {
         if (inputFieldName === 'name') {
           this.formData.delete('name');
           this.formData.append('name', targetValue);
-        } 
-        else 
-        if (inputFieldName === 'contact_number') {
-          const contactNo = targetValue;
-          this.formData.delete('contact_number');
-          this.formData.append('contact_number', contactNo);
         }
+        else
+          if (inputFieldName === 'contact_number') {
+            const contactNo = targetValue;
+            this.formData.delete('contact_number');
+            this.formData.append('contact_number', contactNo);
+          }
         break;
 
       case 'email':
@@ -162,21 +163,21 @@ class ContactUs extends Component {
           }
           // console.log('allowStateField', this.allowStateField, 'isStateRequired', this.isStateRequired);
         } else if (inputFieldName === 'region') {
-            this.formData.append('region', targetValue);
-            if (targetValue.toLowerCase() === 'india' && this.allowStateField === true) {
-              this.isStateRequired = true;
-              // console.log('allowStateField', this.allowStateField, 'isStateRequired', this.isStateRequired);
-            } else {
-              this.isStateRequired = false
-              // console.log('allowStateField', this.allowStateField, 'isStateRequired', this.isStateRequired);
-            }
+          this.formData.append('region', targetValue);
+          if (targetValue.toLowerCase() === 'india' && this.allowStateField === true) {
+            this.isStateRequired = true;
+            // console.log('allowStateField', this.allowStateField, 'isStateRequired', this.isStateRequired);
+          } else {
+            this.isStateRequired = false
+            // console.log('allowStateField', this.allowStateField, 'isStateRequired', this.isStateRequired);
+          }
         } else if (inputFieldName === 'state') {
           this.formData.append('state', targetValue);
         }
         break;
 
       case 'textarea':
-        
+
         this.formData.delete('message');
         this.formData.append('message', targetValue);
         break;
@@ -207,8 +208,8 @@ class ContactUs extends Component {
       meta: {
         property: {
           'title': 'Contact us | Ethereal Machines-Bangalore, India.',
-           'description': ' Ethereal Machines – get in touch with us.',
-          }
+          'description': ' Ethereal Machines – get in touch with us.',
+        }
       }
     };
     return (
@@ -218,39 +219,53 @@ class ContactUs extends Component {
           <FormSuccessMsg />
         </Modal>
         <div className="page page--contact-us">
-        {/* <Helmet>
+          {/* <Helmet>
         <title>Contact us | Ethereal Machines-Bangalore, India.</title>
         <meta name="description" content="Ethereal Machines – get in touch with us."/>
         </Helmet> */}
 
-<DocumentMeta {...meta} />
+          <DocumentMeta {...meta} />
           <PageBanner heading={"Get in touch with Ethereal Machines"} subHeading={"Let's talk."} classValue={"page-banner--contact-us"} />
           <section className="section section--contact-us-form">
-          
+
             <div className="container">
-            {
+              {
                 this.props.session.session
-                ?
-                    <div>
-                      <button className="form-btn" onClick={this.queryReport}>Query Report</button>
-                    </div>
-                    
-                :
-                    null
+                  ?
+                  <div>
+                    <button className="form-btn" onClick={this.queryReport}>Query Report</button>
+                  </div>
+
+                  :
+                  null
               }
-              </div>
-              <SectionHeading name={"Quick Enquiry form"} classValue={"u-margin-bottom-big u-text-center"} hasSubHeading subHeading={"Please fill your details to get in touch with us."}/>
-              <ContactUsForm 
-              onInputChange={this.onInputChange} 
-              onSubmitHandler={this.onSubmitHandler} 
-              formSubmissionStart={this.state.formSubmissionStart} 
-              errorMsg={this.state.errorMsg} 
-              natureOfQuery={this.natureOfQuery} 
-              isStateRequired={this.isStateRequired} 
-              showLoader={this.state.formSubmissionStart}
+            </div>
+            <SectionHeading name={"Quick Enquiry form"} classValue={"u-margin-bottom-big-1 u-text-center"} hasSubHeading subHeading={"Please fill your details to get in touch with us."} />
+            <div  style={{
+              position:'relative'
+            }}>
+                 <div className="contactinfo-new" style={
+                {
+                  marginBottom: '50%'
+                }
+              }>
+                  <SectionHeading name={"TALK TO US"} classValue={"  u-text-center"} />
+                  <IconsubHeading classValue={""} hasSubHeading subHeading={"+91 8792757504"} />
+                  <IconsubHeading classValue={""} hasSubHeading subHeading={"info@etherealmachines.com"} hasSubHeading1 subHeading1={"sales@etherealmachines.com"} />
+                </div>
+ 
+              <ContactUsForm
+                onInputChange={this.onInputChange}
+                onSubmitHandler={this.onSubmitHandler}
+                formSubmissionStart={this.state.formSubmissionStart}
+                errorMsg={this.state.errorMsg}
+                natureOfQuery={this.natureOfQuery}
+                isStateRequired={this.isStateRequired}
+                showLoader={this.state.formSubmissionStart}
               />
-            
-            
+
+
+            </div>
           </section>
         </div>
         <Footer />
@@ -260,7 +275,7 @@ class ContactUs extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return{
+  return {
     session: state.login
   }
 }

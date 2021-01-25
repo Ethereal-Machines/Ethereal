@@ -31,8 +31,9 @@ class ContactUsForm extends Component {
     ];
 
     return (
-      <Form {...this.props} classValue={"form form--contact-us"} >
-        <div className="form-controls single-col-layout">
+    
+     <Form {...this.props} classValue={"form form--contact-us-1"} >
+        <div className="form-controls-1 single-col-layout">
           <Select labelName={"Nature of Query"} inputName={"natureOfQuery"} options={natureOfQuery} defaultValue={"--select--"} isRequired {...this.props} />
           <InputText labelName={"Name"} inputName={"name"} placeholder={"Enter Name"} isRequired {...this.props} />
           <InputEmail labelName={"Email"} inputName={"email"} placeholder={"Enter Email"} isRequired {...this.props} />
