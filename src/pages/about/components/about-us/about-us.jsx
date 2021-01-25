@@ -11,6 +11,7 @@ import pdf from '../../assets/images/ethereal-journey/pdf.svg';
 
 const aboutUs = (props) => {
   return (
+
     <div className="about-us-container">
       <div className="about-ethereal-machines">
         {/* <div className="about-title subtitle u-margin-bottom-small">
@@ -40,17 +41,21 @@ const aboutUs = (props) => {
           </div>
           <p>Our mission is to solve problems related to manufacturing faced by industries, engineers and makers through our machines and aid the growth of small-scale and mid-scale entrepreneurs by equipping them with affordable machines.</p>
         </div>
-        <div className="mission">
-          <span>Investor Relations  |</span>
-
-          <span onClick={() => {
-            window.location.href = "https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/Form+MGT-7_Ethereal+website+upload+copy_protected+(1).pdf";
-          }}><img src={pdf} alt="Facebook" width="30" height="30" />
-
-              FY 19-20</span>
-        </div>
       </div>
+
+      <div className="mission_Investor">
+        <span>Investor Relations  |</span>
+
+        <span onClick={() => {
+          window.location.href = "https://ethereal-website2020.s3-ap-southeast-1.amazonaws.com/static/Form+MGT-7_Ethereal+website+upload+copy_protected+(1).pdf";
+        }}>
+          <img src={pdf} alt="Facebook" width="30" height="30" />
+              FY 19-20
+          </span>
+      </div>
+      
     </div>
+
   );
 };
 

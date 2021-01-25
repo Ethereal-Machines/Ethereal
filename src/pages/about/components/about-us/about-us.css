@@ -18,7 +18,7 @@
 }
 
 .about-ethereal-machines {
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
 }
 
 .vision-mission {
@@ -44,6 +44,10 @@
 }
 */
 
+.mission_Investor {
+  margin-top: 6%;
+}
+
 .about-title {
   font-size: var(--small-font-size);
   font-family: var(--regular);
@@ -55,18 +59,17 @@
   .about-ethereal-machines {
     margin-bottom: 3rem;
   }
-
   .vision-mission {
     flex-wrap: wrap;
   }
-
   .vision {
     padding-right: 0;
     margin-bottom: 3rem;
   }
-
-  .vision,
   .mission {
     width: ;
+  }
+  .mission_Investor {
+    margin-top: 6%;
   }
 }

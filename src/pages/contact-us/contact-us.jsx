@@ -66,7 +66,7 @@ class ContactUs extends Component {
 
   onSubmitCallBack = (data) => {
     if (data.status === 201) {
-      document.querySelector(".form--contact-us").reset();
+      document.querySelector(".form--contact-us-1").reset();
       this.onClearningFormData();
       this.resetProperties();
       utilityFunctions.clearSelectField('.select-input');
@@ -241,19 +241,7 @@ class ContactUs extends Component {
               }
             </div>
             <SectionHeading name={"Quick Enquiry form"} classValue={"u-margin-bottom-big-1 u-text-center"} hasSubHeading subHeading={"Please fill your details to get in touch with us."} />
-            <div  style={{
-              position:'relative'
-            }}>
-                 <div className="contactinfo-new" style={
-                {
-                  marginBottom: '50%'
-                }
-              }>
-                  <SectionHeading name={"TALK TO US"} classValue={"  u-text-center"} />
-                  <IconsubHeading classValue={""} hasSubHeading subHeading={"+91 8792757504"} />
-                  <IconsubHeading classValue={""} hasSubHeading subHeading={"info@etherealmachines.com"} hasSubHeading1 subHeading1={"sales@etherealmachines.com"} />
-                </div>
- 
+            <div style={{ position: 'relative' }}>
               <ContactUsForm
                 onInputChange={this.onInputChange}
                 onSubmitHandler={this.onSubmitHandler}
@@ -263,9 +251,13 @@ class ContactUs extends Component {
                 isStateRequired={this.isStateRequired}
                 showLoader={this.state.formSubmissionStart}
               />
-
-
+              <div className="contactinfo-new">
+                <SectionHeading name={"TALK TO US"} classValue={"  u-text-center"} />
+                <IconsubHeading classValue={""} hasSubHeading subHeading={"+91 8792757504"} />
+                <IconsubHeading classValue={""} hasSubHeading subHeading={"info@etherealmachines.com"} hasSubHeading1 subHeading1={"sales@etherealmachines.com"} />
+              </div>
             </div>
+
           </section>
         </div>
         <Footer />

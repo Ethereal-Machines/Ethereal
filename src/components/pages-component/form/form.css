@@ -32,10 +32,29 @@
   font-size: 1.4rem;
   font-family: var(--light);
 }
- 
+
 .contactinfo-new {
   width: 50%;
   display: inline-block;
   height: 20vh;
   text-align: center;
+  margin-Bottom: 50%;
+}
+
+@media screen and (max-width: 419px) {
+  .contactinfo-new {
+    display: table-cell;
+    height: 20vh;
+    text-align: center;
+    margin-Bottom: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contactinfo-new {
+    display: table-cell;
+    height: 20vh;
+    text-align: center;
+    margin-Bottom: 50%;
+  }
 }

@@ -73,7 +73,7 @@ class About extends Component {
         <DocumentMeta {...meta} />
 
         <PageBanner heading={"Know about Ethereal Machines"} subHeading={"Who are we and what do we do?"} classValue={'page-banner--about'}/>
-        <section className="section section--about-us">
+        <section className="section2 section--about-us">
           <div className="container">
             <SectionHeading classValue={'u-margin-bottom-big u-text-center'} name={'About Ethereal Machines'}/>
             
