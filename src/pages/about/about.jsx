@@ -81,7 +81,9 @@ class About extends Component {
           <AboutUs />
         </section>
         <section className="section section--journey section--background-fill">
-        <SectionHeading classValue={'u-margin-bottom-big u-text-center u-text-white'} name={'The Ethereal Journey'}/>
+        <SectionHeading classValue={'u-margin-bottom-big u-text-center u-text-white'} 
+        // name={'The Ethereal Journey'}
+        />
           {/* <div className="container"> */}
           <div>
             <LazyLoad height={200} offset={100} once>

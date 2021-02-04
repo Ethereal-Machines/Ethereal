@@ -29,61 +29,261 @@ import img16 from '../../assets/images/ethereal-journey/16.jpg';
 
 const etherealJourney = (props) => {
   return (
-    <Carousel autoPlay={true} showIndicators={false} infiniteLoop={true} interval={5000} emulateTouch={true}>
+    <Carousel
+      autoPlay={true}
+      // showIndicators={false}
+      infiniteLoop={true}
+      interval={5000}
+    // emulateTouch={true}
+    >
       <div>
-        <img src={img1} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/uHInw3gudPg"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img2} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/zaHYUCGa8U4"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img3} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/0q20Y6LWSQ8"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img4} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/nfdw0t58eLM"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img5} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/-K8lYFu0tT4"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img6} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/CiO7u4zWHHM"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img7} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/Zybz599w0AQ"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img8} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/p2Er4a39J4M"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img9} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/pL_rcfaGq4A"
+          allowFullScreen
+        >
+        </iframe>
       </div>
-      {/* <div>
-        <img src={img10} alt="Journey"/>
-      </div> */}
-      {/* <div>
-        <img src={img11} alt="Journey"/>
-      </div> */}
+
       <div>
-        <img src={img12} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/N12qiuaG7C4"
+          allowFullScreen
+        >
+        </iframe>
       </div>
-      {/* <div>
-        <img src={img13} alt="Journey"/>
-      </div> */}
+
       <div>
-        <img src={img14} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/UAp-5DmHu1A"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img15} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/EVuhhs5AqMU"
+          allowFullScreen
+        >
+        </iframe>
       </div>
+
       <div>
-        <img src={img16} alt="Journey"/>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/N-dgL8hhmIg"
+          allowFullScreen
+        >
+        </iframe>
       </div>
-      {/* <div>
-        <img src={img17} alt="Journey"/>
-      </div> */}
-      {/* <div>
-        <img src={img18} alt="Journey"/>
-      </div> */}
+
+      <div>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/ZiA6Z6pOIt4"
+          allowFullScreen
+        >
+        </iframe>
+      </div>
+
+      <div>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/XG3MGehtIQw"
+          allowFullScreen
+        >
+        </iframe>
+      </div>
+
+      <div>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/l-DpQiPuaRE"
+          allowFullScreen
+        >
+        </iframe>
+      </div>
+
+      <div>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/gZTxCDtRKBQ"
+          allowFullScreen
+        >
+        </iframe>
+      </div>
+
+      <div>
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/4c_7WmSYjMU"
+          allowFullScreen
+        >
+        </iframe>
+      </div>
+
+      <div>
+        <img />
+        <iframe
+          className='videoFrame'
+          width="450vw"
+          height="600vh"
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          src="https://www.youtube.com/embed/6dun2zbYJmc"
+          allowFullScreen
+        >
+        </iframe>
+      </div>
+
     </Carousel>
   );
 };
