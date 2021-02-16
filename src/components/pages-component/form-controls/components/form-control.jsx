@@ -9,7 +9,7 @@ import './form-control.css';
 
 const formControl = (props) => {
   return (
-    <div className="form-control flex-column">
+    <div className="form-control flex-column form-container">
       {props.children}
     </div>
   );

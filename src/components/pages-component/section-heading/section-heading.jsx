@@ -11,8 +11,8 @@ const sectionHeading = (props) => {
       <h3 className="section-heading">{props.name}</h3>
       {
         props.hasSubHeading ?
-        <span className="section-sub-heading">{props.subHeading}</span> :
-        null
+          <span className="section-sub-heading">{props.subHeading}</span> :
+          null
       }
     </div>
   );

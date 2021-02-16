@@ -13,12 +13,12 @@ const IconsubHeading = (props) => {
 
       {
         props.hasSubHeading1 ?
-          <div style={{ display: 'block', }}>
+          <div style={{ display: 'block', fontSize: '30', fontWeight: 'bolder' }}>
 
             <div style={{
               display: 'inline-block',
               height: '40px',
-              padding:'6px',
+              padding: '6px',
             }}>
               <img src={envelope} alt="Facebook" width="30" height="30" />
             </div>
@@ -32,11 +32,13 @@ const IconsubHeading = (props) => {
                 style={{
                   display: 'block',
                   height: '20px',
+                  // fontSize: '1rem',
                 }}>{props.subHeading}</div>
               <div className="section-sub-heading"
                 style={{
                   display: 'block',
                   height: '20px',
+                  // fontSize: '1rem',
                 }}
               >{props.subHeading1}</div>
 
@@ -48,12 +50,13 @@ const IconsubHeading = (props) => {
               props.hasSubHeading ?
                 <div style={{
                   display: 'block',
+                  fontSize: 'larger', fontWeight: '900'
                 }}>
                   <div style={{
                     display: 'inline-block',
                     height: '40px',
                     verticalAlign: 'bottom',
-                    padding:'6px',
+                    padding: '6px',
                   }}>
                     <img src={call} alt="Facebook" width="30" height="30" />
                   </div>

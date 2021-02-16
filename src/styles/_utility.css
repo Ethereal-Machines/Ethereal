@@ -20,7 +20,7 @@
 
 .u-margin-bottom-big-1 {
   margin-bottom: 8rem;
-  margin-left: 40%;
+  /* margin-left: 40%; */
 }
 
 .u-margin-bottom-medium {
@@ -45,4 +45,12 @@
 
 .display-inline {
   display: inline;
+}
+
+@media screen and (max-width: 712px) {
+  .u-margin-bottom-big-1 {
+    margin-bottom: 8rem;
+    /* margin-left: 40%; */
+    margin-top: 8rem;
+  }
 }

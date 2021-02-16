@@ -227,35 +227,41 @@ class ContactUs extends Component {
           <DocumentMeta {...meta} />
           <PageBanner heading={"Get in touch with Ethereal Machines"} subHeading={"Let's talk."} classValue={"page-banner--contact-us"} />
           <section className="section section--contact-us-form">
+            <div className="contactinfo-container">
 
-            <div className="container">
-              {
-                this.props.session.session
-                  ?
-                  <div>
-                    <button className="form-btn" onClick={this.queryReport}>Query Report</button>
-                  </div>
-
-                  :
-                  null
-              }
-            </div>
-            <SectionHeading name={"Quick Enquiry form"} classValue={"u-margin-bottom-big-1 u-text-center"} hasSubHeading subHeading={"Please fill your details to get in touch with us."} />
-            <div style={{ position: 'relative' }}>
-              <ContactUsForm
-                onInputChange={this.onInputChange}
-                onSubmitHandler={this.onSubmitHandler}
-                formSubmissionStart={this.state.formSubmissionStart}
-                errorMsg={this.state.errorMsg}
-                natureOfQuery={this.natureOfQuery}
-                isStateRequired={this.isStateRequired}
-                showLoader={this.state.formSubmissionStart}
-              />
-              <div className="contactinfo-new">
+              <div className="contactinfo-new2">
                 <SectionHeading name={"TALK TO US"} classValue={"  u-text-center"} />
                 <IconsubHeading classValue={""} hasSubHeading subHeading={"+91 8792757504"} />
                 <IconsubHeading classValue={""} hasSubHeading subHeading={"info@etherealmachines.com"} hasSubHeading1 subHeading1={"sales@etherealmachines.com"} />
               </div>
+
+              <div className="contactinfo-quick-enquiry">
+                <SectionHeading name={"Quick Enquiry form"} classValue={"u-margin-bottom-big-1 u-text-center"} hasSubHeading subHeading={"Please fill your details to get in touch with us."} />
+
+                <ContactUsForm
+                  onInputChange={this.onInputChange}
+                  onSubmitHandler={this.onSubmitHandler}
+                  formSubmissionStart={this.state.formSubmissionStart}
+                  errorMsg={this.state.errorMsg}
+                  natureOfQuery={this.natureOfQuery}
+                  isStateRequired={this.isStateRequired}
+                  showLoader={this.state.formSubmissionStart}
+                />
+
+                <div className="container">
+                  {
+                    this.props.session.session
+                      ?
+                      <div>
+                        <button className="form-btn" onClick={this.queryReport}>Query Report</button>
+                      </div>
+
+                      :
+                      null
+                  }
+                </div>
+              </div>
+
             </div>
 
           </section>

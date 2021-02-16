@@ -117,6 +117,10 @@ section, .section {
   grid-template-columns: 1fr;
 }
 
+.single-col-layout2 {
+  grid-template-columns: 1fr;
+}
+
 .col-12-grid {
   display: grid;
   grid-template-columns: var(--grid-template-columns);
