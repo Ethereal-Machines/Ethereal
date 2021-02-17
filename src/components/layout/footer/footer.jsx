@@ -338,7 +338,6 @@ class Footer extends Component {
                 <Button className="popupequiry_button"
                   tooltip="Quick!"
                   icon="fas fa-info"
-                  rotate={true}
                 >
                   <img src={add} alt="Linkedin" width="30" height="30" />
                 </Button>

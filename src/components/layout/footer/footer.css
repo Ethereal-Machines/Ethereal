@@ -128,13 +128,14 @@
 }
 
 .popupequiry_button {
-  background-color: #f7941d !important;
-  color: rgb(250, 250, 250)!important;
-  text-decoration: none !important;
-  border: none !important;
-  width: 4.2vw !important;
-  height: 4.2vw !important;
-  object-fit: contain !important;
+  background-color: #f8b91c!important;
+  color: #fafafa!important;
+  text-decoration: none!important;
+  border: none!important;
+  width: 37px!important;
+  height: 37px!important;
+  FONT-WEIGHT: 500;
+  object-fit: contain!important;
 }
 
 .popupequiry_button2 {

@@ -87,19 +87,29 @@
   .form_entry_fields {
     display: flex;
   }
+  .form--contact-us-2 {
+    max-width: 40% !important;
+  }
+  .form--contact-us-3 {
+    max-width: 40% !important;
+  }
+  .form2 {
+    margin: 0 auto;
+    width: 50% !important;
+  }
 }
 
 .form2 {
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
 }
 
 .form--contact-us-2 {
-  max-width: 40%;
+  max-width: 82%;
 }
 
 .form--contact-us-3 {
-  max-width: 40%;
+  max-width: 82%;
 }
 
 .form--contact-us-23 {
