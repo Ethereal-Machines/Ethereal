@@ -325,7 +325,7 @@ class Footer extends Component {
             </div>
             <div>
               <Container>
-                <Link href="https://wa.me/2348100000000" className="popupequiry_button2"
+                <Link href="https://wa.me/+918792757504" className="popupequiry_button2"
                   tooltip="Quick Whatsapp"
                   icon="far fa-sticky-note" >
                   <img src={whatsapp} alt="Linkedin" width="30" height="30" />
