@@ -61,6 +61,12 @@ class Footer extends Component {
     formSubmissionStart: false,
     showModal: false
   }
+  closeModal = () => {
+    this.setState({
+      ...this.state,
+      showModal: false
+    });
+  }
 
   showPopup = () => {
     this.setState({

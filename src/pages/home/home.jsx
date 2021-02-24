@@ -9,6 +9,7 @@ import LazyLoad from 'react-lazyload';
 import './home.css';
 
 import PageBanner from '../../components/ui/page-banner/page-banner';
+import PageBanner_video from '../../components/ui/page-banner/page-banner-video';
 import SectionHeading from '../../components/pages-component/section-heading/section-heading';
 import ContactUsBanner from '../../components/pages-component/contact-us-banner/contact-us-banner';
 import HomePageMedia from './components/home-page-media/home-page-media';
@@ -30,7 +31,7 @@ class Home extends Component {
 
       <div className="page page--home">
         <Header />
-        <PageBanner heading={"Welcome to Ethereal Machines"} subHeading={"We build the future of manufacturing. We create entrepreneurs."} classValue={"page-banner--home"} />
+        <PageBanner_video heading={"Welcome to Ethereal Machines"} subHeading={"We build the future of manufacturing. We create entrepreneurs."} classValue={"page-banner--video"} />
         <section className="company-brief">
           <div className="container">
             <div className="detail-text">
