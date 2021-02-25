@@ -4,7 +4,7 @@
  */
 
 import React, { Component } from 'react';
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 // import * as actionType from '../../../../store/actions/action-type'
 // import getBlogById from '../../../../services/api/get-blog-item-byid';
 import emptyData from './blog-empty-data'
@@ -22,7 +22,7 @@ import spacer from 'ory-editor-plugins-spacer'
 import 'ory-editor-plugins-spacer/lib/index.css'
 
 // The image plugin
-import  imagePlugin  from 'ory-editor-plugins-image'
+import imagePlugin from 'ory-editor-plugins-image'
 import 'ory-editor-plugins-image/lib/index.css'
 
 // The video plugin
@@ -51,7 +51,7 @@ require("react-tap-event-plugin");
 
 
 
-class BlogPage extends Component {  
+class BlogPage extends Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -60,45 +60,45 @@ class BlogPage extends Component {
     render() {
         const id = this.props.match.params.id
         let filterBlog, filterContent;
-        if(this.props.blog.length>0){
+        if (this.props.blog.length > 0) {
             filterBlog = this.props.blog.filter((data) => data.id === id)
-            if(filterBlog){
-                filterContent=filterBlog[0].content
+            if (filterBlog) {
+                filterContent = filterBlog[0].content
             }
         }
-       
+
         const content = filterContent ? JSON.parse(filterContent) : emptyData
-       
+
         const plugins = {
-            content: [slate(),spacer,imagePlugin,video,divider], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
+            content: [slate(), spacer, imagePlugin, video, divider], // Define plugins for content cells. To import multiple plugins, use [slate(), image, spacer, divider]
             layout: [parallax({ defaultPlugin: slate() })], // Define plugins for layout cells
             native
-          }
-          const editor = new Editor({
+        }
+        const editor = new Editor({
             plugins: plugins,
             editables: [content],
         })
 
         return (
-        <div className="page page--blog">
-            <Header />
-            <section className="section">
-                <div className="container">
-                    <div className="my-editor">
-                        <Editable editor={editor} id={content.id} />
+            <div className="page page--blog">
+                <Header />
+                <section className="section">
+                    <div className="container">
+                        <div className="my-editor">
+                            <Editable editor={editor} id={content.id} />
+                        </div>
                     </div>
-                </div>
-            </section>
-        <Footer />
-        </div>
+                </section>
+                <Footer />
+            </div>
         );
     }
-    }
+}
 
-    const mapStateToProps = (state) => {
-        return{
-            blog: state.blog.blogItems
-        }
+const mapStateToProps = (state) => {
+    return {
+        blog: state.blog.blogItems
     }
+}
 
 export default connect(mapStateToProps)(BlogPage);

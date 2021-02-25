@@ -46,8 +46,8 @@ import native from 'ory-editor-plugins-default-native'
 import divider from 'ory-editor-plugins-divider'
 
 // Renders json state to html, can be used on server and client side
-require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
-
+// require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
+require("react-tap-event-plugin");
 // Define which plugins we want to use. We only have slate and parallax available, so load those.
 
 
