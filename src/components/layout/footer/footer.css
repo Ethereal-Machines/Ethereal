@@ -125,6 +125,7 @@
   position: fixed !important;
   margin: 1em !important;
   right: 3vw !important;
+  z-index: 10;
 }
 
 .popupequiry_button {
