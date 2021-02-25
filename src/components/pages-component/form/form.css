@@ -19,6 +19,14 @@
   margin: 0vw 14vw 0vw 0vw;
 }
 
+form.form--contact-us-1.popup--form--div {
+  max-width: 100%;
+  width: 100%;
+  float: none;
+  margin: 0vw;
+  overflow-y: scroll;
+}
+
 .form-controls {
   width: 100%;
   grid-gap: 2rem 2rem;

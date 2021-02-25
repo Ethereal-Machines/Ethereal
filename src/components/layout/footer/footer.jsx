@@ -5,9 +5,7 @@
 
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-
 import './footer.css';
-
 import logoWithName from '../../../assets/images/logo/logo-with-name-white.svg';
 import ces from './assets/images/ces.png';
 import makeInIndia from './assets/images/make-in-india.png';
@@ -27,12 +25,9 @@ import whatsapp from './assets/images/social-media-icons/whatsapp.svg';
 import { connect } from 'react-redux'
 import Logo from '../logo/logo';
 import { Container, Button, Link } from 'react-floating-action-button'
-
 import SectionHeadingfooter from '../../pages-component/section-heading-footer/section-heading-footer';
 import ContactUsForm from '../../../pages/contact-us/components/contact-us-form/contact-us-form'
 import Popupcontactus from '../../../pages/contact-us/components/contact-us-form/pop-contact-us-form'
-
-
 import postGeneralQuery from '../../../services/api/post-general-query';
 import postMediaQuery from '../../../services/api/post-media-query';
 import postDistributorQuery from '../../../services/api/post-distributor-query';
@@ -60,12 +55,6 @@ class Footer extends Component {
     errorMsg: null,
     formSubmissionStart: false,
     showModal: false
-  }
-  closeModal = () => {
-    this.setState({
-      ...this.state,
-      showModal: false
-    });
   }
 
   showPopup = () => {
@@ -228,6 +217,16 @@ class Footer extends Component {
       formData: this.formData,
     });
   }
+  closeModal = () => {
+    this.setState({
+      ...this.state,
+      showModal: false
+    });
+  }
+
+  queryReport = () => {
+    getQueryReport()
+  }
 
   render() {
     if (this.props.blog === true) {
@@ -332,17 +331,17 @@ class Footer extends Component {
             <div>
               <Container>
                 <Link href="https://wa.me/+918792757504" className="popupequiry_button2"
-                  tooltip="Quick Whatsapp"
+                  tooltip="Whatsapp"
                   icon="far fa-sticky-note" >
                   <img src={whatsapp} alt="Linkedin" width="30" height="30" />
                 </Link>
                 <Button onClick={this.showPopup} className="popupequiry_button2"
-                  tooltip="Quick Enquiry!"
+                  tooltip="Enquiry"
                   icon="fas fa-user-plus" >
                   <img src={info} alt="Linkedin" width="30" height="30" />
                 </Button>
                 <Button className="popupequiry_button"
-                  tooltip="Quick!"
+                  tooltip="Quick Contact!"
                   icon="fas fa-info"
                 >
                   <img src={add} alt="Linkedin" width="30" height="30" />

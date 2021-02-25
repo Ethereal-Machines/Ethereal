@@ -132,8 +132,8 @@
   color: #fafafa!important;
   text-decoration: none!important;
   border: none!important;
-  width: 37px!important;
-  height: 37px!important;
+  width: 36px!important;
+  height: 36px!important;
   FONT-WEIGHT: 500;
   object-fit: contain!important;
 }
@@ -226,6 +226,7 @@
 }
 
 .popup {
+  position: relative;
   background-color: #ffffff;
   z-index: 200;
   border-radius: 2vw;
@@ -234,6 +235,10 @@
   overflow-y: scroll;
   margin: 0vh 5vw;
   height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .popup_bg {
@@ -271,7 +276,9 @@
   border-radius: 100%;
   justify-self: flex-end;
   display: grid;
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .quiz_close {

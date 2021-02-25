@@ -32,7 +32,7 @@ class Popupcontactus extends Component {
 
     return (
 
-      <Form {...this.props} classValue={""} >
+      <Form {...this.props} classValue={"form form--contact-us-1 popup--form--div"} >
         <div className="form_entry_fields">
           <div className="form-controls-12 single-col-layout2 form form--contact-us-2">
 

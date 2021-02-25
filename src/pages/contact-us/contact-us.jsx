@@ -6,26 +6,20 @@
 import React, { Component } from 'react';
 // import { Helmet } from "react-helmet";
 import DocumentMeta from 'react-document-meta';
-
 import './contact-us.css';
-
 import PageBanner from '../../components/ui/page-banner/page-banner';
 import SectionHeading from '../../components/pages-component/section-heading/section-heading';
 import ContactUsForm from './components/contact-us-form/contact-us-form';
 import Modal from '../../components/ui/modal/modal';
 import FormSuccessMsg from '../../components/pages-component/form-success-msg/form-success-msg';
-
 import postGeneralQuery from '../../services/api/post-general-query';
 import postMediaQuery from '../../services/api/post-media-query';
 import postDistributorQuery from '../../services/api/post-distributor-query';
 import getQueryReport from '../../services/api/get-queries-report'
-
 import * as utilityFunctions from '../../utility-functions/utility-functions';
 import { connect } from 'react-redux';
-
 import Header from '../../components/layout/header/header';
 import Footer from '../../components/layout/footer/footer';
-
 import IconsubHeading from '../../components/pages-component/icon-subheading/icon-subheading';
 
 class ContactUs extends Component {

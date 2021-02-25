@@ -6,7 +6,7 @@
 import React from 'react';
 
 import './page-banner.css';
-import bannervideo from './assets/images/Dsc 0208-1(1).mp4';
+import bannervideo from './assets/images/Dsc 0208-1(1).m4v';
 import overlay from './assets/images/overlay.png';
 
 const pageBanner = (props) => {
@@ -14,7 +14,7 @@ const pageBanner = (props) => {
     <div className={`page-banner--video`}>
       <div className={`page-banner--video-color-overlay`}></div>
       <img src={overlay} className={`page-banner--video-overlay`} />
-      <video oncontextmenu="return false;" className='page-banner--video1' autoPlay loop muted controls={false} controlsList="nodownload">
+      <video oncontextmenu="return false;" className='page-banner--video1' autoPlay loop muted playsinline controls={false} controlsList="nodownload">
         <source src={bannervideo} type="video/mp4" />
       </video>
 
