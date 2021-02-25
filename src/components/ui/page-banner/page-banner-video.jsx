@@ -14,7 +14,7 @@ const pageBanner = (props) => {
     <div className={`page-banner--video`}>
 
       <div className="container container--page-banner">
-        <h1 className="primary-heading u-text-center popup--title-container">
+        <h1 className="primary-heading u-text-center">
           <span className="primary-heading--main">{props.heading}</span>
           <hr className="hr--primary-heading" />
           <span className="primary-heading--sub">{props.subHeading}</span>

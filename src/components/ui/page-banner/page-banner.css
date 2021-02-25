@@ -59,6 +59,7 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
+  z-index: 1;
 }
 
 .page-banner--video .primary-heading--sub {
