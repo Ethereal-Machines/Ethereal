@@ -51,6 +51,7 @@
   right: 0;
   bottom: 0;
   height: 100vh;
+  z-index: 1;
 }
 
 .page-banner--video-color-overlay {
@@ -111,7 +112,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 80rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .banner-heading {
