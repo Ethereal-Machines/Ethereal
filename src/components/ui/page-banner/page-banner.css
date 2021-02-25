@@ -31,6 +31,7 @@
 .page-banner--video1 {
   width: 100%;
   object-fit: cover;
+  z-index: -1;
 }
 
 .page-banner--video1 source {
