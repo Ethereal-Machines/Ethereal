@@ -311,7 +311,7 @@ class Footer extends Component {
                     </a>
                   </li>
                   <li className="link-item link-item--social-media">
-                    <a href="https://www.youtube.com/channel/UCW8I3771Afa4v_KkATxw2EA" target="_blank">
+                    <a href="https://www.youtube.com/channel/UCW8I3771Afa4v_KkATxw2EA?sub_confirmation=1" target="_blank">
                       <img src={youtube} alt="YouTube" width="30" height="30" />
                     </a>
                   </li>

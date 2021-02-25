@@ -45,8 +45,8 @@ import Header from '../../../../components/layout/header/header';
 import Footer from '../../../../components/layout/footer/footer';
 
 // Renders json state to html, can be used on server and client side
-require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
-
+// require('react-tap-event-plugin')() // react-tap-event-plugin is required by material-ui which is used by ory-editor-ui so we need to call it here
+require("react-tap-event-plugin");
 // Define which plugins we want to use. We only have slate and parallax available, so load those.
 
 
