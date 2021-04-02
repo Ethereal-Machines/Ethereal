@@ -1,2 +1,0 @@
-(this["webpackJsonpetherealmachines.com"]=this["webpackJsonpetherealmachines.com"]||[]).push([[56],{1772:function(e,t,i){"use strict";i.r(t);i(0);var n=i(2);t.default=function(){return Object(n.jsx)("div",{children:"Hi! I'm Certificate and I'll put weight on your personality."})}}}]);
-//# sourceMappingURL=56.897c1ad8.chunk.js.map

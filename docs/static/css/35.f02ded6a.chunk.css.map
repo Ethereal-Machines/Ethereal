@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/components/form/error-box/error-box.css"],"names":[],"mappings":"AAEC,WACG,oBAAqB,CACrB,eAAgB,CAChB,eAAgB,CAChB,SAAU,CACV,eACJ","file":"35.f02ded6a.chunk.css","sourcesContent":[" \r\n\r\n .error-box {\r\n    display: inline-block;\r\n    list-style: none;\r\n    text-align: left;\r\n    color: red;\r\n    font-size: 0.8rem;\r\n}"]}
