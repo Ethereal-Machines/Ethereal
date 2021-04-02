@@ -8,8 +8,10 @@
 
 # production
 /build
+/docs
 /notes
 /xd-designs
+
 
 # misc
 .DS_Store
